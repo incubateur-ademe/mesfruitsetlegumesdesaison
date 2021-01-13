@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { QueryParamProvider } from 'use-query-params'
 
+import { GlobalStyle, mq } from 'utils/styles'
+import StyleProvider from 'components/providers/StyleProvider'
+import ProductProvider from 'components/providers/ProductProvider'
+import SearchProvider from 'components/providers/SearchProvider'
+
+import Header from 'components/layout/Header'
+import Footer from 'components/layout/Footer'
+import EmbedConfigurator from 'components/misc/EmbedConfigurator'
+import Search from 'views/Search'
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  ${mq.medium} {
+    flex-direction: column-reverse;
+  }
+`
+const Content = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+`
+const FullScreen = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <QueryParamProvider ReactRouterRoute={Route}>
+        <StyleProvider>
+          <ProductProvider>
+            <SearchProvider>
+              <GlobalStyle />
+              <Wrapper>
+                <Content>
+                  <FullScreen>
+                    <Header />
+                    <Search />
+                  </FullScreen>
+                  <Footer />
+                </Content>
+                <EmbedConfigurator />
+              </Wrapper>
+            </SearchProvider>
+          </ProductProvider>
+        </StyleProvider>
+      </QueryParamProvider>
+    </Router>
+  )
 }
 
-export default App;
+export default App

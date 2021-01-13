@@ -1,0 +1,596 @@
+[
+  {
+    "label": { "fr": "Fraise" },
+    "months": [4, 5, 6],
+    "emoji": "🍓",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Pomme" },
+    "months": [0, 1, 2, 3, 7, 8, 9, 10, 11],
+    "emoji": "🍏",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Orange" },
+    "months": [0, 1, 2],
+    "emoji": "🍊",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Citron" },
+    "months": [0, 1],
+    "emoji": "🍋",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Ail" },
+    "months": [6, 7, 8, 9, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Artichaut" },
+    "months": [4, 5, 6, 7, 8],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Asperge" },
+    "months": [3, 4, 5],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Betterave" },
+    "months": [0, 1, 2, 9, 10, 11],
+    "emoji": "🍠",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Blette" },
+    "months": [5, 6, 7, 8, 9, 10],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Carotte" },
+    "months": [0, 1, 2, 8, 9, 10, 11],
+    "emoji": "🥕",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Céleri" },
+    "months": [0, 1, 2, 9, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Champignon de Paris" },
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11],
+    "emoji": "🍄",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Chou" },
+    "months": [0, 1, 2, 9, 10, 11],
+    "emoji": "🥬",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Chou de Bruxelles" },
+    "months": [0, 1, 2, 9, 10, 11],
+    "emoji": "🥬🇧🇪",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Chou-fleur" },
+    "months": [0, 1, 2, 8, 9, 10, 11],
+    "emoji": "🥦",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Concombre" },
+    "months": [4, 5, 6, 7, 8, 9],
+    "emoji": "🥒",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Courge" },
+    "months": [0, 8, 9, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Courgette" },
+    "months": [4, 5, 6, 7, 8, 9],
+    "emoji": "🍆",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Cresson" },
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Echalote" },
+    "months": [9, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Endive" },
+    "months": [0, 1, 2, 3, 4, 9],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Epinard" },
+    "months": [0, 1, 2, 3, 4, 8, 9, 10, 11],
+    "emoji": "🥬",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Fenouil" },
+    "months": [3, 5, 6, 7, 8, 9, 10],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Haricot vert" },
+    "months": [5, 6, 7, 8, 9],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Laitue" },
+    "months": [4, 5, 6, 7, 8],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Mâche" },
+    "months": [0, 1, 9, 10, 11],
+    "emoji": "🥗",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Navet" },
+    "months": [0, 1, 2, 3, 4, 9, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Maïs" },
+    "months": [6, 7, 8],
+    "emoji": "🌽",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Oignon" },
+    "months": [0, 1, 2, 3, 8, 9, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Panais" },
+    "months": [0, 1, 2, 9, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Petit pois" },
+    "months": [4, 5, 6],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Poireau" },
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Poivron" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🌶️",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Potiron" },
+    "months": [0, 8, 9, 10, 11],
+    "emoji": "🎃",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Radis" },
+    "months": [2, 3, 4, 5],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Salsifis" },
+    "months": [0, 1, 2, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Topinambour" },
+    "months": [0, 1, 10, 11],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Cassis" },
+    "months": [5, 6, 7],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Châtaigne" },
+    "months": [9, 10],
+    "emoji": "🌰",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Clémentine" },
+    "months": [0, 1, 10, 11],
+    "emoji": "🍊",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Pamplemousse" },
+    "months": [1, 2, 3, 4, 5],
+    "emoji": "🍊",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Coing" },
+    "months": [9],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Figue" },
+    "months": [6, 7, 8, 9],
+    "emoji": "🥭",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Groseille" },
+    "months": [5, 6, 7],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Kiwi" },
+    "months": [0, 1, 2, 10, 11],
+    "emoji": "🥝",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Mandarine" },
+    "months": [0, 1, 10, 11],
+    "emoji": "🍊",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Melon" },
+    "months": [5, 6, 7, 8, 9],
+    "emoji": "🍈",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Mirabelle" },
+    "months": [7, 8],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Mûre" },
+    "months": [7, 8],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Nectarine" },
+    "months": [7, 8],
+    "emoji": "🍊",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Myrtille" },
+    "months": [7, 8, 9],
+    "emoji": "🍇",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Noisette" },
+    "months": [8, 9, 10],
+    "emoji": "🌰",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Noix" },
+    "months": [8, 9],
+    "emoji": "🌰",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Prune" },
+    "months": [6, 7, 8],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Quetsche" },
+    "months": [7, 8, 9],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Reine Claude" },
+    "months": [8],
+    "emoji": "🍏",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Rhubarbe" },
+    "months": [3, 4, 5],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Pêche" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🍑",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Cerise" },
+    "months": [5, 6],
+    "emoji": "🍒",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Abricot" },
+    "months": [5, 6, 7],
+    "emoji": "🍑",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Framboise" },
+    "months": [5, 6, 7],
+    "emoji": "🌱",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Poire" },
+    "months": [0, 1, 2, 7, 8, 9, 10, 11],
+    "emoji": "🍐",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Raisin" },
+    "months": [8, 9],
+    "emoji": "🍇",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Aubergine" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🍆",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Brocoli" },
+    "months": [8, 9, 10],
+    "emoji": "🥦",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  },
+  {
+    "label": { "fr": "Tomate" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🍅",
+    "text": {
+      "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
+      "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
+    }
+  }
+]
