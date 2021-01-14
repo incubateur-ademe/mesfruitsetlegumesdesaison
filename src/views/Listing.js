@@ -58,7 +58,8 @@ export default function Listing() {
           ❮
         </Navigation>
         <Title>
-          Tous les fruits et légumes {[3, 7, 9].includes(month) ? `d'` : 'de '}
+          Tous les fruits et légumes{' '}
+          {[3, 7, 9].includes(Number(month)) ? `d'` : 'de '}
           {months[month]}
         </Title>
         <Navigation to={`/months/${month < 11 ? Number(month) + 1 : 0}`}>
