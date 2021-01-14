@@ -8,6 +8,7 @@ import { mq } from 'utils/styles'
 import StyleContext from 'utils/StyleContext'
 
 import Button from 'components/base/Button'
+import About from './footer/About'
 
 const Wrapper = styled.div`
   position: relative;
@@ -50,7 +51,7 @@ const Logos = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  width: 100%;
   background-color: white;
 `
 const Logo = styled.img`
@@ -63,6 +64,7 @@ export default function Footer() {
   return (
     <Wrapper>
       <Content>
+        <About />
         <Flex>
           <Source>
             <Title>Sources des données :</Title>
@@ -87,14 +89,14 @@ export default function Footer() {
             Je veux l'intégrer à mon site !
           </Button>
         </Flex>
-        <LogosWrapper>
-          <Logos>
-            <Logo src={repufrancaise} />
-            <Logo src={ademe} />
-            <Logo src={ecolab} />
-          </Logos>
-        </LogosWrapper>
       </Content>
+      <LogosWrapper>
+        <Logos>
+          <Logo src={repufrancaise} />
+          <Logo src={ademe} />
+          <Logo src={ecolab} />
+        </Logos>
+      </LogosWrapper>
     </Wrapper>
   )
 }
