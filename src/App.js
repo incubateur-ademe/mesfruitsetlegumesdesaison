@@ -11,6 +11,7 @@ import SearchProvider from 'components/providers/SearchProvider'
 
 import Header from 'components/layout/Header'
 import Footer from 'components/layout/Footer'
+import Background from 'components/layout/Background'
 import EmbedConfigurator from 'components/misc/EmbedConfigurator'
 import Search from 'views/Search'
 
@@ -43,6 +44,7 @@ function App() {
           <ProductProvider>
             <SearchProvider>
               <GlobalStyle />
+              <Background />
               <Wrapper>
                 <Content>
                   <FullScreen windowHeight={height}>

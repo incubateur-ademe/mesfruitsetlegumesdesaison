@@ -6,13 +6,17 @@ import icons from './background/icons'
 
 const Wrapper = styled.div`
   position: absolute;
-  bottom: 1em;
-  left: 0;
-  right: 0;
+  top: 1em;
+  left: -10vw;
+  right: -10vw;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  opacity: 0.6;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  opacity: 0.2;
+
+  ${mq.small} {
+    display: none;
+  }
 `
 const Item = styled.div`
   opacity: ${(props) => (props.mounted ? 1 : 0)};
@@ -20,20 +24,15 @@ const Item = styled.div`
   transition: opacity 1000ms ${(props) => props.index * 100 + 2500}ms,
     transform 400ms ${(props) => props.index * 100 + 2400}ms ease-in-out;
 
-  ${mq.small} {
-    display: ${(props) => (props.index > 3 ? 'none' : 'block')};
-  }
+  margin: ${(props) =>
+    props.index % 14 === 0 ? '2.5vw 2.5vw 2.5vw 10vw' : '2.5vw'};
 
   svg {
-    width: 5vw;
+    width: 10vw;
     height: auto;
 
-    ${mq.small} {
-      width: 15vw;
-    }
-
     path {
-      fill: ${(props) => props.theme.colors.second};
+      fill: white;
     }
   }
 `
@@ -47,7 +46,7 @@ export default function Background() {
       const j = Math.floor(Math.random() * (i + 1))
       ;[icons[i], icons[j]] = [icons[j], icons[i]]
     }
-    setIconsToDisplay(icons)
+    setIconsToDisplay([...icons, ...icons])
   }, [])
   useEffect(() => {
     if (iconsToDisplay.length) {
@@ -56,14 +55,11 @@ export default function Background() {
   }, [iconsToDisplay])
   return (
     <Wrapper>
-      {iconsToDisplay.map(
-        (icon, index) =>
-          index < 7 && (
-            <Item mounted={mounted} index={index}>
-              {icon}
-            </Item>
-          )
-      )}
+      {iconsToDisplay.map((icon, index) => (
+        <Item mounted={mounted} index={index}>
+          {icon}
+        </Item>
+      ))}
     </Wrapper>
   )
 }

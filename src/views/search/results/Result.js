@@ -31,6 +31,9 @@ const Title = styled.h2`
   font-size: 2.5em;
   line-height: 1;
 `
+const Emoji = styled.span`
+  font-style: normal;
+`
 const Text = styled.p`
   position: relative;
   margin: 1em 0 0;
@@ -46,7 +49,7 @@ export default function Result(props) {
     <Wrapper index={props.index} mounted={mounted}>
       <Title>
         <span>{props.product.label.fr}</span>
-        <span>{props.product.emoji}</span>
+        <Emoji>{props.product.emoji}</Emoji>
       </Title>
       <Year months={props.product.months} />
       {props.product.text && (

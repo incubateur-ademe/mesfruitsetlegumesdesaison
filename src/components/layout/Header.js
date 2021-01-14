@@ -22,7 +22,19 @@ const Title = styled.h1`
   font-size: inherit;
   line-height: 1.1;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ${(props) => props.theme.colors.background};
+    filter: blur(20px);
+  }
+
   a {
+    position: relative;
     display: flex;
     flex-direction: column;
     color: ${(props) => props.theme.colors.text};
@@ -51,6 +63,7 @@ const Bottom = styled(Top)`
   align-self: flex-end;
 `
 const StyledLink = styled(Link)`
+  position: relative;
   display: block;
   margin-right: 1rem;
   font-size: 1.2rem;

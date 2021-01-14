@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom'
 
 import { mq } from 'utils/styles'
 
-import Background from 'components/layout/Background'
 import SearchInput from './search/SearchInput'
 import Results from './search/Results'
 import Listing from 'views/Listing'
@@ -40,7 +39,6 @@ export default function Search() {
             <Results />
           </Route>
         </Switch>
-        <Background />
       </Content>
     </Wrapper>
   )

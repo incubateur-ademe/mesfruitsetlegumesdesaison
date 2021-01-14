@@ -38,6 +38,9 @@ const Title = styled.h2`
   font-size: 1.3em;
   line-height: 1;
 `
+const Emoji = styled.span`
+  font-style: normal;
+`
 const Date = styled.p`
   position: relative;
 `
@@ -64,7 +67,7 @@ export default function Product(props) {
       <Content>
         <Title>
           <span>{props.product.label.fr}</span>
-          <span>{props.product.emoji}</span>
+          <Emoji>{props.product.emoji}</Emoji>
         </Title>
         <Date>
           {props.product.months.length === 12 ? (
