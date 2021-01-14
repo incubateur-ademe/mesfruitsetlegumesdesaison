@@ -92,7 +92,7 @@ export default function Header() {
         )}
       </Title>
       <StyledLink to={`/months/${currentMonth}`}>
-        Voir tous les produits de saison
+        Voir les produits par mois
       </StyledLink>
     </Wrapper>
   )
