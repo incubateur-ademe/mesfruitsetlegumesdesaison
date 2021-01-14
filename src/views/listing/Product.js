@@ -71,7 +71,8 @@ export default function Product(props) {
             `Toute l'année :)`
           ) : (
             <>
-              De {months[interval[0]]} à {months[interval[1]]} :)
+              {[3, 7, 9].includes(interval[0]) ? `D'` : 'De '}
+              {months[interval[0]]} à {months[interval[1]]} :)
             </>
           )}
         </Date>
