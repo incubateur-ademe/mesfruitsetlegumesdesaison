@@ -59,7 +59,6 @@ export default function Product(props) {
       setInterval([orderedMonths[0], orderedMonths[orderedMonths.length - 1]])
     }
   }, [props.product])
-  console.log(interval)
   return (
     <Wrapper>
       <Content>
