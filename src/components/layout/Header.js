@@ -10,7 +10,7 @@ const Wrapper = styled.h1`
   flex-direction: column;
   width: 8em;
   max-width: 100%;
-  margin: 2rem auto 2.5rem;
+  margin: 4vh auto 5vh;
   font-size: 5em;
   line-height: 1.1;
 
