@@ -47,7 +47,7 @@ export default function Product(props) {
   useEffect(() => {
     const orderedMonths = props.product.months.sort((a, b) => (a > b ? 1 : -1))
     console.log(orderedMonths, orderedMonths.includes(11))
-    if (orderedMonths.includes(11)) {
+    if (orderedMonths.includes(11) && orderedMonths.includes(0)) {
       for (let i = orderedMonths.length - 1; i >= 0; i--) {
         if (orderedMonths[i] !== orderedMonths[i - 1] + 1) {
           console.log(orderedMonths[i], orderedMonths[i - 1])

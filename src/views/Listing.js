@@ -19,6 +19,10 @@ const Title = styled.h2`
   margin: 0;
   font-size: 1.7em;
   text-align: center;
+
+  ${mq.small} {
+    font-size: 1.1em;
+  }
 `
 const Navigation = styled(Link)`
   font-size: 2em;

@@ -163,7 +163,7 @@
   },
   {
     "label": { "fr": "Cresson" },
-    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11],
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "emoji": "🌱",
     "text": {
       "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
@@ -280,7 +280,7 @@
   },
   {
     "label": { "fr": "Poireau" },
-    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11],
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "emoji": "🌱",
     "text": {
       "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
