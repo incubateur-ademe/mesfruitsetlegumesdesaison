@@ -47,7 +47,7 @@ const Input = styled.input`
 
   ${mq.small} {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 `
 export default function SearchInput() {
