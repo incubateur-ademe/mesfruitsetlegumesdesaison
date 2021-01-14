@@ -1,13 +1,31 @@
 import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import { mq } from 'utils/styles'
+import { months } from 'utils/months'
 import ProductContext from 'utils/ProductContext'
 
 import Product from './listing/Product'
 
-const Wrapper = styled.div`
+const Wrapper = styled.div``
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+`
+const Title = styled.h2`
+  margin: 0;
+  font-size: 1.7em;
+  text-align: center;
+`
+const Navigation = styled(Link)`
+  font-size: 2em;
+  font-weight: 900;
+  text-decoration: none;
+`
+const Products = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1em;
@@ -31,9 +49,23 @@ export default function Listing() {
 
   return (
     <Wrapper>
-      {filteredProducts.map((product) => (
-        <Product product={product} />
-      ))}
+      <Header>
+        <Navigation to={`/months/${month > 0 ? Number(month) - 1 : 11}`}>
+          ❮
+        </Navigation>
+        <Title>
+          Tous les fruits et légumes {[3, 7, 9].includes(month) ? `d'` : 'de '}
+          {months[month]}
+        </Title>
+        <Navigation to={`/months/${month < 11 ? Number(month) + 1 : 0}`}>
+          ❯
+        </Navigation>
+      </Header>
+      <Products>
+        {filteredProducts.map((product) => (
+          <Product product={product} />
+        ))}
+      </Products>
     </Wrapper>
   )
 }

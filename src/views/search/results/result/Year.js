@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import { mq } from 'utils/styles'
 import { abbr, currentMonth } from 'utils/months'
@@ -20,8 +21,9 @@ const Answer = styled.div`
 const Months = styled.div`
   display: flex;
 `
-const Month = styled.div`
+const Month = styled(Link)`
   flex: 1;
+  display: block;
   padding: 1em 0;
   background-color: ${(props) => (props.valid ? '#39d05c' : '#c81d25')};
   border: 3px solid
@@ -30,6 +32,7 @@ const Month = styled.div`
   border-radius: 1em;
   font-size: 0.75em;
   text-align: center;
+  text-decoration: none;
   color: white;
 
   ${mq.small} {
@@ -47,6 +50,7 @@ export default function Year(props) {
         {abbr.map((month, index) => (
           <Month
             key={month}
+            to={`/months/${index}`}
             valid={props.months.includes(index)}
             active={index === currentMonth}
           >
