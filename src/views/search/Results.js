@@ -39,8 +39,8 @@ export default function Results() {
 
   return (
     <div>
-      {filteredProducts.map((product) => (
-        <Result key={product.label.fr} product={product} />
+      {filteredProducts.map((product, index) => (
+        <Result key={product.label.fr} index={index} product={product} />
       ))}
     </div>
   )

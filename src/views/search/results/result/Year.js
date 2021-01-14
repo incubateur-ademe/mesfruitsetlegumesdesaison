@@ -22,19 +22,15 @@ const currentMonth = new Date().getMonth()
 const Wrapper = styled.div`
   position: relative;
 `
-const Answer = styled.h3`
+const Answer = styled.div`
   margin-bottom: 1.5rem;
   font-size: 4em;
+  font-weight: 900;
   font-family: ${(props) => props.theme.fonts.body};
+  font-style: none;
   text-align: center;
   line-height: 1;
   color: ${(props) => (props.valid ? '#39d05c' : '#c81d25')};
-`
-const SmileyYes = styled.span`
-  letter-spacing: -0.1em;
-`
-const SmileyNo = styled.span`
-  letter-spacing: -0.2em;
 `
 const Months = styled.div`
   display: flex;
@@ -60,15 +56,7 @@ export default function Year(props) {
   return (
     <Wrapper>
       <Answer valid={props.months.includes(currentMonth)}>
-        {props.months.includes(currentMonth) ? (
-          <>
-            Oui <SmileyYes>:)</SmileyYes>
-          </>
-        ) : (
-          <>
-            Non <SmileyNo>:(</SmileyNo>
-          </>
-        )}
+        {props.months.includes(currentMonth) ? 'Oui :)' : 'Non :('}
       </Answer>
       <Months>
         {months.map((month, index) => (

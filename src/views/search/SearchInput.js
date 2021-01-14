@@ -4,44 +4,62 @@ import styled from 'styled-components'
 import { mq } from 'utils/styles'
 import SearchContext from 'utils/SearchContext'
 
-const Wrapper = styled.input`
+const Wrapper = styled.div`
   position: relative;
   display: block;
-  width: 26rem;
-  margin: 0 auto 2rem;
-  padding: 0.3em 0;
-  font-size: 2.5em;
-  font-family: ${(props) => props.theme.fonts.title};
-  color: ${(props) => props.theme.colors.main};
-  text-align: center;
-  background: none;
+  margin: 0 auto 2em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0.5em;
+    left: -0.5em;
+    width: 100%;
+    height: 100%;
+    background-color: ${(props) => props.theme.colors.second};
+  }
+`
+const Input = styled.input`
+  position: relative;
+  width: 100%;
+  padding: 0.6em 0.8em;
+  font-size: 2.2em;
+  font-weight: 700;
+  font-style: italic;
+  color: ${(props) => props.theme.colors.second};
+  background-color: ${(props) => props.theme.colors.main};
   border: none;
-  // box-shadow: rgba(43, 174, 173, 0.6) 0px 1px;
-  box-shadow: ${(props) => props.theme.colors.main} 0px 1px;
-  transition: box-shadow 100ms ease-out;
+  transition: box-shadow 300ms ease-out;
 
   &:focus {
     outline: none;
-    box-shadow: ${(props) => props.theme.colors.main} 0px 2px;
+    box-shadow: inset 0px 0px 0px 0.1em rgba(0, 0, 0, 0.3);
+
+    &::placeholder {
+      opacity: 0;
+    }
   }
   &::placeholder {
-    color: ${(props) => props.theme.colors.main};
+    color: ${(props) => props.theme.colors.second};
     opacity: 0.6;
+    transition: opacity 300ms ease-out;
   }
 
   ${mq.small} {
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 `
 export default function SearchInput() {
   const { search, setSearch } = useContext(SearchContext)
   return (
-    <Wrapper
-      type='text'
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      placeholder={'Rentrez un fruit ou un légume'}
-    />
+    <Wrapper>
+      <Input
+        type='text'
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder={'Rentrez un fruit ou un légume'}
+      />
+    </Wrapper>
   )
 }

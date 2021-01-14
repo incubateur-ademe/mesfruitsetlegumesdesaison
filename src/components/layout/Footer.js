@@ -10,6 +10,7 @@ import StyleContext from 'utils/StyleContext'
 import Button from 'components/base/Button'
 
 const Wrapper = styled.div`
+  position: relative;
   background-color: ${(props) => props.theme.colors.second};
   transition: all 600ms;
 `

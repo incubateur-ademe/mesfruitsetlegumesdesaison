@@ -5,25 +5,39 @@ import { mq } from 'utils/styles'
 import StyleContext from 'utils/StyleContext'
 
 const Wrapper = styled.h1`
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 5.5em;
-  margin: 2rem auto;
-  font-size: 6em;
-  font-size: 6em;
-  line-height: 0.9;
+  width: 8em;
+  max-width: 100%;
+  margin: 2rem auto 2.5rem;
+  font-size: 5em;
+  line-height: 1.1;
 
   ${mq.small} {
-    font-size: 3.8em;
+    font-size: 3.2em;
   }
 `
 const Top = styled.span`
+  position: relative;
   align-self: flex-start;
   display: block;
+
+  &:before {
+    content: '${(props) => props.text}';
+    position: absolute;
+    top: 0.3rem;
+    left: -0.5rem;
+    width: 100%;
+    color: ${(props) => props.theme.colors.second};
+  }
+
+  span {
+    position: relative;
+  }
 `
-const Bottom = styled.span`
+const Bottom = styled(Top)`
   align-self: flex-end;
-  display: block;
 `
 export default function Header() {
   const { displayTitle } = useContext(StyleContext)
@@ -32,8 +46,12 @@ export default function Header() {
     <Wrapper>
       {displayTitle && (
         <>
-          <Top>Est-ce bien</Top>
-          <Bottom>la saison ?</Bottom>
+          <Top text={'Est-ce bien'}>
+            <span>Est-ce bien</span>
+          </Top>
+          <Bottom text={'la saison ?'}>
+            <span>la saison ?</span>
+          </Bottom>
         </>
       )}
     </Wrapper>

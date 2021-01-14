@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { QueryParamProvider } from 'use-query-params'
 
 import { GlobalStyle, mq } from 'utils/styles'
+import useWindowSize from 'hooks/useWindowSize'
 import StyleProvider from 'components/providers/StyleProvider'
 import ProductProvider from 'components/providers/ProductProvider'
 import SearchProvider from 'components/providers/SearchProvider'
@@ -30,9 +31,11 @@ const FullScreen = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: ${(props) => props.windowHeight}px;
 `
 function App() {
+  const { height } = useWindowSize()
+
   return (
     <Router>
       <QueryParamProvider ReactRouterRoute={Route}>
@@ -42,7 +45,7 @@ function App() {
               <GlobalStyle />
               <Wrapper>
                 <Content>
-                  <FullScreen>
+                  <FullScreen windowHeight={height}>
                     <Header />
                     <Search />
                   </FullScreen>

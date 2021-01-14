@@ -21,7 +21,7 @@ const Content = styled.div`
   ${mq.small} {
     width: auto;
     margin: 0 3vw 2em;
-    padding-bottom: 15vw;
+    padding-bottom: 5vw;
   }
 `
 export default function Search() {

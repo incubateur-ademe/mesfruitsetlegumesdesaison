@@ -5,14 +5,14 @@ export const themes = {
   default: {
     name: 'Défaut',
     colors: {
-      main: '#ff006e',
+      main: '#ff4c82',
       second: '#FFF5CB',
       background: '#FFE57D',
       text: '#2BAEAD',
     },
     fonts: {
-      body: '"Yusei Magic", sans-serif',
-      title: '"Caveat", Arial, cursive',
+      body: '"Work Sans", sans-serif',
+      title: '"Work Sans", sans-serif',
     },
   },
   classic: {
@@ -24,8 +24,8 @@ export const themes = {
       text: '#32337B',
     },
     fonts: {
-      body: '"Yusei Magic", sans-serif',
-      title: '"Caveat", Arial, cursive',
+      body: '"Work Sans", sans-serif',
+      title: '"Work Sans", sans-serif',
     },
   },
   night: {
@@ -37,8 +37,8 @@ export const themes = {
       text: '#fdfdfd',
     },
     fonts: {
-      body: '"Yusei Magic", sans-serif',
-      title: '"Caveat", Arial, cursive',
+      body: '"Work Sans", sans-serif',
+      title: '"Work Sans", sans-serif',
     },
   },
   accessible: {
@@ -51,7 +51,7 @@ export const themes = {
     },
     fonts: {
       body: 'Arial, sans-serif',
-      title: 'Arial, cursive',
+      title: 'Arial, sans-serif',
     },
   },
 }
@@ -100,6 +100,7 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     font-family: ${(props) => props.theme.fonts.title};
+    font-style: italic;
   }
 
   a {

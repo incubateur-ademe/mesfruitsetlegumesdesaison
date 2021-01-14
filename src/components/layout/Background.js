@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
+  opacity: 0.6;
 `
 const Item = styled.div`
   opacity: ${(props) => (props.mounted ? 1 : 0)};
@@ -22,6 +23,7 @@ const Item = styled.div`
   ${mq.small} {
     display: ${(props) => (props.index > 3 ? 'none' : 'block')};
   }
+
   svg {
     width: 5vw;
     height: auto;
@@ -31,7 +33,7 @@ const Item = styled.div`
     }
 
     path {
-      fill: ${(props) => props.theme.colors.text};
+      fill: ${(props) => props.theme.colors.second};
     }
   }
 `
@@ -56,7 +58,7 @@ export default function Background() {
     <Wrapper>
       {iconsToDisplay.map(
         (icon, index) =>
-          index < 10 && (
+          index < 7 && (
             <Item mounted={mounted} index={index}>
               {icon}
             </Item>
