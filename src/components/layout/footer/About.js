@@ -1,11 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import ButtonLink from 'components/base/ButtonLink'
+
 const Wrapper = styled.div`
   margin-bottom: 3em;
 `
 const Title = styled.h2``
 const Paragraph = styled.p``
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+`
 export default function About() {
   return (
     <Wrapper>
@@ -18,6 +25,15 @@ export default function About() {
         responsables du changement climatique. Consommer des fruits et légumes
         de saison est un excellent moyen de concilier plaisir, santé et climat.
       </Paragraph>
+      <ButtonWrapper>
+        <ButtonLink
+          href={
+            'https://www.ademe.fr/sites/default/files/assets/documents/calendrier-fruits-legumes-de-saison.pdf'
+          }
+        >
+          Imprimer le calendrier des fruits et légumes de saison
+        </ButtonLink>
+      </ButtonWrapper>
       <Paragraph>
         Une tomate produite localement, mais sous une serre chauffée, génère
         environ 7 fois plus de gaz à effet de serre, que la même tomate produite
