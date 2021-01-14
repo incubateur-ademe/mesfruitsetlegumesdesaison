@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
-import { mq } from 'utils/styles'
-
+import { currentMonth } from 'utils/months'
 import Year from './result/Year'
-
-const currentMonth = new Date().getMonth()
 
 const Wrapper = styled.div`
   position: relative;

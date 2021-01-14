@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Switch, Route } from 'react-router-dom'
 
 import { mq } from 'utils/styles'
 
 import Background from 'components/layout/Background'
 import SearchInput from './search/SearchInput'
 import Results from './search/Results'
+import Listing from 'views/Listing'
 
 const Wrapper = styled.div`
   flex: 1;
@@ -24,12 +26,20 @@ const Content = styled.div`
     padding-bottom: 5vw;
   }
 `
+
 export default function Search() {
   return (
     <Wrapper>
       <Content>
         <SearchInput />
-        <Results />
+        <Switch>
+          <Route path='/months/:month'>
+            <Listing />
+          </Route>
+          <Route path='/'>
+            <Results />
+          </Route>
+        </Switch>
         <Background />
       </Content>
     </Wrapper>

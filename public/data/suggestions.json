@@ -1,0 +1,23 @@
+[
+  {
+    "label": { "fr": "Fraise" },
+    "emoji": "🍓"
+  },
+  { "label": { "fr": "Pomme" }, "emoji": "🍏" },
+  {
+    "label": { "fr": "Orange" },
+    "emoji": "🍊"
+  },
+  {
+    "label": { "fr": "Carotte" },
+    "emoji": "🥕"
+  },
+  {
+    "label": { "fr": "Raisin" },
+    "emoji": "🍇"
+  },
+  {
+    "label": { "fr": "Tomate" },
+    "emoji": "🍅"
+  }
+]

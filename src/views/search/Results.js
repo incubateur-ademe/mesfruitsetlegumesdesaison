@@ -4,6 +4,7 @@ import SearchContext from 'utils/SearchContext'
 import ProductContext from 'utils/ProductContext'
 
 import Result from './results/Result'
+import Suggestions from './results/Suggestions'
 
 export default function Results() {
   const { search } = useContext(SearchContext)
@@ -39,9 +40,13 @@ export default function Results() {
 
   return (
     <div>
-      {filteredProducts.map((product, index) => (
-        <Result key={product.label.fr} index={index} product={product} />
-      ))}
+      {filteredProducts.length ? (
+        filteredProducts.map((product, index) => (
+          <Result key={product.label.fr} index={index} product={product} />
+        ))
+      ) : (
+        <Suggestions />
+      )}
     </div>
   )
 }

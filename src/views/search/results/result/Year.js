@@ -2,22 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { mq } from 'utils/styles'
-
-const months = [
-  'janv.',
-  'févr.',
-  'mars',
-  'avr.',
-  'mai',
-  'juin',
-  'juil.',
-  'août',
-  'sept.',
-  'oct.',
-  'nov.',
-  'déc.',
-]
-const currentMonth = new Date().getMonth()
+import { abbr, currentMonth } from 'utils/months'
 
 const Wrapper = styled.div`
   position: relative;
@@ -59,7 +44,7 @@ export default function Year(props) {
         {props.months.includes(currentMonth) ? 'Oui :)' : 'Non :('}
       </Answer>
       <Months>
-        {months.map((month, index) => (
+        {abbr.map((month, index) => (
           <Month
             key={month}
             valid={props.months.includes(index)}

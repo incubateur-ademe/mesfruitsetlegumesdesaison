@@ -17,8 +17,8 @@ const Wrapper = styled.div`
 const Item = styled.div`
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transform: translateY(${(props) => (props.mounted ? 0 : '200%')});
-  transition: opacity 1000ms ${(props) => props.index * 100 + 700}ms,
-    transform 400ms ${(props) => props.index * 100 + 600}ms ease-in-out;
+  transition: opacity 1000ms ${(props) => props.index * 100 + 2500}ms,
+    transform 400ms ${(props) => props.index * 100 + 2400}ms ease-in-out;
 
   ${mq.small} {
     display: ${(props) => (props.index > 3 ? 'none' : 'block')};
