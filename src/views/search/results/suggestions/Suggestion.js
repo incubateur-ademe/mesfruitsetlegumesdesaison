@@ -23,7 +23,7 @@ const Wrapper = styled.div`
     transform 400ms ${(props) => props.index * 100}ms ease-in-out,
     text-shadow 300ms ease-out, font-size 200ms ease-out;
   cursor: pointer;
-  animation: ${flash} 35s ${(props) => props.index * 5 + 5}s infinite linear;
+  animation: ${flash} 25s ${(props) => props.index * 4 + 2}s infinite linear;
 
   &:hover {
     font-size: 3.2em;
