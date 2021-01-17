@@ -73,6 +73,14 @@ export default function Footer() {
             >
               ADEME
             </a>
+            <br />
+            <a
+              href='http://www.agribalyse.fr/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              AGRIBALYSE®
+            </a>
           </Source>
           <Button
             onClick={() => {
