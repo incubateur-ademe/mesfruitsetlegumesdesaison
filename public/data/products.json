@@ -592,5 +592,10 @@
       "in": "Et tant mieux ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison",
       "out": "Et il vaut mieux s'en passer ! Parce qu'une fraise hors saison c'est +43% d'émissions de CO2 par rapport à une fraise de saison"
     }
+  },
+  {
+    "label": { "fr": "Ananas" },
+    "emoji": "🍍",
+    "months": []
   }
 ]

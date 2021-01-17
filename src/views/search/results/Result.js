@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
+import { mq } from 'utils/styles'
 import { currentMonth } from 'utils/months'
 import Year from './result/Year'
 
@@ -22,6 +23,10 @@ const Wrapper = styled.div`
     background-color: ${(props) => props.theme.colors.second};
     opacity: 0.4;
   }
+
+  ${mq.small} {
+    padding: 1em;
+  }
 `
 const Title = styled.h2`
   position: relative;
@@ -33,6 +38,10 @@ const Title = styled.h2`
 `
 const Emoji = styled.span`
   font-style: normal;
+`
+const Local = styled.p`
+  font-size: 1em;
+  color: #c81d25;
 `
 const Text = styled.p`
   position: relative;
@@ -51,7 +60,15 @@ export default function Result(props) {
         <span>{props.product.label.fr}</span>
         <Emoji>{props.product.emoji}</Emoji>
       </Title>
-      <Year months={props.product.months} />
+      {props.product.months.length ? (
+        <Year months={props.product.months} />
+      ) : (
+        <Local>
+          Ce produit n'est pas local :( pour lieux de production des pays et
+          régions très éloignés de la France métropolitaine, il faut donc les
+          faire importer (par avion ou bateau), ce qui est très polluant.
+        </Local>
+      )}
       {props.product.text && (
         <Text>
           {

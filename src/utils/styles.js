@@ -79,17 +79,17 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: ${(props) => props.theme.fonts.body};
     scroll-behavior: smooth;
+    line-height: 1.4;
+    
+    ${mq.small} {
+      font-size: 0.875em;
+    }
   }
 
   body {
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
-    line-height: 1.3;
-    transition: all 600ms;
-
-    ${mq.small} {
-      font-size: 0.875em;
-    }
+    transition: background-color 600ms, color 600ms;
   } 
 
   *, *:before, *:after {

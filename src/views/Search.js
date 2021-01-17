@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 `
 
 const Content = styled.div`
-  width: 38em;
+  width: 40em;
   margin: 0 auto 2em;
   padding-bottom: 5vw;
 

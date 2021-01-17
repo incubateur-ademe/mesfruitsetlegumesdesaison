@@ -8,7 +8,6 @@ import { mq } from 'utils/styles'
 import StyleContext from 'utils/StyleContext'
 
 import Button from 'components/base/Button'
-import About from './footer/About'
 
 const Wrapper = styled.div`
   position: relative;
@@ -16,7 +15,7 @@ const Wrapper = styled.div`
   transition: all 600ms;
 `
 const Content = styled.div`
-  max-width: 45em;
+  max-width: 40em;
   margin: 0 auto;
   padding: 1em 0 0;
 
@@ -64,7 +63,6 @@ export default function Footer() {
   return (
     <Wrapper>
       <Content>
-        <About />
         <Flex>
           <Source>
             <Title>Sources des données :</Title>

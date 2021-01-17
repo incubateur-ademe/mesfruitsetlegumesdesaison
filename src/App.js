@@ -11,6 +11,7 @@ import SearchProvider from 'components/providers/SearchProvider'
 
 import Header from 'components/layout/Header'
 import Footer from 'components/layout/Footer'
+import Learning from 'components/layout/Learning'
 import Background from 'components/layout/Background'
 import EmbedConfigurator from 'components/misc/EmbedConfigurator'
 import Search from 'views/Search'
@@ -51,6 +52,7 @@ function App() {
                     <Header />
                     <Search />
                   </FullScreen>
+                  <Learning />
                   <Footer />
                 </Content>
                 <EmbedConfigurator />
