@@ -51,7 +51,7 @@ const ButtonWrapper = styled.div`
 `
 export default function Learning() {
   return (
-    <Wrapper>
+    <Wrapper id='informations'>
       <Content>
         <Statistic>256%</Statistic>
         <Strong>
@@ -59,12 +59,12 @@ export default function Learning() {
           un produit de saison.
         </Strong>
         <Text>
-          Par exemple une tomate produite localement, mais sous une serre
-          chauffée, génère environ 4 fois plus de gaz à effet de serre, que la
-          même tomate produite à la bonne saison. Or, nous sommes environ 75% de
-          Français à déclarer consommer des tomates en hiver. De même pour les
-          fraises, 1 kg consommé en hiver nécessite 25 fois plus de pétrole pour
-          son transport que la même quantité produite en saison et localement.
+          Une tomate produite localement, mais sous une serre chauffée, génère
+          environ 4 fois plus de gaz à effet de serre, que la même tomate
+          produite à la bonne saison. Or, nous sommes environ 75% de Français à
+          déclarer consommer des tomates en hiver. De même pour les fraises, 1
+          kg consommé en hiver nécessite 25 fois plus de pétrole pour son
+          transport que la même quantité produite en saison et localement.
           Bénéfiques pour le climat et la santé, les fruits et légumes de saison
           sont également meilleurs au goût.
         </Text>

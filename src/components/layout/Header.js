@@ -62,14 +62,15 @@ const Top = styled.span`
 const Bottom = styled(Top)`
   align-self: flex-end;
 `
-const StyledLink = styled(Link)`
+const ScrollToInformations = styled.a`
   position: relative;
   display: block;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   font-size: 1.2rem;
   font-style: italic;
   text-align: right;
 
+  cursor: pointer;
   ${mq.small} {
     font-size: 1rem;
   }
@@ -91,9 +92,9 @@ export default function Header() {
           </Link>
         )}
       </Title>
-      <StyledLink to={`/months/${currentMonth}`}>
-        Voir les produits par mois
-      </StyledLink>
+      <ScrollToInformations href={'/#informations'}>
+        Pourquoi choisir des produits de saison ?
+      </ScrollToInformations>
     </Wrapper>
   )
 }

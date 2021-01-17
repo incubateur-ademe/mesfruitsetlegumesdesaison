@@ -16,14 +16,17 @@ const flash = keyframes`
   }
 }`
 const Wrapper = styled.div`
+  width: 15%;
+  height: 4.5rem;
   font-size: 2.6em;
+  text-align: center;
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transform: translateY(${(props) => (props.mounted ? 0 : '200%')});
   transition: opacity 1000ms ${(props) => props.index * 100 + 100}ms,
-    transform 400ms ${(props) => props.index * 100}ms ease-in-out,
-    text-shadow 300ms ease-out, font-size 200ms ease-out;
+    transform 400ms ${(props) => props.index * 100}ms ease-in-out;
+
   cursor: pointer;
-  animation: ${flash} 25s ${(props) => props.index * 4 + 2}s infinite linear;
+  animation: ${flash} 25s ${(props) => props.index * 4 + 2.5}s infinite linear;
 
   &:hover {
     font-size: 3.2em;
