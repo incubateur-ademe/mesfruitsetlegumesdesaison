@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { useCountUp } from 'react-countup'
 
@@ -64,11 +64,14 @@ export default function Learning() {
     suffix: '%',
     startOnMount: false,
   })
+  const [fired, setFired] = useState(false)
   useEffect(() => {
-    if (onScreen) {
+    if (onScreen && !fired) {
       start()
+      setFired(true)
     }
-  }, [onScreen])
+  }, [onScreen, start, fired])
+
   return (
     <Wrapper id='informations'>
       <Content>
