@@ -22,6 +22,7 @@ export default function Themes() {
     <Wrapper>
       {themeKeys.map((themeKey) => (
         <Theme
+          key={themeKey}
           theme={themes[themeKey]}
           current={themeKey === theme}
           onClick={() => setTheme(themeKey)}

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
+import { useCountUp } from 'react-countup'
 
 import { mq } from 'utils/styles'
+import useOnScreen from 'hooks/useOnScreen'
 
 import ButtonLink from 'components/base/ButtonLink'
 import BarChart from 'components/charts/BarChart'
@@ -10,7 +12,7 @@ const Wrapper = styled.div`
   position: relative;
   max-width: 40em;
   margin: 0 auto 1em;
-  //background: ${(props) => props.theme.colors.second};
+
   ${mq.small} {
     margin: 0 3vw 1em;
   }
@@ -33,6 +35,8 @@ const Statistic = styled.div`
   font-size: 10em;
   font-weight: 900;
   line-height: 0.9;
+  opacity: ${(props) => (props.onScreen ? 1 : 0)};
+  transition: opacity 400ms;
 
   ${mq.small} {
     font-size: 30vw;
@@ -51,10 +55,27 @@ const ButtonWrapper = styled.div`
   margin-bottom: 2em;
 `
 export default function Learning() {
+  const ref = useRef()
+  const onScreen = useOnScreen(ref, '-100px')
+  const { countUp, start } = useCountUp({
+    end: 256,
+    delay: 0.4,
+    duration: 4,
+    suffix: '%',
+    startOnMount: false,
+  })
+  useEffect(() => {
+    if (onScreen) {
+      start()
+    }
+  }, [onScreen])
   return (
     <Wrapper id='informations'>
       <Content>
-        <Statistic>256%</Statistic>
+        <Statistic ref={ref} onScreen={onScreen}>
+          {countUp}
+        </Statistic>
+
         <Strong>
           Gaz à effet de serre moyen généré par un produit hors saison par
           rapport à un produit de saison.

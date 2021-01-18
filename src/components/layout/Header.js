@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 import { mq } from 'utils/styles'
-import { currentMonth } from 'utils/months'
 import StyleContext from 'utils/StyleContext'
 
 const Wrapper = styled.div`

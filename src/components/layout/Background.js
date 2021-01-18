@@ -36,8 +36,8 @@ const Item = styled.div`
 export default function Background() {
   return (
     <Wrapper>
-      {icons.map((icon, index) => (
-        <Item index={index}>{icon}</Item>
+      {[...icons, ...icons].map((icon, index) => (
+        <Item key={index}>{icon}</Item>
       ))}
     </Wrapper>
   )

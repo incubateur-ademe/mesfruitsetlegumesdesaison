@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
+
+import useOnScreen from 'hooks/useOnScreen'
 
 const Wrapper = styled.div`
   position: relative;
@@ -36,6 +38,10 @@ const Bar = styled.div`
   color: ${(props) => props.theme.colors.second};
   background-color: ${(props) => props.theme.colors.text};
   opacity: ${(props) => (props.secondary ? 0.4 : 0.8)};
+  transform: scaleX(${(props) => (props.onScreen ? 1 : 0)});
+  transform-origin: left;
+  transition: transform 400ms ease-in-out
+    ${(props) => props.index * 200 + 1000}ms;
 `
 const Axis = styled.div`
   position: relative;
@@ -90,8 +96,10 @@ const Item = styled.div`
   }
 `
 export default function BarChart() {
+  const ref = useRef()
+  const onScreen = useOnScreen(ref, '-100px')
   return (
-    <Wrapper>
+    <Wrapper ref={ref}>
       <Caption>
         <Item secondary>En saison</Item>
         <Item>Hors saison</Item>
@@ -99,19 +107,33 @@ export default function BarChart() {
       <Product>
         <Label>🍓</Label>
         <Bars>
-          <Bar length={(0.47 / 2) * 100} secondary>
+          <Bar
+            index={0}
+            length={(0.47 / 2) * 100}
+            secondary
+            onScreen={onScreen}
+          >
             0.47
           </Bar>
-          <Bar length={(0.67 / 2) * 100}>0.67</Bar>
+          <Bar index={1} length={(0.67 / 2) * 100} onScreen={onScreen}>
+            0.67
+          </Bar>
         </Bars>
       </Product>
       <Product>
         <Label>🍅</Label>
         <Bars>
-          <Bar length={(0.51 / 2) * 100} secondary>
+          <Bar
+            index={2}
+            length={(0.51 / 2) * 100}
+            secondary
+            onScreen={onScreen}
+          >
             0.51
           </Bar>
-          <Bar length={(1.88 / 2) * 100}>1.88</Bar>
+          <Bar index={3} length={(1.88 / 2) * 100} onScreen={onScreen}>
+            1.88
+          </Bar>
         </Bars>
       </Product>
       <Axis>
