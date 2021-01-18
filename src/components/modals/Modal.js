@@ -35,6 +35,8 @@ const Content = styled.div`
   color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.second};
   border-radius: 1em;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
+
   opacity: ${(props) => (props.open ? 1 : 0)};
   transform: scale(${(props) => (props.open ? 1 : 0.7)})
     translateY(${(props) => (props.open ? 0 : '10em')});
