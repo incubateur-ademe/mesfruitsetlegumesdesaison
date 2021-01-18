@@ -21,7 +21,7 @@ const Title = styled.h1`
   font-size: inherit;
   line-height: 1.1;
 
-  /*&:before {
+  &:before {
     content: '';
     position: absolute;
     top: 0;
@@ -30,7 +30,7 @@ const Title = styled.h1`
     height: 100%;
     background-color: ${(props) => props.theme.colors.background};
     filter: blur(20px);
-  }*/
+  }
 
   a {
     position: relative;

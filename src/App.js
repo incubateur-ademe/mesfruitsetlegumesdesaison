@@ -13,6 +13,7 @@ import SearchProvider from 'components/providers/SearchProvider'
 import Header from 'components/layout/Header'
 import Footer from 'components/layout/Footer'
 import Learning from 'components/layout/Learning'
+import Background from 'components/layout/Background'
 import EmbedConfigurator from 'components/misc/EmbedConfigurator'
 import CO2EModal from 'components/modals/CO2EModal'
 import PEFModal from 'components/modals/PEFModal'
@@ -49,6 +50,7 @@ function App() {
             <UXProvider>
               <SearchProvider>
                 <GlobalStyle />
+                <Background />
                 <Wrapper>
                   <Content>
                     <FullScreen windowHeight={height}>

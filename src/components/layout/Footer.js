@@ -98,9 +98,9 @@ export default function Footer() {
       </Content>
       <LogosWrapper>
         <Logos>
-          <Logo src={repufrancaise} />
-          <Logo src={ademe} />
-          <Logo src={ecolab} />
+          <Logo src={repufrancaise} alt='République Française' />
+          <Logo src={ademe} alt='ADEME' />
+          <Logo src={ecolab} alt='Ecolab' />
         </Logos>
       </LogosWrapper>
     </Wrapper>
