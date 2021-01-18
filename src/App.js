@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import styled from 'styled-components'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { QueryParamProvider } from 'use-query-params'
@@ -13,12 +13,12 @@ import SearchProvider from 'components/providers/SearchProvider'
 import Header from 'components/layout/Header'
 import Footer from 'components/layout/Footer'
 import Learning from 'components/layout/Learning'
-import Background from 'components/layout/Background'
 import EmbedConfigurator from 'components/misc/EmbedConfigurator'
 import CO2EModal from 'components/modals/CO2EModal'
 import PEFModal from 'components/modals/PEFModal'
 import LocalModal from 'components/modals/LocalModal'
 import Search from 'views/Search'
+const Background = React.lazy(() => import('./components/layout/Background'))
 
 const Wrapper = styled.div`
   display: flex;
@@ -50,7 +50,9 @@ function App() {
             <UXProvider>
               <SearchProvider>
                 <GlobalStyle />
-                <Background />
+                <Suspense fallback={''}>
+                  <Background />
+                </Suspense>
                 <Wrapper>
                   <Content>
                     <FullScreen windowHeight={height}>
