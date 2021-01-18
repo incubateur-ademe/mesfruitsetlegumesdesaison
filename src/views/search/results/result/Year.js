@@ -7,6 +7,7 @@ import { abbr, currentMonth } from 'utils/months'
 
 const Wrapper = styled.div`
   position: relative;
+  margin-bottom: 1em;
 `
 const Answer = styled.div`
   margin-bottom: 1.5rem;

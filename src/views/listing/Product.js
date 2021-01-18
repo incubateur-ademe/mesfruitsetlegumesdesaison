@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 
 import { mq } from 'utils/styles'
 import { months } from 'utils/months'
+import UXContext from 'utils/UXContext'
 
 const Wrapper = styled.div`
   width: calc(50% - 2em);
@@ -44,16 +45,36 @@ const Emoji = styled.span`
 const Date = styled.p`
   position: relative;
 `
+const Flex = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+`
+const Local = styled.div`
+  font-size: 0.75em;
+  color: ${(props) => (props.local ? '#39d05c' : '#c81d25')};
+  cursor: pointer;
+`
+const Score = styled.div`
+  font-size: 0.75em;
+  font-style: normal;
+  cursor: pointer;
+`
+const Sup = styled.sup`
+  line-height: 0;
+`
+const ScoreNumber = styled.span`
+  font-weight: 700;
+`
 export default function Product(props) {
-  const [interval, setInterval] = useState([])
+  const { setPEF, setLocal } = useContext(UXContext)
 
+  const [interval, setInterval] = useState([])
   useEffect(() => {
     const orderedMonths = props.product.months.sort((a, b) => (a > b ? 1 : -1))
-    console.log(orderedMonths, orderedMonths.includes(11))
     if (orderedMonths.includes(11) && orderedMonths.includes(0)) {
       for (let i = orderedMonths.length - 1; i >= 0; i--) {
         if (orderedMonths[i] !== orderedMonths[i - 1] + 1) {
-          console.log(orderedMonths[i], orderedMonths[i - 1])
           setInterval([orderedMonths[i], orderedMonths[i - 1]])
           break
         }
@@ -79,6 +100,18 @@ export default function Product(props) {
             </>
           )}
         </Date>
+        <Flex>
+          <Local onClick={() => setLocal(true)} local={props.product.local}>
+            {props.product.local
+              ? `Ce produit est local`
+              : `Ce produit n'est pas local`}
+            {' '}
+            <Sup>(?)</Sup>
+          </Local>
+          <Score onClick={() => setPEF(true)}>
+            PEF: <ScoreNumber>{props.product.pef}</ScoreNumber> <Sup>(?)</Sup>
+          </Score>
+        </Flex>
       </Content>
     </Wrapper>
   )

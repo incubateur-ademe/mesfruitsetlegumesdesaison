@@ -91,7 +91,7 @@ export default function Header() {
           </Link>
         )}
       </Title>
-      <ScrollToInformations href={'/#informations'}>
+      <ScrollToInformations href={'#informations'}>
         Pourquoi choisir des produits de saison ?
       </ScrollToInformations>
     </Wrapper>

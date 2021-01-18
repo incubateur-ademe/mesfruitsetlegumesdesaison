@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 
 import { mq } from 'utils/styles'
 import { currentMonth } from 'utils/months'
+import UXContext from 'utils/UXContext'
+
 import Year from './result/Year'
 
 const Wrapper = styled.div`
@@ -39,9 +41,28 @@ const Title = styled.h2`
 const Emoji = styled.span`
   font-style: normal;
 `
-const Local = styled.p`
-  font-size: 1em;
-  color: #c81d25;
+const Flex = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+`
+const Local = styled.div`
+  font-size: 1.2em;
+  font-weight: 700;
+  color: ${(props) => (props.local ? '#39d05c' : '#c81d25')};
+  cursor: pointer;
+`
+const Score = styled.div`
+  font-size: 1.2em;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+`
+const Sup = styled.sup`
+  line-height: 0;
+`
+const ScoreNumber = styled.span`
+  font-weight: 900;
 `
 const Text = styled.p`
   position: relative;
@@ -49,6 +70,8 @@ const Text = styled.p`
   text-align: center;
 `
 export default function Result(props) {
+  const { setPEF, setLocal } = useContext(UXContext)
+
   const [mounted, setMounted] = useState(false)
   useEffect(() => {
     setMounted(true)
@@ -60,15 +83,19 @@ export default function Result(props) {
         <span>{props.product.label.fr}</span>
         <Emoji>{props.product.emoji}</Emoji>
       </Title>
-      {props.product.months.length ? (
-        <Year months={props.product.months} />
-      ) : (
-        <Local>
-          Ce produit n'est pas local :( pour lieux de production des pays et
-          régions très éloignés de la France métropolitaine, il faut donc les
-          faire importer (par avion ou bateau), ce qui est très polluant.
+      <Year months={props.product.months} />
+      <Flex>
+        <Local onClick={() => setLocal(true)} local={props.product.local}>
+          {props.product.local
+            ? `Ce produit est local`
+            : `Ce produit n'est pas local`}
+          {' '}
+          <Sup>(?)</Sup>
         </Local>
-      )}
+        <Score onClick={() => setPEF(true)}>
+          PEF: <ScoreNumber>{props.product.pef}</ScoreNumber> <Sup>(?)</Sup>
+        </Score>
+      </Flex>
       {props.product.text && (
         <Text>
           {

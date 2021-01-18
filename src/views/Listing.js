@@ -47,7 +47,9 @@ export default function Listing() {
 
   useEffect(() => {
     setFilteredProducts(
-      products.filter((product) => product.months.includes(Number(month)))
+      products
+        .filter((product) => product.months.includes(Number(month)))
+        .sort((a, b) => (a.local > b.local ? -1 : 1))
     )
   }, [products, month])
 
