@@ -39,7 +39,8 @@ const Statistic = styled.div`
   }
 `
 const Strong = styled.p`
-  max-width: 29em;
+  max-width: 26em;
+  font-size: 1.125em;
   font-weight: 700;
   font-style: italic;
 `
@@ -55,8 +56,8 @@ export default function Learning() {
       <Content>
         <Statistic>256%</Statistic>
         <Strong>
-          Pollution moyenne engendrée par un produit hors saison par rapport à
-          un produit de saison.
+          Gaz à effet de serre moyen généré par un produit hors saison par
+          rapport à un produit de saison.
         </Strong>
         <Text>
           Une tomate produite localement, mais sous une serre chauffée, génère

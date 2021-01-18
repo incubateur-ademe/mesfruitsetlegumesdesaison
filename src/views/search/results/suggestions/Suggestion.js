@@ -23,7 +23,8 @@ const Wrapper = styled.div`
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transform: translateY(${(props) => (props.mounted ? 0 : '200%')});
   transition: opacity 1000ms ${(props) => props.index * 100 + 100}ms,
-    transform 400ms ${(props) => props.index * 100}ms ease-in-out;
+    transform 400ms ${(props) => props.index * 100}ms ease-in-out,
+    font-size 200ms ease-out;
 
   cursor: pointer;
   animation: ${flash} 25s ${(props) => props.index * 4 + 2.5}s infinite linear;

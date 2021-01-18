@@ -98,7 +98,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    overflow: hidden;
     position: relative;
   }
   
