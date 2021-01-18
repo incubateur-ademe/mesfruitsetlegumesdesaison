@@ -19,5 +19,17 @@
   {
     "label": { "fr": "Tomate" },
     "emoji": "🍅"
+  },
+  {
+    "label": { "fr": "Maïs" },
+    "emoji": "🌽"
+  },
+  {
+    "label": { "fr": "Kiwi" },
+    "emoji": "🥝"
+  },
+  {
+    "label": { "fr": "Cerise" },
+    "emoji": "🍒"
   }
 ]

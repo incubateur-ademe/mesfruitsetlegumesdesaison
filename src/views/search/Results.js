@@ -8,8 +8,9 @@ import { currentMonth } from 'utils/months'
 import SearchContext from 'utils/SearchContext'
 import ProductContext from 'utils/ProductContext'
 
+import Suggestions from 'components/misc/Suggestions'
 import Result from './results/Result'
-import Suggestions from './results/Suggestions'
+import NotFound from './results/NotFound'
 
 const StyledLink = styled(Link)`
   position: relative;
@@ -60,8 +61,10 @@ export default function Results() {
             product={product.item}
           />
         ))
+      ) : search.length > 2 ? (
+        <NotFound />
       ) : (
-        <Suggestions />
+        <Suggestions length={5} />
       )}
       <StyledLink to={`/months/${currentMonth}`} mounted={mounted}>
         Voir tous les produits du mois
