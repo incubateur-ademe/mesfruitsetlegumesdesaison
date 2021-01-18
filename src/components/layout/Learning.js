@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     margin: 0 3vw 1em;
   }
 
-  &:before {
+  /*&:before {
     content: '';
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     height: 100%;
     background-color: ${(props) => props.theme.colors.background};
     filter: blur(20px);
-  }
+  }*/
 `
 const Content = styled.div`
   position: relative;
