@@ -27,7 +27,8 @@ const Content = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 25em;
+  width: 30em;
+  max-width: 90vw;
   max-height: 90vh;
   margin: 2em;
   padding: 2em;
