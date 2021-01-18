@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Fuse from 'fuse.js'
+import Fuse from '../../../node_modules/fuse.js/dist/fuse.basic.esm.min.js'
 
 import { mq } from 'utils/styles'
 import { currentMonth } from 'utils/months'
