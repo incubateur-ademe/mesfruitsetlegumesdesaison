@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Fuse from 'fuse.js'
 
 import { mq } from 'utils/styles'
 import { currentMonth } from 'utils/months'
@@ -32,38 +33,32 @@ export default function Results() {
     setTimeout(() => setMounted(true), 300)
   }, [])
 
+  const [fuse, setFuse] = useState(null)
   useEffect(() => {
-    if (search.length > 2) {
-      // Separate and normalize each word of the search
-      const sentence = search
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .toLowerCase()
-        .split(' ')
+    setFuse(
+      new Fuse(products, {
+        keys: ['label.fr'],
+        threshold: 0.3,
+        minMatchCharLength: 3,
+      })
+    )
+  }, [products])
 
-      setFilteredProducts(
-        products.filter((product) => {
-          // Normalize the product label
-          const label = product.label.fr
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase()
-
-          // Filter the search array with the label.
-          // Return true if each word in the search are found in the label
-          return !sentence.filter((word) => !label.includes(word)).length
-        })
-      )
-    } else {
-      setFilteredProducts([])
+  useEffect(() => {
+    if (fuse) {
+      setFilteredProducts(fuse.search(search))
     }
-  }, [search, products])
+  }, [search, products, fuse])
 
   return (
     <div>
       {filteredProducts.length ? (
         filteredProducts.map((product, index) => (
-          <Result key={product.label.fr} index={index} product={product} />
+          <Result
+            key={product.item.label.fr}
+            index={index}
+            product={product.item}
+          />
         ))
       ) : (
         <Suggestions />
