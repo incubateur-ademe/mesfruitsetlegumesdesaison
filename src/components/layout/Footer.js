@@ -39,7 +39,7 @@ const Source = styled.div`
     margin-bottom: 1em;
   }
 `
-const Title = styled.h4`
+const Title = styled.h3`
   margin: 0;
 `
 const LogosWrapper = styled.div`
