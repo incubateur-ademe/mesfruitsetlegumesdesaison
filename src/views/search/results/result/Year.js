@@ -14,10 +14,10 @@ const Answer = styled.div`
   font-size: 4em;
   font-weight: 900;
   font-family: ${(props) => props.theme.fonts.body};
-  font-style: none;
   text-align: center;
   line-height: 1;
-  color: ${(props) => (props.valid ? '#39d05c' : '#c81d25')};
+  color: ${(props) =>
+    props.valid ? (props.local ? '#39d05c' : 'inherit') : '#c81d25'};
 `
 const Months = styled.div`
   display: flex;
@@ -44,8 +44,12 @@ const Month = styled(Link)`
 export default function Year(props) {
   return (
     <Wrapper>
-      <Answer valid={props.months.includes(currentMonth)}>
-        {props.months.includes(currentMonth) ? 'Oui :)' : 'Non :('}
+      <Answer valid={props.months.includes(currentMonth)} local={props.local}>
+        {props.months.includes(currentMonth)
+          ? props.local
+            ? 'Oui :)'
+            : 'Oui.'
+          : 'Non :('}
       </Answer>
       <Months>
         {abbr.map((month, index) => (

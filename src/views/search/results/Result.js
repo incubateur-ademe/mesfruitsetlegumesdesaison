@@ -83,7 +83,7 @@ export default function Result(props) {
         <span>{props.product.label.fr}</span>
         <Emoji>{props.product.emoji}</Emoji>
       </Title>
-      <Year months={props.product.months} />
+      <Year months={props.product.months} local={props.product.local} />
       <Flex>
         <Local onClick={() => setLocal(true)} local={props.product.local}>
           {props.product.local
