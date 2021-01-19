@@ -16,6 +16,9 @@ const Wrapper = styled.div`
 `
 const Content = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1em;
   height: 100%;
   background: ${(props) => props.theme.colors.second};
@@ -29,6 +32,10 @@ const Content = styled.div`
     height: 100%;
     background-color: ${(props) => props.theme.colors.second};
     opacity: 0.4;
+  }
+
+  ${mq.small} {
+    padding: 0.5em;
   }
 `
 const Title = styled.h2`
@@ -44,6 +51,10 @@ const Emoji = styled.span`
 `
 const Date = styled.p`
   position: relative;
+
+  ${mq.small} {
+    font-size: 0.875em;
+  }
 `
 const Flex = styled.div`
   position: relative;
@@ -51,12 +62,18 @@ const Flex = styled.div`
   justify-content: space-between;
 `
 const Local = styled.div`
-  font-size: 0.75em;
+  font-size: 0.875em;
   color: ${(props) => (props.local ? '#39d05c' : '#c81d25')};
   cursor: pointer;
+
+  span {
+    ${mq.small} {
+      display: none;
+    }
+  }
 `
 const Score = styled.div`
-  font-size: 0.75em;
+  font-size: 0.875em;
   font-style: normal;
   cursor: pointer;
 `
@@ -96,15 +113,21 @@ export default function Product(props) {
           ) : (
             <>
               {[3, 7, 9].includes(interval[0]) ? `D'` : 'De '}
-              {months[interval[0]]} à {months[interval[1]]} :)
+              {months[interval[0]]} à {months[interval[1]]}
             </>
           )}
         </Date>
         <Flex>
           <Local onClick={() => setLocal(true)} local={props.product.local}>
-            {props.product.local
-              ? `Ce produit est local`
-              : `Ce produit n'est pas local`}
+            {props.product.local ? (
+              <>
+                <span>Ce produit est </span>local
+              </>
+            ) : (
+              <>
+                <span>Ce produit n'est </span>pas local
+              </>
+            )}
             {' '}
             <Sup>(?)</Sup>
           </Local>

@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   font-size: 5em;
 
   ${mq.small} {
+    width: auto;
     margin: 4vh 0;
     padding: 0 3vw;
     font-size: 3em;
