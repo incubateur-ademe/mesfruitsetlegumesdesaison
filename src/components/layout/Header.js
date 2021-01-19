@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     width: auto;
     margin: 4vh 0;
     padding: 0 3vw;
-    font-size: 3em;
+    font-size: 12vw;
   }
 `
 const Title = styled.h1`
@@ -74,7 +74,7 @@ const ScrollToInformations = styled.a`
 
   cursor: pointer;
   ${mq.small} {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 `
 export default function Header() {
