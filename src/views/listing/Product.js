@@ -119,15 +119,7 @@ export default function Product(props) {
         </Date>
         <Flex>
           <Local onClick={() => setLocal(true)} local={props.product.local}>
-            {props.product.local ? (
-              <>
-                <span>Ce produit est </span>local
-              </>
-            ) : (
-              <>
-                <span>Ce produit n'est </span>pas local
-              </>
-            )}
+            {props.product.local ? 'Local' : 'Non local'}
             {' '}
             <Sup>(?)</Sup>
           </Local>
