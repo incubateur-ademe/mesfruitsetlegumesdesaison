@@ -47,5 +47,10 @@
   },
   "resolutions": {
     "react-scripts/eslint-webpack-plugin": "2.3.0"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }

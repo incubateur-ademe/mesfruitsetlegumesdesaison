@@ -13,8 +13,9 @@ const Wrapper = styled.div`
   font-size: 5em;
 
   ${mq.small} {
-    margin: 4vh 3vw;
-    font-size: 3.2em;
+    margin: 4vh 0;
+    padding: 0 3vw;
+    font-size: 3em;
   }
 `
 const Title = styled.h1`
