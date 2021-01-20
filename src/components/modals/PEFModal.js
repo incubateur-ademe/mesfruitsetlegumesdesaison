@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 
-import UXContext from 'utils/UXContext'
+import ModalContext from 'utils/ModalContext'
 
-import Modal from 'components/modals/Modal'
+import Modal from '@bit/datagir.simulateurs.modal'
 
 const Title = styled.h2``
 const Text = styled.p``
 export default function PEFModal() {
-  const { PEF, setPEF } = useContext(UXContext)
+  const { PEF, setPEF } = useContext(ModalContext)
 
   return (
     <Modal open={PEF} setOpen={setPEF}>

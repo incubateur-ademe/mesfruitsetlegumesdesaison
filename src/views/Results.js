@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Fuse from '../../../node_modules/fuse.js/dist/fuse.basic.esm.min.js'
+import Fuse from '../../node_modules/fuse.js/dist/fuse.basic.esm.min.js'
 
-import { mq } from 'utils/styles'
 import { currentMonth } from 'utils/months'
 import SearchContext from 'utils/SearchContext'
 import ProductContext from 'utils/ProductContext'
+import useMounted from 'hooks/useMounted'
 
 import Suggestions from 'components/misc/Suggestions'
 import Result from './results/Result'
@@ -20,7 +20,7 @@ const StyledLink = styled(Link)`
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transition: opacity 1000ms 2000ms;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     font-size: 1rem;
   }
 `
@@ -29,10 +29,7 @@ export default function Results() {
   const { products } = useContext(ProductContext)
   const [filteredProducts, setFilteredProducts] = useState([])
 
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => {
-    setTimeout(() => setMounted(true), 300)
-  }, [])
+  const mounted = useMounted()
 
   const [fuse, setFuse] = useState(null)
   useEffect(() => {
@@ -52,7 +49,7 @@ export default function Results() {
   }, [search, products, fuse])
 
   return (
-    <div>
+    <>
       {filteredProducts.length ? (
         filteredProducts.map((product, index) => (
           <Result
@@ -66,9 +63,9 @@ export default function Results() {
       ) : (
         <Suggestions length={5} />
       )}
-      <StyledLink to={`/months/${currentMonth}`} mounted={mounted}>
+      <StyledLink to={`/months/${currentMonth}`} mounted={mounted ? 1 : 0}>
         Voir tous les produits du mois
       </StyledLink>
-    </div>
+    </>
   )
 }

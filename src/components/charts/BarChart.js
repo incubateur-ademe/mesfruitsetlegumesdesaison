@@ -38,7 +38,7 @@ const Bar = styled.div`
   color: ${(props) => props.theme.colors.second};
   background-color: ${(props) => props.theme.colors.text};
   opacity: ${(props) => (props.secondary ? 0.4 : 0.8)};
-  transform: scaleX(${(props) => (props.onScreen ? 1 : 0)});
+  transform: scaleX(${(props) => (props.isOnScreen ? 1 : 0)});
   transform-origin: left;
   transition: transform 400ms ease-in-out
     ${(props) => props.index * 200 + 1000}ms;
@@ -97,7 +97,7 @@ const Item = styled.div`
 `
 export default function BarChart() {
   const ref = useRef()
-  const onScreen = useOnScreen(ref, '-100px')
+  const isOnScreen = useOnScreen(ref, '-100px')
   return (
     <Wrapper ref={ref}>
       <Caption>
@@ -111,11 +111,11 @@ export default function BarChart() {
             index={0}
             length={(0.47 / 2) * 100}
             secondary
-            onScreen={onScreen}
+            isOnScreen={isOnScreen}
           >
             0.47
           </Bar>
-          <Bar index={1} length={(0.67 / 2) * 100} onScreen={onScreen}>
+          <Bar index={1} length={(0.67 / 2) * 100} isOnScreen={isOnScreen}>
             0.67
           </Bar>
         </Bars>
@@ -127,11 +127,11 @@ export default function BarChart() {
             index={2}
             length={(0.51 / 2) * 100}
             secondary
-            onScreen={onScreen}
+            isOnScreen={isOnScreen}
           >
             0.51
           </Bar>
-          <Bar index={3} length={(1.88 / 2) * 100} onScreen={onScreen}>
+          <Bar index={3} length={(1.88 / 2) * 100} isOnScreen={isOnScreen}>
             1.88
           </Bar>
         </Bars>

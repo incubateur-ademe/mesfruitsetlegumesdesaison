@@ -1,13 +1,12 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 
-import { mq } from 'utils/styles'
 import SearchContext from 'utils/SearchContext'
 
 const Wrapper = styled.div`
   position: relative;
   display: block;
-  margin: 0 auto 2em;
+  margin-bottom: 2em;
 
   &:before {
     content: '';
@@ -45,7 +44,7 @@ const Input = styled.input`
     transition: opacity 300ms ease-out;
   }
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     width: 100%;
     font-size: 1.3em;
   }

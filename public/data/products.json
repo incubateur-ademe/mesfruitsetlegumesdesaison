@@ -4,538 +4,615 @@
     "months": [4, 5, 6],
     "emoji": "🍓",
     "local": true,
-    "pef": 0.42
+    "pef": 0.42,
+    "CO2": 0.53
   },
   {
     "label": { "fr": "Pomme" },
     "months": [0, 1, 2, 3, 7, 8, 9, 10, 11],
     "emoji": "🍏",
     "local": true,
-    "pef": 0.06
+    "pef": 0.06,
+    "CO2": 0.28
   },
   {
     "label": { "fr": "Orange" },
     "months": [0, 1, 2],
     "emoji": "🍊",
     "local": false,
-    "pef": 0.2
+    "pef": 0.2,
+    "CO2": 0.97
   },
   {
     "label": { "fr": "Citron" },
     "months": [0, 1],
     "emoji": "🍋",
     "local": false,
-    "pef": 0.21
+    "pef": 0.21,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Ail" },
     "months": [6, 7, 8, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.37
   },
   {
     "label": { "fr": "Artichaut" },
     "months": [4, 5, 6, 7, 8],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.4
+    "pef": 0.4,
+    "CO2": 3.97
   },
   {
     "label": { "fr": "Asperge" },
     "months": [3, 4, 5],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.28
+    "pef": 0.28,
+    "CO2": 1.39
   },
   {
     "label": { "fr": "Betterave" },
     "months": [0, 1, 2, 9, 10, 11],
     "emoji": "🍠",
     "local": true,
-    "pef": 0.06
+    "pef": 0.06,
+    "CO2": 0.25
   },
   {
     "label": { "fr": "Blette" },
     "months": [5, 6, 7, 8, 9, 10],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.06
+    "pef": 0.06,
+    "CO2": 0.48
   },
   {
     "label": { "fr": "Carotte" },
     "months": [0, 1, 2, 8, 9, 10, 11],
     "emoji": "🥕",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.39
   },
   {
     "label": { "fr": "Céleri" },
     "months": [0, 1, 2, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.08
+    "pef": 0.08,
+    "CO2": 0.39
   },
   {
     "label": { "fr": "Champignon de Paris" },
     "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "emoji": "🍄",
     "local": true,
-    "pef": 0.08
+    "pef": 0.08,
+    "CO2": 0.4
   },
   {
     "label": { "fr": "Chou" },
     "months": [0, 1, 2, 9, 10, 11],
     "emoji": "🥬",
     "local": true,
-    "pef": 0.12
+    "pef": 0.12,
+    "CO2": 1.06
   },
   {
     "label": { "fr": "Chou de Bruxelles" },
     "months": [0, 1, 2, 9, 10, 11],
     "emoji": "🥬🇧🇪",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.5
   },
   {
     "label": { "fr": "Chou-fleur" },
     "months": [0, 1, 2, 8, 9, 10, 11],
     "emoji": "🥦",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.51
   },
   {
     "label": { "fr": "Concombre" },
     "months": [4, 5, 6, 7, 8, 9],
     "emoji": "🥒",
     "local": true,
-    "pef": 0.43
+    "pef": 0.43,
+    "CO2": 4.86
   },
   {
     "label": { "fr": "Courge" },
     "months": [0, 8, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.1
+    "pef": 0.1,
+    "CO2": 0.55
   },
   {
     "label": { "fr": "Courgette" },
     "months": [4, 5, 6, 7, 8, 9],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.05
+    "pef": 0.05,
+    "CO2": 0.41
   },
   {
     "label": { "fr": "Cresson" },
     "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.13
+    "pef": 0.13,
+    "CO2": 0.88
   },
   {
     "label": { "fr": "Echalote" },
     "months": [9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.37
   },
   {
     "label": { "fr": "Endive" },
     "months": [0, 1, 2, 3, 4, 9],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.12
+    "pef": 0.12,
+    "CO2": 0.79
   },
   {
     "label": { "fr": "Epinard" },
     "months": [0, 1, 2, 3, 4, 8, 9, 10, 11],
     "emoji": "🥬",
     "local": true,
-    "pef": 0.05
+    "pef": 0.05,
+    "CO2": 0.33
   },
   {
     "label": { "fr": "Fenouil" },
     "months": [3, 5, 6, 7, 8, 9, 10],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.13
+    "pef": 0.13,
+    "CO2": 0.97
   },
   {
     "label": { "fr": "Haricot vert" },
     "months": [5, 6, 7, 8, 9],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.14
+    "pef": 0.14,
+    "CO2": 0.48
   },
   {
     "label": { "fr": "Laitue" },
     "months": [4, 5, 6, 7, 8],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.13
+    "pef": 0.13,
+    "CO2": 0.88
   },
   {
     "label": { "fr": "Mâche" },
     "months": [0, 1, 9, 10, 11],
     "emoji": "🥗",
     "local": true,
-    "pef": 0.13
+    "pef": 0.13,
+    "CO2": 0.88
   },
   {
     "label": { "fr": "Navet" },
     "months": [0, 1, 2, 3, 4, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.39
   },
   {
     "label": { "fr": "Maïs" },
     "months": [6, 7, 8],
     "emoji": "🌽",
     "local": true,
-    "pef": 0.14
+    "pef": 0.14,
+    "CO2": 0.63
   },
   {
     "label": { "fr": "Oignon" },
     "months": [0, 1, 2, 3, 8, 9, 10, 11],
-    "emoji": "🧅",
+    "emoji": "🌱",
     "local": true,
-    "pef": 0.7
+    "pef": 0.7,
+    "CO2": 0.42
   },
   {
     "label": { "fr": "Panais" },
     "months": [0, 1, 2, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.39
   },
   {
     "label": { "fr": "Petit pois" },
     "months": [4, 5, 6],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.09
+    "pef": 0.09,
+    "CO2": 0.39
   },
   {
     "label": { "fr": "Poireau" },
     "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.11
+    "pef": 0.11,
+    "CO2": 0.71
   },
   {
     "label": { "fr": "Poivron" },
     "months": [5, 6, 7, 8],
     "emoji": "🌶️",
     "local": true,
-    "pef": 0.13
+    "pef": 0.13,
+    "CO2": 0.92
   },
   {
     "label": { "fr": "Potiron" },
     "months": [0, 8, 9, 10, 11],
     "emoji": "🎃",
     "local": true,
-    "pef": 0.1
+    "pef": 0.1,
+    "CO2": 0.55
   },
   {
     "label": { "fr": "Radis" },
     "months": [2, 3, 4, 5],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.06
+    "pef": 0.06,
+    "CO2": 0.25
   },
   {
     "label": { "fr": "Salsifis" },
     "months": [0, 1, 2, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.39
   },
   {
     "label": { "fr": "Topinambour" },
     "months": [0, 1, 10, 11],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.11
+    "pef": 0.11,
+    "CO2": 0.86
   },
   {
     "label": { "fr": "Cassis" },
     "months": [5, 6, 7],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.27
+    "pef": 0.27,
+    "CO2": 1.76
   },
   {
     "label": { "fr": "Châtaigne" },
     "months": [9, 10],
     "emoji": "🌰",
     "local": true,
-    "pef": 0.45
+    "pef": 0.45,
+    "CO2": 1.63
   },
   {
     "label": { "fr": "Clémentine" },
     "months": [0, 1, 10, 11],
     "emoji": "🍊",
     "local": false,
-    "pef": 0.21
+    "pef": 0.21,
+    "CO2": 0.71
   },
   {
     "label": { "fr": "Pamplemousse" },
     "months": [1, 2, 3, 4, 5],
     "emoji": "🍊",
     "local": false,
-    "pef": 0.12
+    "pef": 0.12,
+    "CO2": 0.63
   },
   {
     "label": { "fr": "Coing" },
     "months": [9],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.08
+    "pef": 0.08,
+    "CO2": 0.49
   },
   {
     "label": { "fr": "Figue" },
     "months": [6, 7, 8, 9],
     "emoji": "🥭",
     "local": true,
-    "pef": 0.23
+    "pef": 0.23,
+    "CO2": 0.58
   },
   {
     "label": { "fr": "Groseille" },
     "months": [5, 6, 7],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.27
+    "pef": 0.27,
+    "CO2": 1.76
   },
   {
     "label": { "fr": "Kiwi" },
     "months": [0, 1, 2, 10, 11],
     "emoji": "🥝",
     "local": true,
-    "pef": 0.13
+    "pef": 0.13,
+    "CO2": 0.92
   },
   {
     "label": { "fr": "Mandarine" },
     "months": [0, 1, 10, 11],
     "emoji": "🍊",
     "local": false,
-    "pef": 0.21
+    "pef": 0.21,
+    "CO2": 0.71
   },
   {
     "label": { "fr": "Melon" },
     "months": [5, 6, 7, 8, 9],
     "emoji": "🍈",
     "local": true,
-    "pef": 0.16
+    "pef": 0.16,
+    "CO2": 0.87
   },
   {
     "label": { "fr": "Mirabelle" },
     "months": [7, 8],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.4
+    "pef": 0.4,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Mûre" },
     "months": [7, 8],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.86
+    "pef": 0.86,
+    "CO2": 0.63
   },
   {
     "label": { "fr": "Nectarine" },
     "months": [7, 8],
     "emoji": "🍊",
     "local": true,
-    "pef": 0.22
+    "pef": 0.22,
+    "CO2": 0.57
   },
   {
     "label": { "fr": "Myrtille" },
     "months": [7, 8, 9],
     "emoji": "🍇",
     "local": true,
-    "pef": 0.22
+    "pef": 0.22,
+    "CO2": 1.38
   },
   {
     "label": { "fr": "Noisette" },
     "months": [8, 9, 10],
     "emoji": "🌰",
     "local": true,
-    "pef": 0.62
+    "pef": 0.62,
+    "CO2": 4.51
   },
   {
     "label": { "fr": "Noix" },
     "months": [8, 9],
     "emoji": "🌰",
     "local": true,
-    "pef": 0.86
+    "pef": 0.86,
+    "CO2": 3.79
   },
   {
     "label": { "fr": "Prune" },
     "months": [6, 7, 8],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.4
+    "pef": 0.4,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Quetsche" },
     "months": [7, 8, 9],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.4
+    "pef": 0.4,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Reine Claude" },
     "months": [8],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.4
+    "pef": 0.4,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Rhubarbe" },
     "months": [3, 4, 5],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.8
+    "pef": 0.8,
+    "CO2": 0.69
   },
   {
     "label": { "fr": "Pêche" },
     "months": [5, 6, 7, 8],
     "emoji": "🍑",
     "local": true,
-    "pef": 0.38
+    "pef": 0.38,
+    "CO2": 1.14
   },
   {
     "label": { "fr": "Cerise" },
     "months": [5, 6],
     "emoji": "🍒",
     "local": true,
-    "pef": 0.43
+    "pef": 0.43,
+    "CO2": 1.27
   },
   {
     "label": { "fr": "Abricot" },
     "months": [5, 6, 7],
     "emoji": "🍑",
     "local": true,
-    "pef": 0.12
+    "pef": 0.12,
+    "CO2": 0.86
   },
   {
     "label": { "fr": "Framboise" },
     "months": [5, 6, 7],
     "emoji": "🌱",
     "local": true,
-    "pef": 0.42
+    "pef": 0.42,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Poire" },
     "months": [0, 1, 2, 7, 8, 9, 10, 11],
     "emoji": "🍐",
     "local": true,
-    "pef": 0.09
+    "pef": 0.09,
+    "CO2": 0.25
   },
   {
     "label": { "fr": "Raisin" },
     "months": [8, 9],
     "emoji": "🍇",
     "local": true,
-    "pef": 0.11
+    "pef": 0.11,
+    "CO2": 0.63
   },
   {
     "label": { "fr": "Aubergine" },
     "months": [5, 6, 7, 8],
     "emoji": "🍆",
     "local": true,
-    "pef": 0.49
+    "pef": 0.49,
+    "CO2": 5.31
   },
   {
     "label": { "fr": "Brocoli" },
     "months": [8, 9, 10],
     "emoji": "🥦",
     "local": true,
-    "pef": 0.08
+    "pef": 0.08,
+    "CO2": 0.68
   },
   {
     "label": { "fr": "Tomate" },
     "months": [5, 6, 7, 8],
     "emoji": "🍅",
     "local": true,
-    "pef": 0.1
+    "pef": 0.1,
+    "CO2": 0.62
   },
   {
     "label": { "fr": "Ananas" },
     "emoji": "🍍",
     "months": [0, 1, 2, 10, 11],
     "local": false,
-    "pef": 0.13
+    "pef": 0.13,
+    "CO2": 1.15
   },
   {
     "label": { "fr": "Banane" },
     "emoji": "🍌",
     "months": [0, 1, 2, 3],
     "local": false,
-    "pef": 0.26
+    "pef": 0.26,
+    "CO2": 1.87
   },
   {
     "label": { "fr": "Mangue" },
     "emoji": "🥭",
     "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "local": false,
-    "pef": 1.24
+    "pef": 1.24,
+    "CO2": 14.9
   },
   {
     "label": { "fr": "Avocat" },
     "emoji": "🥑",
     "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "local": false,
-    "pef": 0.55
+    "pef": 0.55,
+    "CO2": 2.75
   },
   {
     "label": { "fr": "Carambole" },
     "emoji": "🌱",
     "months": [0, 10, 11],
     "local": false,
-    "pef": 0.22
+    "pef": 0.22,
+    "CO2": 0.48
   },
   {
     "label": { "fr": "Datte" },
     "emoji": "🌱",
     "months": [0, 9, 10, 11],
     "local": false,
-    "pef": 0.45
+    "pef": 0.45,
+    "CO2": 3.94
   },
   {
     "label": { "fr": "Fruit de la passion" },
     "emoji": "🌱",
     "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "local": false,
-    "pef": 0.12
+    "pef": 0.12,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Grenade" },
     "emoji": "🌱",
     "months": [0, 1, 10, 11],
     "local": false,
-    "pef": 0.07
+    "pef": 0.07,
+    "CO2": 0.43
   },
   {
     "label": { "fr": "Kaki" },
     "emoji": "🌱",
     "months": [0, 9, 10, 11],
     "local": false,
-    "pef": 0.12
+    "pef": 0.12,
+    "CO2": 0.91
   },
   {
     "label": { "fr": "Noix de coco" },
     "emoji": "🥥",
     "months": [0, 1, 10, 11],
     "local": false,
-    "pef": 0.5
+    "pef": 0.5,
+    "CO2": 2.94
   },
   {
     "label": { "fr": "Pastèque" },
     "emoji": "🍉",
     "months": [5, 6, 7, 8],
     "local": false,
-    "pef": 0.12
+    "pef": 0.12,
+    "C02": 0.59
   }
 ]

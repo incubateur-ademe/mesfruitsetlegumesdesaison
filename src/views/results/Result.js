@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 
 import { currentMonth } from 'utils/months'
-import UXContext from 'utils/UXContext'
+import ModalContext from 'utils/ModalContext'
 
 import Tile from 'components/misc/Tile'
 import Year from './result/Year'
@@ -30,16 +30,18 @@ const Local = styled.div`
   cursor: pointer;
 `
 const Score = styled.div`
-  font-size: 1.2em;
-  font-weight: 700;
   font-style: normal;
   cursor: pointer;
 `
 const Sup = styled.sup`
+  font-size: 0.9rem;
+  font-weight: 700;
   line-height: 0;
 `
 const ScoreNumber = styled.span`
+  font-size: 1.2rem;
   font-weight: 900;
+  color: ${(props) => (props.high ? '#c81d25' : 'inherit')};
 `
 const Text = styled.p`
   position: relative;
@@ -47,7 +49,7 @@ const Text = styled.p`
   text-align: center;
 `
 export default function Result(props) {
-  const { setPEF, setLocal } = useContext(UXContext)
+  const { setCO2E, setLocal } = useContext(ModalContext)
 
   return (
     <Tile>
@@ -55,17 +57,22 @@ export default function Result(props) {
         <span>{props.product.label.fr}</span>
         <Emoji>{props.product.emoji}</Emoji>
       </Title>
-      <Year months={props.product.months} local={props.product.local} />
+      <Year months={props.product.months} local={props.product.local ? 1 : 0} />
       <Flex>
-        <Local onClick={() => setLocal(true)} local={props.product.local}>
+        <Local
+          onClick={() => setLocal(true)}
+          local={props.product.local ? 1 : 0}
+        >
           {props.product.local
             ? `Ce produit est local`
-            : `Ce produit n'est pas local`}
-          {' '}
+            : `Ce produit n'est pas local`}{' '}
           <Sup>(?)</Sup>
         </Local>
-        <Score onClick={() => setPEF(true)}>
-          PEF: <ScoreNumber>{props.product.pef}</ScoreNumber> <Sup>(?)</Sup>
+        <Score onClick={() => setCO2E(true)}>
+          <ScoreNumber high={props.product.CO2 > 1 ? 1 : 0}>
+            {props.product.CO2}
+          </ScoreNumber>{' '}
+          kgCO<sub>2</sub>e/kg <Sup>(?)</Sup>
         </Score>
       </Flex>
       {props.product.text && (

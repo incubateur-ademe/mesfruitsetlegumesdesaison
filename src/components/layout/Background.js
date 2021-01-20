@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { mq } from 'utils/styles'
 import icons from './background/icons'
 
 const Wrapper = styled.div`
@@ -15,7 +14,7 @@ const Wrapper = styled.div`
   max-height: 100%;
   opacity: 0.2;
   overflow: hidden;
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     display: none;
   }
 `

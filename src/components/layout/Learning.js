@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { useCountUp } from 'react-countup'
 
-import { mq } from 'utils/styles'
 import useOnScreen from 'hooks/useOnScreen'
 
 import ButtonLink from 'components/base/ButtonLink'
@@ -13,7 +12,7 @@ const Wrapper = styled.div`
   max-width: 40em;
   margin: 0 auto 1em;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     margin: 0 3vw 1em;
   }
 
@@ -35,10 +34,10 @@ const Statistic = styled.div`
   font-size: 10em;
   font-weight: 900;
   line-height: 0.9;
-  opacity: ${(props) => (props.onScreen ? 1 : 0)};
+  opacity: ${(props) => (props.isOnScreen ? 1 : 0)};
   transition: opacity 400ms;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     font-size: 30vw;
   }
 `
@@ -56,7 +55,7 @@ const ButtonWrapper = styled.div`
 `
 export default function Learning() {
   const ref = useRef()
-  const onScreen = useOnScreen(ref, '-100px')
+  const isOnScreen = useOnScreen(ref, '-100px')
   const { countUp, start } = useCountUp({
     end: 256,
     delay: 0.4,
@@ -66,16 +65,16 @@ export default function Learning() {
   })
   const [fired, setFired] = useState(false)
   useEffect(() => {
-    if (onScreen && !fired) {
+    if (isOnScreen && !fired) {
       start()
       setFired(true)
     }
-  }, [onScreen, start, fired])
+  }, [isOnScreen, start, fired])
 
   return (
     <Wrapper id='informations'>
       <Content>
-        <Statistic ref={ref} onScreen={onScreen}>
+        <Statistic ref={ref} isOnScreen={isOnScreen}>
           {countUp}
         </Statistic>
 

@@ -1,13 +1,25 @@
 import React, { useState } from 'react'
+import { useQueryParam, BooleanParam, withDefault } from 'use-query-params'
+
 import UXContext from 'utils/UXContext'
 
 export default function UXProvider(props) {
-  const [CO2E, setCO2E] = useState(false)
-  const [PEF, setPEF] = useState(false)
-  const [local, setLocal] = useState(false)
+  const [configuratorOpen, setConfiguratorOpen] = useState(false)
+
+  const [displayTitle, setDisplayTitle] = useQueryParam(
+    'title',
+    withDefault(BooleanParam, true)
+  )
 
   return (
-    <UXContext.Provider value={{ CO2E, setCO2E, PEF, setPEF, local, setLocal }}>
+    <UXContext.Provider
+      value={{
+        configuratorOpen,
+        setConfiguratorOpen,
+        displayTitle,
+        setDisplayTitle,
+      }}
+    >
       {props.children}
     </UXContext.Provider>
   )

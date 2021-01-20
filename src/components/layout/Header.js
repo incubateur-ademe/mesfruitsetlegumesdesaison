@@ -2,18 +2,15 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { mq } from 'utils/styles'
-import StyleContext from 'utils/StyleContext'
+import UXContext from 'utils/UXContext'
 
 const Wrapper = styled.div`
   position: relative;
-  width: 8em;
-  max-width: 100%;
+  width: 100%;
   margin: 4vh auto;
   font-size: 5em;
 
-  ${mq.small} {
-    width: auto;
+  ${(props) => props.theme.mq.small} {
     margin: 4vh 0;
     padding: 0 3vw;
     font-size: 12vw;
@@ -73,30 +70,34 @@ const ScrollToInformations = styled.a`
   text-align: right;
 
   cursor: pointer;
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     font-size: 0.875rem;
   }
 `
 export default function Header() {
-  const { displayTitle } = useContext(StyleContext)
+  const { displayTitle } = useContext(UXContext)
 
   return (
     <Wrapper>
-      <Title>
-        {displayTitle && (
-          <Link to='/'>
-            <Top text={'Est-ce bien'}>
-              <span>Est-ce bien</span>
-            </Top>
-            <Bottom text={'la saison ?'}>
-              <span>la saison ?</span>
-            </Bottom>
-          </Link>
-        )}
-      </Title>
-      <ScrollToInformations href={'#informations'}>
-        Pourquoi choisir des produits de saison ?
-      </ScrollToInformations>
+      {displayTitle ? (
+        <>
+          <Title>
+            <Link to='/'>
+              <Top text={'Est-ce bien'}>
+                <span>Est-ce bien</span>
+              </Top>
+              <Bottom text={'la saison ?'}>
+                <span>la saison ?</span>
+              </Bottom>
+            </Link>
+          </Title>
+          <ScrollToInformations href={'#informations'}>
+            Pourquoi choisir des produits de saison ?
+          </ScrollToInformations>
+        </>
+      ) : (
+        ''
+      )}
     </Wrapper>
   )
 }

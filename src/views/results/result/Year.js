@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { mq } from 'utils/styles'
 import { abbr, currentMonth } from 'utils/months'
 
 const Wrapper = styled.div`
@@ -36,7 +35,7 @@ const Month = styled(Link)`
   text-decoration: none;
   color: white;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     font-size: 0.625em;
     border-width: 1px;
   }
@@ -44,7 +43,10 @@ const Month = styled(Link)`
 export default function Year(props) {
   return (
     <Wrapper>
-      <Answer valid={props.months.includes(currentMonth)} local={props.local}>
+      <Answer
+        valid={props.months.includes(currentMonth) ? 1 : 0}
+        local={props.local ? 1 : 0}
+      >
         {props.months.includes(currentMonth)
           ? props.local
             ? 'Oui :)'
@@ -56,8 +58,8 @@ export default function Year(props) {
           <Month
             key={month}
             to={`/months/${index}`}
-            valid={props.months.includes(index)}
-            active={index === currentMonth}
+            valid={props.months.includes(index) ? 1 : 0}
+            active={index === currentMonth ? 1 : 0}
           >
             {month}
           </Month>

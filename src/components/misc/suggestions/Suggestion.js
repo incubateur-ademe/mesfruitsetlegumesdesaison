@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import styled, { keyframes } from 'styled-components'
 
 import SearchContext from 'utils/SearchContext'
+import useMounted from 'hooks/useMounted'
 
 const flash = keyframes`
   from,
@@ -37,15 +38,13 @@ const Wrapper = styled.div`
 export default function Suggestion(props) {
   const { setSearch } = useContext(SearchContext)
 
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => {
-    setTimeout(() => setMounted(true), 300)
-  }, [])
+  const mounted = useMounted()
+
   return (
     <Wrapper
       key={props.suggestion.label.fr}
       index={props.index}
-      mounted={mounted}
+      mounted={mounted ? 1 : 0}
       onClick={() => setSearch(props.suggestion.label.fr)}
     >
       {props.suggestion.emoji}

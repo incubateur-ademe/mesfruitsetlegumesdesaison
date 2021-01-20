@@ -2,11 +2,10 @@ import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 import { Link, useParams } from 'react-router-dom'
 
-import { mq } from 'utils/styles'
 import { months } from 'utils/months'
 import ProductContext from 'utils/ProductContext'
 
-import Product from './listing/Product'
+import Product from './months/Product'
 
 const Wrapper = styled.div``
 const Header = styled.div`
@@ -20,7 +19,7 @@ const Title = styled.h2`
   font-size: 1.7em;
   text-align: center;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     font-size: 1.1em;
   }
 `
@@ -34,7 +33,7 @@ const Products = styled.div`
   flex-wrap: wrap;
   margin: 0 -1em;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     margin: 0 -1.5vw;
   }
 `
@@ -70,7 +69,7 @@ export default function Listing() {
       </Header>
       <Products>
         {filteredProducts.map((product) => (
-          <Product product={product} />
+          <Product key={product.label.fr} product={product} />
         ))}
       </Products>
     </Wrapper>

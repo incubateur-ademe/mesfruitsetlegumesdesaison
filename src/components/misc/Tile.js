@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-import { mq } from 'utils/styles'
+import useMounted from 'hooks/useMounted'
 
 const Wrapper = styled.div`
   position: relative;
@@ -22,17 +22,15 @@ const Wrapper = styled.div`
     opacity: 0.4;
   }
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     padding: 1em;
   }
 `
 export default function Tile(props) {
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  const mounted = useMounted()
+
   return (
-    <Wrapper index={props.index} mounted={mounted}>
+    <Wrapper index={props.index} mounted={mounted ? 1 : 0}>
       {props.children}
     </Wrapper>
   )

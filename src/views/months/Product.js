@@ -1,15 +1,14 @@
 import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 
-import { mq } from 'utils/styles'
 import { months } from 'utils/months'
-import UXContext from 'utils/UXContext'
+import ModalContext from 'utils/ModalContext'
 
 const Wrapper = styled.div`
   width: calc(50% - 2em);
   margin: 0px 1em 2em;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     width: calc(50% - 3vw);
     margin: 0px 1.5vw 3vw;
   }
@@ -34,7 +33,7 @@ const Content = styled.div`
     opacity: 0.4;
   }
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     padding: 0.5em;
   }
 `
@@ -52,7 +51,7 @@ const Emoji = styled.span`
 const Date = styled.p`
   position: relative;
 
-  ${mq.small} {
+  ${(props) => props.theme.mq.small} {
     font-size: 0.875em;
   }
 `
@@ -67,24 +66,27 @@ const Local = styled.div`
   cursor: pointer;
 
   span {
-    ${mq.small} {
+    ${(props) => props.theme.mq.small} {
       display: none;
     }
   }
 `
 const Score = styled.div`
-  font-size: 0.875em;
+  font-size: 0.75em;
   font-style: normal;
   cursor: pointer;
 `
 const Sup = styled.sup`
+  font-size: 0.65rem;
   line-height: 0;
 `
 const ScoreNumber = styled.span`
+  font-size: 0.875rem;
   font-weight: 700;
+  color: ${(props) => (props.high ? '#c81d25' : 'inherit')};
 `
 export default function Product(props) {
-  const { setPEF, setLocal } = useContext(UXContext)
+  const { setCO2E, setLocal } = useContext(ModalContext)
 
   const [interval, setInterval] = useState([])
   useEffect(() => {
@@ -118,13 +120,19 @@ export default function Product(props) {
           )}
         </Date>
         <Flex>
-          <Local onClick={() => setLocal(true)} local={props.product.local}>
+          <Local
+            onClick={() => setLocal(true)}
+            local={props.product.local ? 1 : 0}
+          >
             {props.product.local ? 'Local' : 'Non local'}
             {' '}
             <Sup>(?)</Sup>
           </Local>
-          <Score onClick={() => setPEF(true)}>
-            PEF: <ScoreNumber>{props.product.pef}</ScoreNumber> <Sup>(?)</Sup>
+          <Score onClick={() => setCO2E(true)}>
+            <ScoreNumber high={props.product.CO2 > 1 ? 1 : 0}>
+              {props.product.CO2}
+            </ScoreNumber>{' '}
+            kgCO<sub>2</sub>e/kg <Sup>(?)</Sup>
           </Score>
         </Flex>
       </Content>

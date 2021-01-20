@@ -1,75 +1,50 @@
-import React, { Suspense } from 'react'
-import styled from 'styled-components'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { QueryParamProvider } from 'use-query-params'
 
-import { GlobalStyle, mq } from 'utils/styles'
-import useWindowSize from 'hooks/useWindowSize'
+import { GlobalStyle } from 'utils/styles'
 import StyleProvider from 'components/providers/StyleProvider'
+import ModalProvider from 'components/providers/ModalProvider'
 import UXProvider from 'components/providers/UXProvider'
 import ProductProvider from 'components/providers/ProductProvider'
 import SearchProvider from 'components/providers/SearchProvider'
 
-import Header from 'components/layout/Header'
-import Footer from 'components/layout/Footer'
-import Learning from 'components/layout/Learning'
-import EmbedConfigurator from 'components/misc/EmbedConfigurator'
+import Layout from 'components/layout/Layout'
+import SearchInput from 'components/misc/SearchInput'
 import CO2EModal from 'components/modals/CO2EModal'
 import PEFModal from 'components/modals/PEFModal'
 import LocalModal from 'components/modals/LocalModal'
-import Search from 'views/Search'
-const Background = React.lazy(() => import('./components/layout/Background'))
+import Months from 'views/Months'
+import Results from 'views/Results'
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  ${mq.medium} {
-    flex-direction: column-reverse;
-  }
-`
-const Content = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-`
-const FullScreen = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: ${(props) => props.windowHeight}px;
-`
 function App() {
-  const { height } = useWindowSize()
-
   return (
     <Router>
       <QueryParamProvider ReactRouterRoute={Route}>
         <StyleProvider>
-          <ProductProvider>
-            <UXProvider>
-              <SearchProvider>
-                <GlobalStyle />
-                <Suspense fallback={''}>
-                  <Background />
-                </Suspense>
-                <Wrapper>
-                  <Content>
-                    <FullScreen windowHeight={height}>
-                      <Header />
-                      <Search />
-                    </FullScreen>
-                    <Learning />
-                    <Footer />
-                  </Content>
-                  <EmbedConfigurator />
-                </Wrapper>
-                <CO2EModal />
-                <PEFModal />
-                <LocalModal />
-              </SearchProvider>
-            </UXProvider>
-          </ProductProvider>
+          <UXProvider>
+            <ModalProvider>
+              <ProductProvider>
+                <SearchProvider>
+                  <GlobalStyle />
+                  <Layout>
+                    <SearchInput />
+                    <Switch>
+                      <Route path='/months/:month'>
+                        <Months />
+                      </Route>
+                      <Route path='/'>
+                        <Results />
+                      </Route>
+                    </Switch>
+                  </Layout>
+                  <CO2EModal />
+                  <PEFModal />
+                  <LocalModal />
+                </SearchProvider>
+              </ProductProvider>
+            </ModalProvider>
+          </UXProvider>
         </StyleProvider>
       </QueryParamProvider>
     </Router>
