@@ -8,7 +8,7 @@ import { themes } from 'utils/styles'
 export default function CO2NumberProvider(props) {
   const [theme, setTheme] = useQueryParam(
     'theme',
-    withDefault(StringParam, 'default')
+    withDefault(StringParam, 'classic')
   )
 
   return (
