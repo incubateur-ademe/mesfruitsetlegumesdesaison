@@ -5,7 +5,7 @@ import useMounted from 'hooks/useMounted'
 
 const Wrapper = styled.div`
   position: relative;
-  //margin-bottom: 2em;
+  margin-bottom: 2em;
   padding: 2em;
   background: ${(props) => props.theme.colors.second};
   opacity: ${(props) => (props.mounted ? 1 : 0)};
