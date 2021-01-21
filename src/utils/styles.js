@@ -105,7 +105,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
-    transition: background-color 600ms, color 600ms;
   } 
 
   *, *:before, *:after {

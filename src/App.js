@@ -48,10 +48,10 @@ function App() {
                         </Switch>
                       </Web>
                     </Route>
-                    <CO2EModal />
-                    <PEFModal />
-                    <LocalModal />
                   </Switch>
+                  <CO2EModal />
+                  <PEFModal />
+                  <LocalModal />
                 </SearchProvider>
               </ProductProvider>
             </ModalProvider>
