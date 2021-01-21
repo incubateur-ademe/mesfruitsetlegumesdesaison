@@ -52,7 +52,7 @@ const Text = styled.p``
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  margin: 2rem 0;
 `
 const StyledLink = styled.span`
   color: ${(props) => props.theme.colors.main};
@@ -94,16 +94,21 @@ export default function Learning() {
           de saison.
         </Strong>
         <Text>
-          Une tomate produite localement, mais sous une serre chauffée, génère
-          environ 4 fois plus de gaz à effet de serre, que la même tomate
-          produite à la bonne saison. Or, nous sommes environ 75% de Français à
-          déclarer consommer des tomates en hiver. De même pour les fraises, 1
-          kg consommé en hiver génère 40% d'émissions de gaz à effet de serre de
-          plus que la même quantité produite en saison. Bénéfiques pour le
-          climat et la santé, les fruits et légumes de saison sont également
-          meilleurs au goût.
+          Les cultures de produits hors saison sont très consommatrices
+          d'énergie (chauffage des serres, transport longue distance, car les
+          produits sont cultivés plus au sud ou dans un autre hémisphère).
         </Text>
         <BarChart />
+        <Text>
+          Par exemple une tomate produite localement, mais sous une serre
+          chauffée, génère environ 4 fois plus de gaz à effet de serre, que la
+          même tomate produite à la bonne saison. Or, nous sommes environ 75% de
+          Français à déclarer consommer des tomates en hiver. De même pour les
+          fraises, 1 kg consommé en hiver génère 40% d'émissions de gaz à effet
+          de serre de plus que la même quantité produite en saison. Bénéfiques
+          pour le climat et la santé, les fruits et légumes de saison sont
+          également meilleurs au goût.
+        </Text>
         <ButtonWrapper>
           <ButtonLink
             href={
@@ -114,8 +119,8 @@ export default function Learning() {
           </ButtonLink>
         </ButtonWrapper>
         <Text>
-          L’alimentation est le premier poste d’émission de gaz à effet de
-          serre, en France, devant les transports et le logement. Or, c’est un
+          25% des émissions de gaz à effet de serre d'un Français sont liées à
+          l'alimentation, devant les transports et le logement. Or, c’est un
           domaine dans lequel chacun dispose d’une capacité d’action. Il existe
           de nombreuses solutions simples et concrètes pour limiter ces
           émissions, responsables du changement climatique. Consommer des fruits
