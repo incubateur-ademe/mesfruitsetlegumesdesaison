@@ -16,10 +16,12 @@ export default function CO2NumberProvider(props) {
     <SearchContext.Provider
       value={{
         search,
-        setSearch: (newSearch) => {
-          history.replace({
-            pathname: '/',
-          })
+        setSearch: (newSearch, iframe) => {
+          if (!iframe) {
+            history.replace({
+              pathname: '/',
+            })
+          }
           setSearch(newSearch)
         },
       }}

@@ -74,7 +74,7 @@ const ScrollToInformations = styled.a`
     font-size: 0.875rem;
   }
 `
-export default function Header() {
+export default function Header(props) {
   const { displayTitle } = useContext(UXContext)
 
   return (
@@ -82,7 +82,7 @@ export default function Header() {
       {displayTitle ? (
         <>
           <Title>
-            <Link to='/'>
+            <Link to={props.iframe ? '/embed' : '/'}>
               <Top text={'Est-ce bien'}>
                 <span>Est-ce bien</span>
               </Top>
@@ -91,7 +91,13 @@ export default function Header() {
               </Bottom>
             </Link>
           </Title>
-          <ScrollToInformations href={'#informations'}>
+          <ScrollToInformations
+            href={
+              props.iframe
+                ? 'http://mes-fruits-et-legumes-de-saisons.netlify.app#informations'
+                : '#informations'
+            }
+          >
             Pourquoi choisir des produits de saison ?
           </ScrollToInformations>
         </>

@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import styled from 'styled-components'
 import { useCountUp } from 'react-countup'
 
 import useOnScreen from 'hooks/useOnScreen'
+import ModalContext from 'utils/ModalContext'
 
 import ButtonLink from 'components/base/ButtonLink'
 import BarChart from 'components/charts/BarChart'
@@ -42,7 +43,7 @@ const Statistic = styled.div`
   }
 `
 const Strong = styled.p`
-  max-width: 26em;
+  max-width: 25em;
   font-size: 1.125em;
   font-weight: 700;
   font-style: italic;
@@ -53,7 +54,13 @@ const ButtonWrapper = styled.div`
   justify-content: center;
   margin-bottom: 2em;
 `
+const StyledLink = styled.span`
+  color: ${(props) => props.theme.colors.main};
+  cursor: pointer;
+`
 export default function Learning() {
+  const { setCO2E } = useContext(ModalContext)
+
   const ref = useRef()
   const isOnScreen = useOnScreen(ref, '-100px')
   const { countUp, start } = useCountUp({
@@ -79,18 +86,22 @@ export default function Learning() {
         </Statistic>
 
         <Strong>
-          Gaz à effet de serre moyen généré par un produit hors saison par
-          rapport à un produit de saison.
+          de{' '}
+          <StyledLink onClick={() => setCO2E(true)}>
+            kgCO<sub>2</sub>e
+          </StyledLink>{' '}
+          généré en moyenne par un produit hors saison par rapport à un produit
+          de saison.
         </Strong>
         <Text>
           Une tomate produite localement, mais sous une serre chauffée, génère
-          environ 4 fois plus de gaz à effet de serre, que la même tomate
+          environ 4 fois plus de gaz à effet de serre, que la même tomate
           produite à la bonne saison. Or, nous sommes environ 75% de Français à
           déclarer consommer des tomates en hiver. De même pour les fraises, 1
-          kg consommé en hiver nécessite 25 fois plus de pétrole pour son
-          transport que la même quantité produite en saison et localement.
-          Bénéfiques pour le climat et la santé, les fruits et légumes de saison
-          sont également meilleurs au goût.
+          kg consommé en hiver génère 40% d'émissions de gaz à effet de serre de
+          plus que la même quantité produite en saison. Bénéfiques pour le
+          climat et la santé, les fruits et légumes de saison sont également
+          meilleurs au goût.
         </Text>
         <BarChart />
         <ButtonWrapper>
@@ -111,6 +122,22 @@ export default function Learning() {
           et légumes de saison est un excellent moyen de concilier plaisir,
           santé et climat.
         </Text>
+        <Text>
+          Si vous souhaitez aller plus loin dans votre démarche, vous pouvez
+          calculer votre empreinte sur le climat grace à notre simulateur{' '}
+          <a
+            href={'https://nosgestesclimat.fr/'}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Nos Gestes Climat
+          </a>
+        </Text>
+        <ButtonWrapper>
+          <ButtonLink href={'https://nosgestesclimat.fr/'}>
+            Je calcule mon empreinte carbone
+          </ButtonLink>
+        </ButtonWrapper>
       </Content>
     </Wrapper>
   )

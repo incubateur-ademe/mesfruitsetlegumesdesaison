@@ -38,7 +38,7 @@ const FullScreen = styled.div`
     padding-bottom: 5vw;
   }
 `
-export default function Layout(props) {
+export default function Web(props) {
   const { height } = useWindowSize()
 
   const { setConfiguratorOpen } = useContext(UXContext)

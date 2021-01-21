@@ -45,7 +45,7 @@ export default function Suggestion(props) {
       key={props.suggestion.label.fr}
       index={props.index}
       mounted={mounted ? 1 : 0}
-      onClick={() => setSearch(props.suggestion.label.fr)}
+      onClick={() => setSearch(props.suggestion.label.fr, props.iframe)}
     >
       {props.suggestion.emoji}
     </Wrapper>

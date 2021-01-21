@@ -49,14 +49,14 @@ const Input = styled.input`
     font-size: 1.3em;
   }
 `
-export default function SearchInput() {
+export default function SearchInput(props) {
   const { search, setSearch } = useContext(SearchContext)
   return (
     <Wrapper>
       <Input
         type='text'
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value, props.iframe)}
         placeholder={'Rentrez un fruit ou un légume'}
       />
     </Wrapper>

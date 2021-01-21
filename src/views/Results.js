@@ -24,7 +24,7 @@ const StyledLink = styled(Link)`
     font-size: 1rem;
   }
 `
-export default function Results() {
+export default function Results(props) {
   const { search } = useContext(SearchContext)
   const { products } = useContext(ProductContext)
   const [filteredProducts, setFilteredProducts] = useState([])
@@ -51,21 +51,26 @@ export default function Results() {
   return (
     <>
       {filteredProducts.length ? (
-        filteredProducts.map((product, index) => (
-          <Result
-            key={product.item.label.fr}
-            index={index}
-            product={product.item}
-          />
-        ))
+        filteredProducts.map(
+          (product, index) =>
+            (!props.iframe || index === 0) && (
+              <Result
+                key={product.item.label.fr}
+                index={index}
+                product={product.item}
+              />
+            )
+        )
       ) : search.length > 2 ? (
         <NotFound />
       ) : (
-        <Suggestions length={5} />
+        <Suggestions length={5} iframe={props.iframe} />
       )}
-      <StyledLink to={`/months/${currentMonth}`} mounted={mounted ? 1 : 0}>
-        Voir tous les produits du mois
-      </StyledLink>
+      {!props.iframe && (
+        <StyledLink to={`/months/${currentMonth}`} mounted={mounted ? 1 : 0}>
+          Voir tous les produits du mois
+        </StyledLink>
+      )}
     </>
   )
 }

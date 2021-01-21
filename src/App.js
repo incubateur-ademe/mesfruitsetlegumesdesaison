@@ -9,7 +9,8 @@ import UXProvider from 'components/providers/UXProvider'
 import ProductProvider from 'components/providers/ProductProvider'
 import SearchProvider from 'components/providers/SearchProvider'
 
-import Layout from 'components/layout/Layout'
+import Web from 'components/layout/Web'
+import Iframe from 'components/layout/Iframe'
 import SearchInput from 'components/misc/SearchInput'
 import CO2EModal from 'components/modals/CO2EModal'
 import PEFModal from 'components/modals/PEFModal'
@@ -27,20 +28,30 @@ function App() {
               <ProductProvider>
                 <SearchProvider>
                   <GlobalStyle />
-                  <Layout>
-                    <SearchInput />
-                    <Switch>
-                      <Route path='/months/:month'>
-                        <Months />
-                      </Route>
-                      <Route path='/'>
-                        <Results />
-                      </Route>
-                    </Switch>
-                  </Layout>
-                  <CO2EModal />
-                  <PEFModal />
-                  <LocalModal />
+                  <Switch>
+                    <Route path='/embed'>
+                      <Iframe>
+                        <SearchInput iframe />
+                        <Results iframe />
+                      </Iframe>
+                    </Route>
+                    <Route>
+                      <Web>
+                        <SearchInput />
+                        <Switch>
+                          <Route path='/months/:month'>
+                            <Months />
+                          </Route>
+                          <Route path='/'>
+                            <Results />
+                          </Route>
+                        </Switch>
+                      </Web>
+                    </Route>
+                    <CO2EModal />
+                    <PEFModal />
+                    <LocalModal />
+                  </Switch>
                 </SearchProvider>
               </ProductProvider>
             </ModalProvider>
