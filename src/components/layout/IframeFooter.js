@@ -47,7 +47,7 @@ export default function Footer(props) {
           <Logo src={ademe} alt='ADEME' />
           <Logo src={ecolab} alt='Ecolab' />
         </Logos>
-        <ButtonLink href='http://mes-fruits-et-legumes-de-saisons.netlify.app#informations'>
+        <ButtonLink href='https://mesfruitsetlegumesdesaison.fr#informations'>
           En savoir plus sur ce simulateur
         </ButtonLink>
       </Content>
