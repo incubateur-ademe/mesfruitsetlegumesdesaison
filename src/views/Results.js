@@ -12,6 +12,9 @@ import Suggestions from 'components/misc/Suggestions'
 import Result from './results/Result'
 import NotFound from './results/NotFound'
 
+const Wrapper = styled.div`
+  min-height: 22em;
+`
 const StyledLink = styled(Link)`
   position: relative;
   display: block;
@@ -49,7 +52,7 @@ export default function Results(props) {
   }, [search, products, fuse])
 
   return (
-    <>
+    <Wrapper>
       {filteredProducts.length ? (
         filteredProducts.map(
           (product, index) =>
@@ -71,6 +74,6 @@ export default function Results(props) {
           Voir tous les produits du mois
         </StyledLink>
       )}
-    </>
+    </Wrapper>
   )
 }

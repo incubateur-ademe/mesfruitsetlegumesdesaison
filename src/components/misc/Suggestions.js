@@ -8,8 +8,6 @@ import Suggestion from './suggestions/Suggestion'
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: -0.5em;
-  padding-bottom: 15em;
 `
 export default function Suggestions(props) {
   const { suggestions } = useContext(ProductContext)
