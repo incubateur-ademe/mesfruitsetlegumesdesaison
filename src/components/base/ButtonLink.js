@@ -29,6 +29,10 @@ const Wrapper = styled.a`
   &:focus {
     outline: none;
   }
+
+  ${(props) => props.theme.mq.small} {
+    font-size: 1em;
+  }
 `
 export default function ButtonLink(props) {
   return (

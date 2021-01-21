@@ -20,20 +20,22 @@ const Content = styled.div`
   padding: 1em 0;
 
   ${(props) => props.theme.mq.small} {
-    flex-direction: column;
-    align-items: inherit;
+    max-width: none;
     margin: 0 3vw;
   }
 `
 const Logos = styled.div`
   flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
 `
 const Logo = styled.img`
   width: 4em;
+
+  ${(props) => props.theme.mq.small} {
+    width: 3em;
+  }
 `
 
 export default function Footer(props) {
