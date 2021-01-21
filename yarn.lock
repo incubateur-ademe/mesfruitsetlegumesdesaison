@@ -1124,10 +1124,10 @@
     react "^17.0.1"
     styled-components "^5.2.1"
 
-"@bit/datagir.simulateurs.embed-configurator@^0.0.10":
-  version "0.0.10"
-  resolved "https://node.bit.dev/datagir.simulateurs.embed-configurator/-/datagir.simulateurs.embed-configurator-0.0.10.tgz#2e9924e141fe0cdced6c688098892a56c755c321"
-  integrity sha1-Lpkk4UH+DNztbGiAmIkqVsdVwyE=
+"@bit/datagir.simulateurs.embed-configurator@^0.0.11":
+  version "0.0.11"
+  resolved "https://node.bit.dev/datagir.simulateurs.embed-configurator/-/datagir.simulateurs.embed-configurator-0.0.11.tgz#5f0456b20e2f2312f9066d45240e1fd0ffabf157"
+  integrity sha1-XwRWsg4vIxL5Bm1FJA4f0P+r8Vc=
   dependencies:
     "@bit/datagir.simulateurs.button" "0.0.2"
     copy-to-clipboard "3.3.1"
