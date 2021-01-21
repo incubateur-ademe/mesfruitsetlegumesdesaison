@@ -7,12 +7,13 @@ import UXContext from 'utils/UXContext'
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  margin: 4vh auto;
+  margin: 0 auto;
+  padding: 4vh 0;
   font-size: 5em;
 
   ${(props) => props.theme.mq.small} {
-    margin: 4vh 0;
-    padding: 0 3vw;
+    margin: 0;
+    padding: 4vh 3vw;
     font-size: 12vw;
   }
 `
