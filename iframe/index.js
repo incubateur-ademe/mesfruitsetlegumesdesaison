@@ -8,7 +8,7 @@ const search = script.dataset.search
 //const title = script.dataset.title
 const source = window.location.href.toString()
 
-const src = `${domain}/embed${search}&source=${source}`
+const src = `https://mes-fruits-et-legumes-de-saisons.netlify.app/embed${search}&source=${source}`
 
 const iframe = document.createElement('iframe')
 
