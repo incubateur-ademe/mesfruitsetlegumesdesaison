@@ -2,11 +2,11 @@ import { iframeResize } from 'iframe-resizer'
 
 const script = document.getElementById('datagir-fruits-et-legumes')
 
-const domain = encodeURIComponent(script.dataset.domain)
+//const domain = encodeURIComponent(script.dataset.domain)
 const search = encodeURIComponent(script.dataset.search)
 const source = encodeURIComponent(window.location.href.toString())
 
-const src = `${domain}/embed${search}${source}`
+const src = `https://mes-fruits-et-legumes-de-saisons.netlify.app/embed${search}${source}`
 
 const iframe = document.createElement('iframe')
 
