@@ -98,6 +98,8 @@ export default function Header(props) {
                 ? 'http://mes-fruits-et-legumes-de-saisons.netlify.app#informations'
                 : '#informations'
             }
+            target={props.iframe ? '_blank' : '_self'}
+            rel='noopener noreferrer'
           >
             Pourquoi choisir des produits de saison ?
           </ScrollToInformations>
