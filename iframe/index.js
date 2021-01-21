@@ -2,13 +2,13 @@ import { iframeResize } from 'iframe-resizer'
 
 const script = document.getElementById('datagir-fruits-et-legumes')
 
-const domain = encodeURIComponent(script.dataset.domain)
-const search = encodeURIComponent(script.dataset.search)
-const theme = encodeURIComponent(script.dataset.theme)
-const title = encodeURIComponent(script.dataset.title)
-const source = encodeURIComponent(window.location.href.toString())
+const domain = script.dataset.domain
+const search = script.dataset.search
+//const theme = script.dataset.theme
+//const title = script.dataset.title
+const source = window.location.href.toString()
 
-const src = `${domain}/embed?search=${search}&theme=${theme}&title=${title}&title=${source}`
+const src = `${domain}/embed${search}&source=${source}`
 
 const iframe = document.createElement('iframe')
 
