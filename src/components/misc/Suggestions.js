@@ -8,7 +8,6 @@ import Suggestion from './suggestions/Suggestion'
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: -0.5em;
 `
 export default function Suggestions(props) {
   const { suggestions } = useContext(ProductContext)
@@ -32,6 +31,7 @@ export default function Suggestions(props) {
             key={suggestion.label.fr}
             suggestion={suggestion}
             index={index}
+            iframe={props.iframe}
           />
         ))}
     </Wrapper>

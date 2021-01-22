@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { months } from 'utils/months'
 import ModalContext from 'utils/ModalContext'
+import StyleContext from 'utils/StyleContext'
 
 const Wrapper = styled.div`
   width: calc(50% - 2em);
@@ -21,6 +22,11 @@ const Content = styled.div`
   padding: 1em;
   height: 100%;
   background: ${(props) => props.theme.colors.second};
+  border: ${(props) =>
+    props.currentTheme === 'default'
+      ? 'none'
+      : `2px solid ${props.theme.colors.main}`};
+  border-radius: ${(props) => (props.currentTheme === 'default' ? 0 : '1em')};
 
   &:before {
     content: '';
@@ -88,6 +94,8 @@ const ScoreNumber = styled.span`
 export default function Product(props) {
   const { setCO2E, setLocal } = useContext(ModalContext)
 
+  const { theme } = useContext(StyleContext)
+
   const [interval, setInterval] = useState([])
   useEffect(() => {
     const orderedMonths = props.product.months.sort((a, b) => (a > b ? 1 : -1))
@@ -104,7 +112,7 @@ export default function Product(props) {
   }, [props.product])
   return (
     <Wrapper>
-      <Content>
+      <Content currentTheme={theme}>
         <Title>
           <span>{props.product.label.fr}</span>
           <Emoji>{props.product.emoji}</Emoji>

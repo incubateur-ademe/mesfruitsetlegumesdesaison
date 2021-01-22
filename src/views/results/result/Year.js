@@ -34,6 +34,7 @@ const Month = styled(Link)`
   text-align: center;
   text-decoration: none;
   color: white;
+  pointer-events: ${(props) => (props.iframe ? 'none' : 'inherit')};
 
   ${(props) => props.theme.mq.small} {
     font-size: 0.625em;
@@ -60,6 +61,7 @@ export default function Year(props) {
             to={`/months/${index}`}
             valid={props.months.includes(index) ? 1 : 0}
             active={index === currentMonth ? 1 : 0}
+            iframe={props.iframe}
           >
             {month}
           </Month>

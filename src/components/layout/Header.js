@@ -7,12 +7,13 @@ import UXContext from 'utils/UXContext'
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  margin: 4vh auto;
+  margin: 0 auto;
+  padding: 4vh 0;
   font-size: 5em;
 
   ${(props) => props.theme.mq.small} {
-    margin: 4vh 0;
-    padding: 0 3vw;
+    margin: 0;
+    padding: 4vh 3vw;
     font-size: 12vw;
   }
 `
@@ -31,14 +32,20 @@ const Title = styled.h1`
     background-color: ${(props) => props.theme.colors.background};
     filter: blur(20px);
   }
-
-  a {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    color: ${(props) => props.theme.colors.text};
-    text-decoration: none;
-  }
+`
+const StyledLink = styled(Link)`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
+`
+const NoLink = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
 `
 const Top = styled.span`
   position: relative;
@@ -74,7 +81,7 @@ const ScrollToInformations = styled.a`
     font-size: 0.875rem;
   }
 `
-export default function Header() {
+export default function Header(props) {
   const { displayTitle } = useContext(UXContext)
 
   return (
@@ -82,16 +89,35 @@ export default function Header() {
       {displayTitle ? (
         <>
           <Title>
-            <Link to='/'>
-              <Top text={'Est-ce bien'}>
-                <span>Est-ce bien</span>
-              </Top>
-              <Bottom text={'la saison ?'}>
-                <span>la saison ?</span>
-              </Bottom>
-            </Link>
+            {props.iframe ? (
+              <NoLink>
+                <Top text={'Est-ce bien'}>
+                  <span>Est-ce bien</span>
+                </Top>
+                <Bottom text={'la saison ?'}>
+                  <span>la saison ?</span>
+                </Bottom>
+              </NoLink>
+            ) : (
+              <StyledLink to={'/'}>
+                <Top text={'Est-ce bien'}>
+                  <span>Est-ce bien</span>
+                </Top>
+                <Bottom text={'la saison ?'}>
+                  <span>la saison ?</span>
+                </Bottom>
+              </StyledLink>
+            )}
           </Title>
-          <ScrollToInformations href={'#informations'}>
+          <ScrollToInformations
+            href={
+              props.iframe
+                ? 'https://mesfruitsetlegumesdesaison.fr#informations'
+                : '#informations'
+            }
+            target={props.iframe ? '_blank' : '_self'}
+            rel='noopener noreferrer'
+          >
             Pourquoi choisir des produits de saison ?
           </ScrollToInformations>
         </>

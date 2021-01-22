@@ -5,7 +5,32 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ff006e" />
-    <meta name="description" content="Mes Fruits et Légumes de Saison" />
+    <meta
+      name="description"
+      content="Découvrez quels sont les fruits et légumes de saison pour consommer des produits frais et locaux toute l'année ! En plus c'est meilleur pour votre santé et pour l'environnement !"
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mesfruitsetlegumesdesaison.fr" />
+    <meta property="og:title" content="Mes Fruits et Légumes de Saison" />
+    <meta
+      property="og:description"
+      content="Découvrez quels sont les fruits et légumes de saison pour consommer des produits frais toute l'année ! En plus c'est meilleur pour votre santé et pour l'environnement !"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/metaimage.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://mesfruitsetlegumesdesaison.fr"
+    />
+    <meta property="twitter:title" content="Mes Fruits et Légumes de Saison" />
+    <meta
+      property="twitter:description"
+      content="Découvrez quels sont les fruits et légumes de saison pour consommer des produits frais et locaux toute l'année ! En plus c'est meilleur pour votre santé et pour l'environnement !"
+    />
+    <meta property="twitter:image" content="%PUBLIC_URL%/metaimage.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -22,28 +47,42 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,700;0,900;1,500;1,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,700;0,900;1,500;1,700"
+      rel="stylesheet"
+    />
 
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq || []
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView'])
+      _paq.push(['enableLinkTracking'])
+      ;(function () {
+        var u = 'https://stats.data.gouv.fr/'
+        _paq.push(['setTrackerUrl', u + 'matomo.php'])
+        _paq.push(['setSiteId', '128'])
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0]
+        g.type = 'text/javascript'
+        g.async = true
+        g.defer = true
+        g.src = u + 'matomo.js'
+        s.parentNode.insertBefore(g, s)
+      })()
+    </script>
+    <!-- End Matomo Code -->
 
     <title>Mes Fruits et Légumes de Saison</title>
-    <style>
-      html {
-        background-color: #FFE57D;
-      }
-    </style
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.js"
+      integrity="sha512-5+HBQlT1izP2UxL213/uqaO9tIpPso52TedvIsOevDs6w/HNt0/KNlkYLgi8Ona7lPCBjMEWybiR/qqs2MgyEg=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

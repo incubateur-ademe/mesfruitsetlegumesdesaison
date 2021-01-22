@@ -4,13 +4,14 @@
   "private": true,
   "dependencies": {
     "@bit/datagir.simulateurs.button": "^0.0.2",
-    "@bit/datagir.simulateurs.embed-configurator": "^0.0.5",
-    "@bit/datagir.simulateurs.footer": "^0.0.1",
     "@bit/datagir.simulateurs.modal": "^0.0.2",
+    "@bit/datagir.simulateurs.embed-configurator": "0.0.12",
+    "@bit/datagir.simulateurs.footer": "0.0.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "fuse.js": "^6.4.6",
+    "iframe-resizer-react": "^1.1.0",
     "query-string": "^6.13.8",
     "react": "^17.0.1",
     "react-app-rewired": "^2.1.8",
@@ -26,7 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn iframe",
+    "iframe": "webpack",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -55,6 +57,10 @@
     },
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "yarn"
+  },
+  "devDependencies": {
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.4.0"
   },
   "resolutions": {
     "react-scripts/eslint-webpack-plugin": "2.3.0"

@@ -38,7 +38,7 @@ const FullScreen = styled.div`
     padding-bottom: 5vw;
   }
 `
-export default function Layout(props) {
+export default function Web(props) {
   const { height } = useWindowSize()
 
   const { setConfiguratorOpen } = useContext(UXContext)
@@ -62,6 +62,10 @@ export default function Layout(props) {
               href: 'https://www.ademe.fr/calendrier-fruits-legumes-saison',
             },
             { label: 'AGRIBALYSE®', href: 'http://www.agribalyse.fr/' },
+            {
+              label:
+                'Ces données sont valables pour la France metropolitaine uniquement',
+            },
           ]}
         />
       </Content>

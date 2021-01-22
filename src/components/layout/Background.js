@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 
 import icons from './background/icons'
+import StyleContext from 'utils/StyleContext'
 
 const Wrapper = styled.div`
   position: absolute;
@@ -33,11 +34,14 @@ const Item = styled.div`
 `
 
 export default function Background() {
+  const { theme } = useContext(StyleContext)
   return (
-    <Wrapper>
-      {[...icons, ...icons].map((icon, index) => (
-        <Item key={index}>{icon}</Item>
-      ))}
-    </Wrapper>
+    theme === 'default' && (
+      <Wrapper>
+        {[...icons, ...icons].map((icon, index) => (
+          <Item key={index}>{icon}</Item>
+        ))}
+      </Wrapper>
+    )
   )
 }

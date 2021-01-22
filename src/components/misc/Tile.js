@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 
+import StyleContext from 'utils/StyleContext'
 import useMounted from 'hooks/useMounted'
 
 const Wrapper = styled.div`
@@ -8,6 +9,11 @@ const Wrapper = styled.div`
   margin-bottom: 2em;
   padding: 2em;
   background: ${(props) => props.theme.colors.second};
+  border: ${(props) =>
+    props.currentTheme === 'default'
+      ? 'none'
+      : `2px solid ${props.theme.colors.main}`};
+  border-radius: ${(props) => (props.currentTheme === 'default' ? 0 : '1em')};
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transition: opacity 1000ms ${(props) => props.index * 100}ms;
 
@@ -28,9 +34,9 @@ const Wrapper = styled.div`
 `
 export default function Tile(props) {
   const mounted = useMounted()
-
+  const { theme } = useContext(StyleContext)
   return (
-    <Wrapper index={props.index} mounted={mounted ? 1 : 0}>
+    <Wrapper index={props.index} currentTheme={theme} mounted={mounted ? 1 : 0}>
       {props.children}
     </Wrapper>
   )

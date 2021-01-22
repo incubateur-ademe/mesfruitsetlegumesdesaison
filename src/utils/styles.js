@@ -15,7 +15,7 @@ export const themes = {
       title: '"Work Sans", sans-serif',
     },
     mq: {
-      small: `@media screen and (max-width: ${730}px)`,
+      small: `@media screen and (max-width: ${650}px)`,
       medium: `@media screen and (max-width: ${1260}px)`,
       mediumLandscape: `@media screen and (orientation: landscape) and (max-width: ${1260}px)`,
       mediumPortrait: `@media screen and (orientation: portrait) and (max-width: ${1260}px)`,
@@ -36,7 +36,7 @@ export const themes = {
       title: '"Work Sans", sans-serif',
     },
     mq: {
-      small: `@media screen and (max-width: ${730}px)`,
+      small: `@media screen and (max-width: ${650}px)`,
       medium: `@media screen and (max-width: ${1260}px)`,
       mediumLandscape: `@media screen and (orientation: landscape) and (max-width: ${1260}px)`,
       mediumPortrait: `@media screen and (orientation: portrait) and (max-width: ${1260}px)`,
@@ -57,7 +57,7 @@ export const themes = {
       title: '"Work Sans", sans-serif',
     },
     mq: {
-      small: `@media screen and (max-width: ${730}px)`,
+      small: `@media screen and (max-width: ${650}px)`,
       medium: `@media screen and (max-width: ${1260}px)`,
       mediumLandscape: `@media screen and (orientation: landscape) and (max-width: ${1260}px)`,
       mediumPortrait: `@media screen and (orientation: portrait) and (max-width: ${1260}px)`,
@@ -78,7 +78,7 @@ export const themes = {
       title: 'Arial, sans-serif',
     },
     mq: {
-      small: `@media screen and (max-width: ${730}px)`,
+      small: `@media screen and (max-width: ${650}px)`,
       medium: `@media screen and (max-width: ${1260}px)`,
       mediumLandscape: `@media screen and (orientation: landscape) and (max-width: ${1260}px)`,
       mediumPortrait: `@media screen and (orientation: portrait) and (max-width: ${1260}px)`,
@@ -105,7 +105,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
-    transition: background-color 600ms, color 600ms;
   } 
 
   *, *:before, *:after {
@@ -114,6 +113,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #root {
+    overflow: hidden;
+    width: 100%;
     position: relative;
   }
   
