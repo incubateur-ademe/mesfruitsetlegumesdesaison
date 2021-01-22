@@ -24,6 +24,7 @@ const Title = styled.h2`
   }
 `
 const Navigation = styled(Link)`
+  position: relative;
   font-size: 2em;
   font-weight: 900;
   text-decoration: none;
