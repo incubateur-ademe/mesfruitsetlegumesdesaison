@@ -57,7 +57,11 @@ export default function Result(props) {
         <span>{props.product.label.fr}</span>
         <Emoji>{props.product.emoji}</Emoji>
       </Title>
-      <Year months={props.product.months} local={props.product.local ? 1 : 0} />
+      <Year
+        months={props.product.months}
+        local={props.product.local ? 1 : 0}
+        iframe={props.iframe}
+      />
       <Flex>
         <Local
           onClick={() => setLocal(true)}

@@ -32,14 +32,20 @@ const Title = styled.h1`
     background-color: ${(props) => props.theme.colors.background};
     filter: blur(20px);
   }
-
-  a {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    color: ${(props) => props.theme.colors.text};
-    text-decoration: none;
-  }
+`
+const StyledLink = styled(Link)`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
+`
+const NoLink = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
 `
 const Top = styled.span`
   position: relative;
@@ -83,14 +89,25 @@ export default function Header(props) {
       {displayTitle ? (
         <>
           <Title>
-            <Link to={props.iframe ? '/embed' : '/'}>
-              <Top text={'Est-ce bien'}>
-                <span>Est-ce bien</span>
-              </Top>
-              <Bottom text={'la saison ?'}>
-                <span>la saison ?</span>
-              </Bottom>
-            </Link>
+            {props.iframe ? (
+              <NoLink>
+                <Top text={'Est-ce bien'}>
+                  <span>Est-ce bien</span>
+                </Top>
+                <Bottom text={'la saison ?'}>
+                  <span>la saison ?</span>
+                </Bottom>
+              </NoLink>
+            ) : (
+              <StyledLink to={'/'}>
+                <Top text={'Est-ce bien'}>
+                  <span>Est-ce bien</span>
+                </Top>
+                <Bottom text={'la saison ?'}>
+                  <span>la saison ?</span>
+                </Bottom>
+              </StyledLink>
+            )}
           </Title>
           <ScrollToInformations
             href={

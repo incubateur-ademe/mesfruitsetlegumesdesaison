@@ -61,6 +61,7 @@ export default function Results(props) {
                 key={product.item.label.fr}
                 index={index}
                 product={product.item}
+                iframe={props.iframe}
               />
             )
         )
