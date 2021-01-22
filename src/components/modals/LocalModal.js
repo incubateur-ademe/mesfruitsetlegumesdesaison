@@ -16,9 +16,9 @@ export default function LocalModal() {
       <Text>
         Quand on consomme des aliments qui viennent de loin, il ne faut pas
         oublier que ces produits ont du faire un long voyage pour arriver jusque
-        notre assiette. Qu'ils viennent en bateau ou en avion, leur transport
-        engendre de grandes quantités de gaz à effet de serre relâchées dans
-        l'air.
+        notre assiette. L’avion est le mode de transport le plus consommateur
+        d’énergie et émetteur de gaz à effet de serre, suivi par le transport
+        terrestre et le bateau.
       </Text>
     </Modal>
   )
