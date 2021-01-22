@@ -110,7 +110,7 @@ export default function Learning() {
             <StyledLink onClick={() => setCO2E(true)}>
               kgCO<sub>2</sub>e
             </StyledLink>{' '}
-            généré par une tomate produite hors saison par rapport à la même
+            générés par une tomate produite hors saison par rapport à la même
             tomate produite à la bonne saison.
           </Strong>
         </StrongWrapper>
