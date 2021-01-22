@@ -1135,10 +1135,10 @@
     react-router-dom "^5.2.0"
     styled-components "^5.2.1"
 
-"@bit/datagir.simulateurs.footer@^0.0.1":
-  version "0.0.1"
-  resolved "https://node.bit.dev/datagir.simulateurs.footer/-/datagir.simulateurs.footer-0.0.1.tgz#2c31d8d442467a85c8306438bd2413dafea11abf"
-  integrity sha1-LDHY1EJGeoXIMGQ4vSQT2v6hGr8=
+"@bit/datagir.simulateurs.footer@0.0.2":
+  version "0.0.2"
+  resolved "https://node.bit.dev/datagir.simulateurs.footer/-/datagir.simulateurs.footer-0.0.2.tgz#5fd7dbce35db3a009b7955bac18547ef9a49e3ab"
+  integrity sha1-X9fbzjXbOgCbeVW6wYVH75pJ46s=
   dependencies:
     "@bit/datagir.simulateurs.button" "0.0.2"
     react "^17.0.1"

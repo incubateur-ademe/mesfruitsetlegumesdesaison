@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext, useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import styled from 'styled-components'
-import { useCountUp } from 'react-countup'
 
 import useOnScreen from 'hooks/useOnScreen'
 import ModalContext from 'utils/ModalContext'
@@ -92,19 +91,6 @@ export default function Learning() {
 
   const ref = useRef()
   const isOnScreen = useOnScreen(ref, '-100px')
-  const { countUp, start } = useCountUp({
-    end: 4,
-    delay: 0.4,
-    duration: 4,
-    startOnMount: false,
-  })
-  const [fired, setFired] = useState(false)
-  useEffect(() => {
-    if (isOnScreen && !fired) {
-      start()
-      setFired(true)
-    }
-  }, [isOnScreen, start, fired])
 
   return (
     <Wrapper id='informations'>
