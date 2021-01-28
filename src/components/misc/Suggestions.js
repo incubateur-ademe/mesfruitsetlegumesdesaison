@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
 
+import { currentMonth } from 'utils/months'
 import ProductContext from 'utils/ProductContext'
 
 import Suggestion from './suggestions/Suggestion'
@@ -10,10 +11,13 @@ const Wrapper = styled.div`
   justify-content: space-around;
 `
 export default function Suggestions(props) {
-  const { suggestions } = useContext(ProductContext)
+  const { products } = useContext(ProductContext)
+
   const [shuffledSuggestions, setShuffledSuggestions] = useState([])
   useEffect(() => {
-    let tempSuggestions = suggestions
+    let tempSuggestions = products
+      .filter((product) => product.suggestions)
+      .filter((product) => product.months.includes(currentMonth))
     for (var i = tempSuggestions.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1))
       var temp = tempSuggestions[i]
@@ -21,7 +25,8 @@ export default function Suggestions(props) {
       tempSuggestions[j] = temp
     }
     setShuffledSuggestions(tempSuggestions)
-  }, [suggestions])
+  }, [products])
+
   return (
     <Wrapper>
       {shuffledSuggestions

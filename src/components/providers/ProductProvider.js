@@ -15,15 +15,8 @@ export default function ProductProvider(props) {
       )
   }, [])
 
-  const [suggestions, setSuggestions] = useState([])
-  useEffect(() => {
-    fetch('/data/suggestions.json')
-      .then((res) => res.json())
-      .then((res) => setSuggestions(res))
-  }, [])
-
   return (
-    <ProductContext.Provider value={{ products, suggestions }}>
+    <ProductContext.Provider value={{ products }}>
       {props.children}
     </ProductContext.Provider>
   )

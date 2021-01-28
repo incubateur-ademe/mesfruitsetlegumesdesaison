@@ -5,7 +5,8 @@
     "emoji": "🍓",
     "local": true,
     "pef": 0.42,
-    "CO2": 0.53
+    "CO2": 0.53,
+    "suggestions": true
   },
   {
     "label": { "fr": "Pomme" },
@@ -13,7 +14,8 @@
     "emoji": "🍏",
     "local": true,
     "pef": 0.06,
-    "CO2": 0.28
+    "CO2": 0.28,
+    "suggestions": true
   },
   {
     "label": { "fr": "Orange" },
@@ -61,7 +63,8 @@
     "emoji": "🍠",
     "local": true,
     "pef": 0.06,
-    "CO2": 0.25
+    "CO2": 0.25,
+    "suggestions": true
   },
   {
     "label": { "fr": "Blette" },
@@ -77,7 +80,8 @@
     "emoji": "🥕",
     "local": true,
     "pef": 0.07,
-    "CO2": 0.39
+    "CO2": 0.39,
+    "suggestions": true
   },
   {
     "label": { "fr": "Céleri" },
@@ -85,7 +89,8 @@
     "emoji": "🌱",
     "local": true,
     "pef": 0.08,
-    "CO2": 0.39
+    "CO2": 0.39,
+    "suggestions": true
   },
   {
     "label": { "fr": "Champignon de Paris" },
@@ -93,7 +98,8 @@
     "emoji": "🍄",
     "local": true,
     "pef": 0.08,
-    "CO2": 0.4
+    "CO2": 0.4,
+    "suggestions": true
   },
   {
     "label": { "fr": "Chou" },
@@ -173,7 +179,8 @@
     "emoji": "🥬",
     "local": true,
     "pef": 0.05,
-    "CO2": 0.33
+    "CO2": 0.33,
+    "suggestions": true
   },
   {
     "label": { "fr": "Fenouil" },
@@ -205,7 +212,8 @@
     "emoji": "🥗",
     "local": true,
     "pef": 0.13,
-    "CO2": 0.88
+    "CO2": 0.88,
+    "suggestions": true
   },
   {
     "label": { "fr": "Navet" },
@@ -221,7 +229,8 @@
     "emoji": "🌽",
     "local": true,
     "pef": 0.14,
-    "CO2": 0.63
+    "CO2": 0.63,
+    "suggestions": true
   },
   {
     "label": { "fr": "Oignon" },
@@ -357,7 +366,8 @@
     "emoji": "🥝",
     "local": true,
     "pef": 0.13,
-    "CO2": 0.92
+    "CO2": 0.92,
+    "suggestions": true
   },
   {
     "label": { "fr": "Mandarine" },
@@ -461,7 +471,8 @@
     "emoji": "🍑",
     "local": true,
     "pef": 0.38,
-    "CO2": 1.14
+    "CO2": 1.14,
+    "suggestions": true
   },
   {
     "label": { "fr": "Cerise" },
@@ -469,7 +480,8 @@
     "emoji": "🍒",
     "local": true,
     "pef": 0.43,
-    "CO2": 1.27
+    "CO2": 1.27,
+    "suggestions": true
   },
   {
     "label": { "fr": "Abricot" },
@@ -501,7 +513,8 @@
     "emoji": "🍇",
     "local": true,
     "pef": 0.11,
-    "CO2": 0.63
+    "CO2": 0.63,
+    "suggestions": true
   },
   {
     "label": { "fr": "Aubergine" },
@@ -509,7 +522,8 @@
     "emoji": "🍆",
     "local": true,
     "pef": 0.49,
-    "CO2": 5.31
+    "CO2": 5.31,
+    "suggestions": true
   },
   {
     "label": { "fr": "Brocoli" },
@@ -517,7 +531,8 @@
     "emoji": "🥦",
     "local": true,
     "pef": 0.08,
-    "CO2": 0.68
+    "CO2": 0.68,
+    "suggestions": true
   },
   {
     "label": { "fr": "Tomate" },
@@ -525,7 +540,8 @@
     "emoji": "🍅",
     "local": true,
     "pef": 0.1,
-    "CO2": 0.62
+    "CO2": 0.62,
+    "suggestions": true
   },
   {
     "label": { "fr": "Ananas" },
