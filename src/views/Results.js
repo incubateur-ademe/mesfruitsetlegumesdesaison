@@ -66,7 +66,7 @@ export default function Results(props) {
             )
         )
       ) : search.length > 2 ? (
-        <NotFound />
+        <NotFound iframe={props.iframe} />
       ) : (
         <Suggestions length={5} iframe={props.iframe} />
       )}

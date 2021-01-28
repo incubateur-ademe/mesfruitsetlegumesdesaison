@@ -23,7 +23,6 @@ export default function Embed() {
       themes={themes}
       theme={theme}
       setTheme={setTheme}
-      setDisplayTitle={setDisplayTitle}
       options={[
         {
           label: 'Rentrez un fruit ou un légume',

@@ -13,12 +13,12 @@ const Text = styled.p`
   position: relative;
   margin-bottom: 2em;
 `
-export default function NotFound() {
+export default function NotFound(props) {
   return (
     <Tile>
       <Title>Désolé, nous n'avons rien trouvé :(</Title>
       <Text>Essayez un de ces produits :</Text>
-      <Suggestions length={5} />
+      <Suggestions length={5} iframe={props.iframe} />
     </Tile>
   )
 }
