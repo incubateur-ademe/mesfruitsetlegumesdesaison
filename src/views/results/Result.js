@@ -62,23 +62,25 @@ export default function Result(props) {
         local={props.product.local ? 1 : 0}
         iframe={props.iframe}
       />
-      <Flex>
-        <Local
-          onClick={() => setLocal(true)}
-          local={props.product.local ? 1 : 0}
-        >
-          {props.product.local
-            ? `Ce produit est local`
-            : `Ce produit n'est pas local`}{' '}
-          <Sup>(?)</Sup>
-        </Local>
-        <Score onClick={() => setCO2E(true)}>
-          <ScoreNumber high={props.product.CO2 > 1 ? 1 : 0}>
-            {props.product.CO2}
-          </ScoreNumber>{' '}
-          kgCO<sub>2</sub>e/kg <Sup>(?)</Sup>
-        </Score>
-      </Flex>
+      {props.product.months.includes(currentMonth) && (
+        <Flex>
+          <Local
+            onClick={() => setLocal(true)}
+            local={props.product.local ? 1 : 0}
+          >
+            {props.product.local
+              ? `Ce produit est local`
+              : `Ce produit n'est pas local`}{' '}
+            <Sup>(?)</Sup>
+          </Local>
+          <Score onClick={() => setCO2E(true)}>
+            <ScoreNumber high={props.product.CO2 > 1 ? 1 : 0}>
+              {props.product.CO2}
+            </ScoreNumber>{' '}
+            kgCO<sub>2</sub>e/kg <Sup>(?)</Sup>
+          </Score>
+        </Flex>
+      )}
       {props.product.text && (
         <Text>
           {
