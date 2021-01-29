@@ -1,6 +1,7 @@
 {
   "short_name": "Fruits & Légumes",
   "name": "Mes Fruits et Légumes de Saison",
+  "description": "Découvrez quels sont les fruits et légumes de saison pour consommer des produits frais et locaux toute l'année ! En plus c'est meilleur pour votre santé et pour l'environnement !",
   "icons": [
     {
       "src": "favicon.ico",
