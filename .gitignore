@@ -9,7 +9,7 @@
 /coverage
 
 /components
-
+/dist
 # production
 /build
 

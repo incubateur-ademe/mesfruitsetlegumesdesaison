@@ -13,5 +13,18 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "datagir.simulateurs/update-available@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/UpdateAvailable/UpdateAvailable.js",
+                "test": false,
+                "name": "UpdateAvailable.js"
+            }
+        ],
+        "mainFile": "src/components/UpdateAvailable/UpdateAvailable.js",
+        "trackDir": "src/components/UpdateAvailable",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.8.8"
 }

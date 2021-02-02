@@ -9,6 +9,7 @@ import UXProvider from 'components/providers/UXProvider'
 import ProductProvider from 'components/providers/ProductProvider'
 import SearchProvider from 'components/providers/SearchProvider'
 
+import UpdateAvailable from 'components/UpdateAvailable/UpdateAvailable'
 import Web from 'components/layout/Web'
 import Iframe from 'components/layout/Iframe'
 import SearchInput from 'components/misc/SearchInput'
@@ -52,6 +53,7 @@ function App() {
                   <CO2EModal />
                   <PEFModal />
                   <LocalModal />
+                  <UpdateAvailable />
                 </SearchProvider>
               </ProductProvider>
             </ModalProvider>
