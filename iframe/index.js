@@ -10,7 +10,7 @@ const source = window.location.href.toString()
 
 const src = `${
   domain || 'https://mesfruitsetlegumesdesaison.fr'
-}/embed${search}&source=${source}`
+}/embed${search}${search.includes('?') ? '&' : '?'}source=${source}`
 
 const iframe = document.createElement('iframe')
 
