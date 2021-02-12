@@ -6,7 +6,7 @@
     "@bit/datagir.simulateurs.button": "^0.0.2",
     "@bit/datagir.simulateurs.button-link": "^0.0.1",
     "@bit/datagir.simulateurs.embed-configurator": "0.0.12",
-    "@bit/datagir.simulateurs.footer": "0.0.4",
+    "@bit/datagir.simulateurs.footer": "0.0.6",
     "@bit/datagir.simulateurs.iframe-footer": "0.0.1",
     "@bit/datagir.simulateurs.modal": "^0.0.2",
     "@testing-library/jest-dom": "^5.11.4",
