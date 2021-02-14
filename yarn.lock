@@ -1124,10 +1124,8 @@
     react "^17.0.1"
     styled-components "^5.2.1"
 
-"@bit/datagir.simulateurs.button@0.0.2", "@bit/datagir.simulateurs.button@^0.0.2":
+"@bit/datagir.simulateurs.button@0.0.2", "@bit/datagir.simulateurs.button@file:./components/button":
   version "0.0.2"
-  resolved "https://node.bit.dev/datagir.simulateurs.button/-/datagir.simulateurs.button-0.0.2.tgz#8322272b5e3cbdddeae9080c833198622cd38053"
-  integrity sha1-gyInK148vd3q6QgMgzGYYizTgFM=
   dependencies:
     react "^17.0.1"
     styled-components "^5.2.1"

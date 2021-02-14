@@ -5,7 +5,7 @@ import useWindowSize from 'hooks/useWindowSize'
 import UXContext from 'utils/UXContext'
 
 import Header from 'components/layout/Header'
-import Footer from '@bit/datagir.simulateurs.footer'
+import Footer from 'components/base/Footer'
 import Learning from 'components/layout/Learning'
 import Embed from 'components/misc/Embed'
 const Background = React.lazy(() => import('components/layout/Background'))

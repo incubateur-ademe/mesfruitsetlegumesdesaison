@@ -4,7 +4,7 @@ import StyleContext from 'utils/StyleContext'
 import UXContext from 'utils/UXContext'
 import SearchContext from 'utils/SearchContext'
 
-import EmbedConfigurator from '@bit/datagir.simulateurs.embed-configurator'
+import EmbedConfigurator from 'components/base/EmbedConfigurator'
 
 export default function Embed() {
   const { themes, theme, setTheme } = useContext(StyleContext)

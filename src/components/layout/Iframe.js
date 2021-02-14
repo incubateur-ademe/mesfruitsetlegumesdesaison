@@ -2,7 +2,8 @@ import React, { Suspense } from 'react'
 import styled from 'styled-components'
 
 import Header from 'components/layout/Header'
-import IframeFooter from '@bit/datagir.simulateurs.iframe-footer'
+import IframeFooter from 'components/base/IframeFooter'
+
 const Background = React.lazy(() => import('components/layout/Background'))
 
 const Wrapper = styled.div``
