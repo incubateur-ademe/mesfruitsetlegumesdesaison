@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import useOnScreen from 'hooks/useOnScreen'
 import ModalContext from 'utils/ModalContext'
 
-import ButtonLink from 'components/base/ButtonLink'
+import Button from 'components/base/Button'
 import BarChart from 'components/charts/BarChart'
 
 const Wrapper = styled.div`
@@ -123,13 +123,13 @@ export default function Learning() {
         </Text>
         <BarChart />
         <ButtonWrapper>
-          <ButtonLink
-            href={
+          <Button
+            to={
               'https://www.ademe.fr/sites/default/files/assets/documents/calendrier-fruits-legumes-de-saison.pdf'
             }
           >
             Je télécharge le calendrier des fruits et légumes de saison
-          </ButtonLink>
+          </Button>
         </ButtonWrapper>
         <Text>
           25% des émissions de gaz à effet de serre d'un Français sont liées à
@@ -150,9 +150,9 @@ export default function Learning() {
           </a>
         </Text>
         <ButtonWrapper>
-          <ButtonLink href={'https://nosgestesclimat.fr/'}>
+          <Button to={'https://nosgestesclimat.fr/'}>
             Je calcule mon empreinte carbone
-          </ButtonLink>
+          </Button>
         </ButtonWrapper>
       </Content>
     </Wrapper>
