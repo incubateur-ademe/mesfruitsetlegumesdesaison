@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components'
 
 import SearchContext from 'utils/SearchContext'
 import useMounted from 'hooks/useMounted'
+import Emoji from 'components/base/Emoji'
 
 const flash = keyframes`
   from,
@@ -16,7 +17,7 @@ const flash = keyframes`
     opacity: 0;
   }
 }`
-const Wrapper = styled.div`
+const Wrapper = styled(Emoji)`
   width: 15%;
   height: 4.5rem;
   font-size: 2.6em;

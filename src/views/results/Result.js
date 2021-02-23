@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { currentMonth } from 'utils/months'
 import ModalContext from 'utils/ModalContext'
 
+import Emoji from 'components/base/Emoji'
 import Tile from 'components/misc/Tile'
 import Year from './result/Year'
 
@@ -14,9 +15,6 @@ const Title = styled.h2`
   margin-bottom: 1rem;
   font-size: 2.5em;
   line-height: 1;
-`
-const Emoji = styled.span`
-  font-style: normal;
 `
 const Flex = styled.div`
   position: relative;

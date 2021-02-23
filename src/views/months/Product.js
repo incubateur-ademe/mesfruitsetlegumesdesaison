@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { months } from 'utils/months'
 import ModalContext from 'utils/ModalContext'
 import StyleContext from 'utils/StyleContext'
+import Emoji from 'components/base/Emoji'
 
 const Wrapper = styled.div`
   width: calc(50% - 2em);
@@ -50,9 +51,6 @@ const Title = styled.h2`
   margin-bottom: 1rem;
   font-size: 1.3em;
   line-height: 1;
-`
-const Emoji = styled.span`
-  font-style: normal;
 `
 const Date = styled.p`
   position: relative;
