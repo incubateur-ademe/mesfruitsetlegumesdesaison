@@ -23,8 +23,8 @@ function App() {
   return (
     <Router>
       <QueryParamProvider ReactRouterRoute={Route}>
-        <StyleProvider>
-          <UXProvider>
+        <UXProvider>
+          <StyleProvider>
             <ModalProvider>
               <ProductProvider>
                 <SearchProvider>
@@ -57,8 +57,8 @@ function App() {
                 </SearchProvider>
               </ProductProvider>
             </ModalProvider>
-          </UXProvider>
-        </StyleProvider>
+          </StyleProvider>
+        </UXProvider>
       </QueryParamProvider>
     </Router>
   )

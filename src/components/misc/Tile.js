@@ -10,10 +10,11 @@ const Wrapper = styled.div`
   padding: 2em;
   background: ${(props) => props.theme.colors.second};
   border: ${(props) =>
-    props.currentTheme === 'default'
+    props.theme.name === 'Défaut' && !props.accessibility
       ? 'none'
       : `2px solid ${props.theme.colors.main}`};
-  border-radius: ${(props) => (props.currentTheme === 'default' ? 0 : '1em')};
+  border-radius: ${(props) =>
+    props.theme.name === 'Défaut' && !props.accessibility ? 0 : '1em'};
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transition: opacity 1000ms ${(props) => props.index * 100}ms;
 
@@ -34,9 +35,13 @@ const Wrapper = styled.div`
 `
 export default function Tile(props) {
   const mounted = useMounted()
-  const { theme } = useContext(StyleContext)
+  const { accessibility } = useContext(StyleContext)
   return (
-    <Wrapper index={props.index} currentTheme={theme} mounted={mounted ? 1 : 0}>
+    <Wrapper
+      index={props.index}
+      accessibility={accessibility}
+      mounted={mounted ? 1 : 0}
+    >
       {props.children}
     </Wrapper>
   )

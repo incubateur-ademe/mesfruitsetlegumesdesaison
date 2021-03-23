@@ -6,6 +6,7 @@ import UXContext from 'utils/UXContext'
 
 import Header from 'components/layout/Header'
 import Footer from 'components/base/Footer'
+import ThemeToggle from 'components/base/ThemeToggle'
 import Learning from 'components/layout/Learning'
 import Embed from 'components/misc/Embed'
 const Background = React.lazy(() => import('components/layout/Background'))
@@ -48,6 +49,7 @@ export default function Web(props) {
       <Suspense fallback={''}>
         <Background />
       </Suspense>
+      <ThemeToggle />
       <Content>
         <FullScreen windowHeight={height}>
           <Header />

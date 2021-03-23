@@ -24,10 +24,11 @@ const Content = styled.div`
   height: 100%;
   background: ${(props) => props.theme.colors.second};
   border: ${(props) =>
-    props.currentTheme === 'default'
+    props.theme.name === 'Défaut' && !props.accessibility
       ? 'none'
       : `2px solid ${props.theme.colors.main}`};
-  border-radius: ${(props) => (props.currentTheme === 'default' ? 0 : '1em')};
+  border-radius: ${(props) =>
+    props.theme.name === 'Défaut' && !props.accessibility ? 0 : '1em'};
 
   &:before {
     content: '';
@@ -92,7 +93,7 @@ const ScoreNumber = styled.span`
 export default function Product(props) {
   const { setCO2E, setLocal } = useContext(ModalContext)
 
-  const { theme } = useContext(StyleContext)
+  const { accessibility } = useContext(StyleContext)
 
   const [interval, setInterval] = useState([])
   useEffect(() => {
@@ -110,7 +111,7 @@ export default function Product(props) {
   }, [props.product])
   return (
     <Wrapper>
-      <Content currentTheme={theme}>
+      <Content accessibility={accessibility}>
         <Title>
           <span>{props.product.label.fr}</span>
           <Emoji>{props.product.emoji}</Emoji>

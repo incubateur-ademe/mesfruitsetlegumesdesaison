@@ -47,10 +47,10 @@ export const themes = {
   night: {
     name: 'Nuit',
     colors: {
-      main: '#fdfdfd',
-      second: '#282c35',
-      background: '#282c35',
-      text: '#fdfdfd',
+      main: '#ffffff',
+      second: '#1e1e1e',
+      background: '#1e1e1e',
+      text: '#ffffff',
     },
     fonts: {
       body: '"Work Sans", sans-serif',
@@ -66,16 +66,16 @@ export const themes = {
     },
   },
   accessible: {
-    name: 'Accessible',
+    name: 'Simple',
     colors: {
-      main: 'black',
-      second: 'white',
-      background: 'white',
-      text: 'black',
+      main: '#1e1e1e',
+      second: '#ffffff',
+      background: '#ffffff',
+      text: '#1e1e1e',
     },
     fonts: {
-      body: 'Arial, sans-serif',
-      title: 'Arial, sans-serif',
+      body: '"Work Sans", sans-serif',
+      title: '"Work Sans", sans-serif',
     },
     mq: {
       small: `@media screen and (max-width: ${650}px)`,
