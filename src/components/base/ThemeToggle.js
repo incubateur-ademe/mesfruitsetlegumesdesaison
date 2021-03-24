@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
-  display: flex;
+  display: ${(props) => (props.mobile ? 'none' : 'flex')};
 
   ${(props) => props.theme.mq.medium} {
     position: relative;
