@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import ButtonOpen from './embedConfigurator/ButtonOpen'
 import Checkbox from './embedConfigurator/Checkbox'
 import TextInput from './embedConfigurator/TextInput'
 import Themes from './embedConfigurator/Themes'
@@ -8,6 +9,7 @@ import Code from './embedConfigurator/Code'
 import Button from 'components/base/Button'
 
 const Wrapper = styled.div`
+  position: relative;
   display: ${(props) => (props.open ? 'block' : 'none')};
   width: 30em;
   background-color: ${(props) => props.theme.colors.second};
@@ -30,7 +32,7 @@ const Content = styled.div`
   margin: 0 auto;
   padding: 2em;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: visible;
 
   ${(props) => props.theme.mq.medium} {
     position: relative;
@@ -66,42 +68,48 @@ const ButtonWrapper = styled.div`
 `
 export default function EmbedConfigurator(props) {
   return (
-    <Wrapper open={props.configuratorOpen}>
-      <Content>
-        <ButtonClose
-          onClick={() => {
-            props.options.map((option) => {
-              if (option.default) {
-                option.setter(option.default)
-              }
-              return option
-            })
-            props.setTheme('default')
-            props.setConfiguratorOpen(false)
-          }}
-        >
-          +
-        </ButtonClose>
-        <Title>Intégrer le simulateur</Title>
-        <Code id={props.id} />
-        <Subtitle>Options d'intégration</Subtitle>
-        {props.options.map((option) =>
-          option.type === 'boolean' ? (
-            <Checkbox option={option} />
-          ) : option.type === 'button' ? (
-            <ButtonWrapper>
-              <Button onClick={option.setter}>{option.label}</Button>
-            </ButtonWrapper>
-          ) : (
-            <TextInput option={option} />
-          )
-        )}
-        <Themes
-          themes={props.themes}
-          theme={props.theme}
-          setTheme={props.setTheme}
-        />
-      </Content>
-    </Wrapper>
+    <>
+      <ButtonOpen
+        open={props.configuratorOpen}
+        onClick={() => props.setConfiguratorOpen((prevOpen) => !prevOpen)}
+      />
+      <Wrapper open={props.configuratorOpen}>
+        <Content>
+          <ButtonClose
+            onClick={() => {
+              props.options.map((option) => {
+                if (option.default) {
+                  option.setter(option.default)
+                }
+                return option
+              })
+              props.setTheme('default')
+              props.setConfiguratorOpen(false)
+            }}
+          >
+            +
+          </ButtonClose>
+          <Title>Intégrer le simulateur</Title>
+          <Code id={props.id} />
+          <Subtitle>Options d'intégration</Subtitle>
+          {props.options.map((option) =>
+            option.type === 'boolean' ? (
+              <Checkbox option={option} />
+            ) : option.type === 'button' ? (
+              <ButtonWrapper>
+                <Button onClick={option.setter}>{option.label}</Button>
+              </ButtonWrapper>
+            ) : (
+              <TextInput option={option} />
+            )
+          )}
+          <Themes
+            themes={props.themes}
+            theme={props.theme}
+            setTheme={props.setTheme}
+          />
+        </Content>
+      </Wrapper>
+    </>
   )
 }
