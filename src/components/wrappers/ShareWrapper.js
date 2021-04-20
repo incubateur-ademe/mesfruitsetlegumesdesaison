@@ -5,8 +5,8 @@ import Share from 'components/layout/Share'
 export default function ShareWrapper() {
   return (
     <Share
-      title='Télétravail - Mon Impact Transport'
-      message='Vous êtes en télétravail ou vous souhaitez vous y mettre ? Calculez facilement l’impact sur le climat !'
+      title='Mes Fruits et Légumes de Saison'
+      message={`Découvrez quels sont les fruits et légumes de saison pour consommer des produits frais et locaux toute l'année ! En plus c'est meilleur pour votre santé et pour l'environnement !`}
     />
   )
 }
