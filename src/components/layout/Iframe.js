@@ -8,7 +8,7 @@ import Header from 'components/misc/Header'
 const Wrapper = styled.div``
 const Content = styled.div`
   position: relative;
-  width: 46rem;
+  width: 41rem;
   margin: 0 auto;
   padding: 2rem 0.5rem;
 
