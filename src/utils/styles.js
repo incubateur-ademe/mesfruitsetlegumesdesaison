@@ -7,6 +7,7 @@ export const themes = {
     colors: {
       main: '#ff4c82',
       second: '#FFF5CB',
+      ter: '#ff4c82',
       background: '#FFE57D',
       text: '#2BAEAD',
     },
@@ -26,9 +27,11 @@ export const themes = {
   classic: {
     name: 'Classique',
     colors: {
-      main: '#32337B',
-      second: '#fdfdfd',
-      background: '#fdfdfd',
+      main: '#EF0D50',
+      second: '#ffffff',
+      ter: '#32337B',
+      quad: '#ffffff',
+      background: '#ffffff',
       text: '#32337B',
     },
     fonts: {
@@ -47,8 +50,10 @@ export const themes = {
   night: {
     name: 'Nuit',
     colors: {
-      main: '#ffffff',
+      main: '#92F2D2',
       second: '#1e1e1e',
+      ter: '#ffffff',
+      quad: '#1e1e1e',
       background: '#1e1e1e',
       text: '#ffffff',
     },
@@ -65,11 +70,13 @@ export const themes = {
       xlarge: `@media screen and (min-width: ${2000}px)`,
     },
   },
-  accessible: {
+  simple: {
     name: 'Simple',
     colors: {
-      main: '#1e1e1e',
+      main: '#000091',
       second: '#ffffff',
+      ter: '#1e1e1e',
+      quad: '#ffffff',
       background: '#ffffff',
       text: '#1e1e1e',
     },

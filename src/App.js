@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { QueryParamProvider } from 'use-query-params'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 import { GlobalStyle } from 'utils/styles'
 import StyleProvider from 'components/providers/StyleProvider'
@@ -18,45 +19,49 @@ import LocalModal from 'components/modals/LocalModal'
 import Months from 'views/Months'
 import Results from 'views/Results'
 
+const queryClient = new QueryClient()
+
 function App() {
   return (
     <Router>
       <QueryParamProvider ReactRouterRoute={Route}>
-        <UXProvider>
-          <StyleProvider>
-            <ModalProvider>
-              <ProductProvider>
-                <SearchProvider>
-                  <GlobalStyle />
-                  <Switch>
-                    <Route path='/embed'>
-                      <Iframe>
-                        <SearchInput iframe />
-                        <Results iframe />
-                      </Iframe>
-                    </Route>
-                    <Route>
-                      <Web>
-                        <SearchInput />
-                        <Switch>
-                          <Route path='/months/:month'>
-                            <Months />
-                          </Route>
-                          <Route path='/'>
-                            <Results />
-                          </Route>
-                        </Switch>
-                      </Web>
-                    </Route>
-                  </Switch>
-                  <CO2EModal />
-                  <PEFModal />
-                  <LocalModal />
-                </SearchProvider>
-              </ProductProvider>
-            </ModalProvider>
-          </StyleProvider>
-        </UXProvider>
+        <QueryClientProvider client={queryClient}>
+          <UXProvider>
+            <StyleProvider>
+              <ModalProvider>
+                <ProductProvider>
+                  <SearchProvider>
+                    <GlobalStyle />
+                    <Switch>
+                      <Route path='/embed'>
+                        <Iframe>
+                          <SearchInput iframe />
+                          <Results iframe />
+                        </Iframe>
+                      </Route>
+                      <Route>
+                        <Web>
+                          <SearchInput />
+                          <Switch>
+                            <Route path='/months/:month'>
+                              <Months />
+                            </Route>
+                            <Route path='/'>
+                              <Results />
+                            </Route>
+                          </Switch>
+                        </Web>
+                      </Route>
+                    </Switch>
+                    <CO2EModal />
+                    <PEFModal />
+                    <LocalModal />
+                  </SearchProvider>
+                </ProductProvider>
+              </ModalProvider>
+            </StyleProvider>
+          </UXProvider>
+        </QueryClientProvider>
       </QueryParamProvider>
     </Router>
   )

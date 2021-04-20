@@ -26,7 +26,7 @@ const Input = styled.input`
   font-weight: 700;
   font-style: italic;
   color: ${(props) => props.theme.colors.second};
-  background-color: ${(props) => props.theme.colors.main};
+  background-color: ${(props) => props.theme.colors.ter};
   border: none;
   transition: box-shadow 300ms ease-out;
 

@@ -1,18 +1,21 @@
-import React, { Suspense, useContext } from 'react'
+import React, { Suspense } from 'react'
 import styled from 'styled-components'
 
 import useWindowSize from 'hooks/useWindowSize'
-import UXContext from 'utils/UXContext'
 
-import Header from 'components/layout/Header'
-import Footer from 'components/base/Footer'
 import ThemeToggle from 'components/base/ThemeToggle'
-import Learning from 'components/layout/Learning'
-import Embed from 'components/misc/Embed'
-const Background = React.lazy(() => import('components/layout/Background'))
+import InstallButton from 'components/base/InstallButton'
+import Background from 'components/misc/Background'
+import Header from 'components/misc/Header'
+import Learning from 'components/misc/Learning'
+import ShareWrapper from 'components/wrappers/ShareWrapper'
+import EmbedWrapper from 'components/wrappers/EmbedWrapper'
+import ContactWrapper from 'components/wrappers/ContactWrapper'
+import FooterWrapper from 'components/wrappers/FooterWrapper'
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 
   ${(props) => props.theme.mq.medium} {
@@ -25,13 +28,14 @@ const Content = styled.div`
   flex-direction: column;
 `
 const FullScreen = styled.div`
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
-  width: 40em;
+  width: 41rem;
   min-height: ${(props) => props.windowHeight}px;
-  margin: 0 auto 2em;
-  padding-bottom: 5vw;
+  margin: 0 auto 5rem;
+  padding: 2rem 0.5rem;
 
   ${(props) => props.theme.mq.small} {
     width: auto;
@@ -41,8 +45,6 @@ const FullScreen = styled.div`
 `
 export default function Web(props) {
   const { height } = useWindowSize()
-
-  const { setConfiguratorOpen } = useContext(UXContext)
 
   return (
     <Wrapper>
@@ -56,22 +58,12 @@ export default function Web(props) {
           {props.children}
         </FullScreen>
         <Learning />
-        <Footer
-          setConfiguratorOpen={setConfiguratorOpen}
-          sources={[
-            {
-              label: 'ADEME',
-              href: 'https://www.ademe.fr/calendrier-fruits-legumes-saison',
-            },
-            { label: 'AGRIBALYSE®', href: 'http://www.agribalyse.fr/' },
-            {
-              label:
-                'Ces données sont valables pour la France metropolitaine uniquement',
-            },
-          ]}
-        />
+        <FooterWrapper />
       </Content>
-      <Embed />
+      <EmbedWrapper />
+      <ShareWrapper />
+      <ContactWrapper />
+      <InstallButton />
     </Wrapper>
   )
 }

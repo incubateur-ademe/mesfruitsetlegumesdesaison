@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   border: ${(props) =>
     props.theme.name === 'Défaut' && !props.accessibility
       ? 'none'
-      : `2px solid ${props.theme.colors.main}`};
+      : `2px solid ${props.theme.colors.ter}`};
   border-radius: ${(props) =>
     props.theme.name === 'Défaut' && !props.accessibility ? 0 : '1em'};
   opacity: ${(props) => (props.mounted ? 1 : 0)};

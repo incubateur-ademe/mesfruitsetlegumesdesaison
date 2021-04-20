@@ -5,6 +5,7 @@ import twemoji from 'twemoji'
 const Wrapper = styled.span`
   display: inline-block;
   font-style: normal;
+  vertical-align: middle;
 
   img {
     display: block;
@@ -13,10 +14,10 @@ const Wrapper = styled.span`
   }
 `
 export default function Emoji(props) {
-  return (
+  return props.children ? (
     <Wrapper
       dangerouslySetInnerHTML={{
-        __html: twemoji.parse(props.children || '😃', {
+        __html: twemoji.parse(props.children, {
           folder: 'svg',
           ext: '.svg',
         }),
@@ -24,5 +25,7 @@ export default function Emoji(props) {
       className={props.className}
       onClick={props.onClick || (() => '')}
     />
+  ) : (
+    ''
   )
 }

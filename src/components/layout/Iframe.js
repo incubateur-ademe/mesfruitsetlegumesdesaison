@@ -1,20 +1,19 @@
 import React, { Suspense } from 'react'
 import styled from 'styled-components'
 
-import Header from 'components/layout/Header'
-import IframeFooter from 'components/base/IframeFooter'
-
-const Background = React.lazy(() => import('components/layout/Background'))
+import IframeFooter from 'components/layout/IframeFooter'
+import Background from 'components/misc/Background'
+import Header from 'components/misc/Header'
 
 const Wrapper = styled.div``
 const Content = styled.div`
-  width: 40em;
-  margin: 0 auto 2em;
-  padding-bottom: 5vw;
+  position: relative;
+  width: 46rem;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
 
   ${(props) => props.theme.mq.small} {
-    width: auto;
-    margin: 0 3vw 2em;
+    width: 100%;
   }
 `
 export default function Iframe(props) {
@@ -27,9 +26,7 @@ export default function Iframe(props) {
         <Header iframe />
         {props.children}
       </Content>
-      <IframeFooter
-        about={'https://mesfruitsetlegumesdesaison.fr#informations'}
-      />
+      <IframeFooter about='https://teletravail.monimpacttransport.fr' />
     </Wrapper>
   )
 }
