@@ -26,7 +26,7 @@ export default function Iframe(props) {
         <Header iframe />
         {props.children}
       </Content>
-      <IframeFooter about='http://mesfruitsetlegumesdesaison.fr/' />
+      <IframeFooter about={process.env.REACT_APP_URL} />
     </Wrapper>
   )
 }
