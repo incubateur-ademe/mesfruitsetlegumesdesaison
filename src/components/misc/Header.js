@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
   ${(props) => props.theme.mq.small} {
     margin: 0;
-    padding: 4vh 3vw;
+    padding: 2rem 3vw;
     font-size: 12vw;
   }
 `
