@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Switch from 'react-switch'
 
 import StyleContext from 'utils/StyleContext'
-import UXContext from 'utils/UXContext'
 
 const Wrapper = styled.div`
   position: fixed;
