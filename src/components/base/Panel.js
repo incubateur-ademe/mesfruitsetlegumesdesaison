@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import useWindowSize from 'hooks/useWindowSize'
 import EmbedButton from './panel/EmbedButton'
 import ShareButton from './panel/ShareButton'
 import ContactButton from './panel/ContactButton'
@@ -28,7 +29,7 @@ const Content = styled.div`
   background-color: ${(props) =>
     props.small ? 'transparent' : props.theme.colors.background};
   border-left: 5px solid ${(props) => props.theme.colors.main};
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: visible;
   transform: translateX(${(props) => (props.open ? 0 : '100%')});
   transition: transform 400ms ease-out;
@@ -65,7 +66,8 @@ const ButtonClose = styled.div`
   line-height: 0.5;
 `
 export default function Panel(props) {
-  return (
+  const { width } = useWindowSize()
+  return (width > 1200 && !props.small) || (width <= 1200 && props.small) ? (
     <Wrapper open={props.open} small={props.small}>
       {!props.small &&
         (props.index === 0 ? (
@@ -92,5 +94,5 @@ export default function Panel(props) {
         {props.children}
       </Content>
     </Wrapper>
-  )
+  ) : null
 }
