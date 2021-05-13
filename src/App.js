@@ -16,6 +16,7 @@ import SearchInput from 'components/misc/SearchInput'
 import CO2EModal from 'components/modals/CO2EModal'
 import PEFModal from 'components/modals/PEFModal'
 import LocalModal from 'components/modals/LocalModal'
+import InstallInstructionsModal from 'components/modals/InstallInstructionsModal'
 import Months from 'views/Months'
 import Results from 'views/Results'
 
@@ -56,6 +57,7 @@ function App() {
                     <CO2EModal />
                     <PEFModal />
                     <LocalModal />
+                    <InstallInstructionsModal />
                   </SearchProvider>
                 </ProductProvider>
               </ModalProvider>

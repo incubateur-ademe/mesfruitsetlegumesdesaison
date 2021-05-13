@@ -22,8 +22,20 @@ export default function UXProvider(props) {
   useEffect(() => {
     window.addEventListener('beforeinstallprompt', (e) => {
       setInstallPrompt(e)
-      console.log(`'beforeinstallprompt' event was fired.`)
     })
+  }, [])
+
+  const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase()
+    return /iphone|ipad|ipod/.test(userAgent)
+  }
+  const isInStandaloneMode = () =>
+    'standalone' in window.navigator && window.navigator.standalone
+  const [iOSPrompt, setIOSPrompt] = useState(false)
+  useEffect(() => {
+    if (isIos() && !isInStandaloneMode()) {
+      setIOSPrompt(true)
+    }
   }, [])
 
   return (
@@ -61,6 +73,7 @@ export default function UXProvider(props) {
         typeShare,
         setTypeShare,
         installPrompt,
+        iOSPrompt,
         displayTitle,
         setDisplayTitle,
       }}
