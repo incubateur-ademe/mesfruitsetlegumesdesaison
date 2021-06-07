@@ -258,7 +258,7 @@
   },
   {
     "label": { "fr": "Poireau" },
-    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "months": [0, 1, 2, 3, 8, 9, 10, 11],
     "emoji": "🌱",
     "local": true,
     "pef": 0.11,
@@ -379,7 +379,7 @@
   },
   {
     "label": { "fr": "Melon" },
-    "months": [5, 6, 7, 8, 9],
+    "months": [5, 6, 7, 8],
     "emoji": "🍈",
     "local": true,
     "pef": 0.16,
@@ -411,7 +411,7 @@
   },
   {
     "label": { "fr": "Myrtille" },
-    "months": [7, 8, 9],
+    "months": [6, 7, 8],
     "emoji": "🍇",
     "local": true,
     "pef": 0.22,
