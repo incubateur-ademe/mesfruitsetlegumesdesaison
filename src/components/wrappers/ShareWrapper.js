@@ -6,8 +6,61 @@ export default function ShareWrapper(props) {
   return (
     <Share
       small={props.small}
-      title='Mes Fruits et Légumes de Saison'
-      message={`Découvrez quels sont les fruits et légumes de saison pour consommer des produits frais et locaux toute l'année ! En plus c'est meilleur pour votre santé et pour l'environnement !`}
+      messages={{
+        mail: {
+          simulator: {
+            subject: `Découvrez et intégrez le simulateur de l'ADEME Mes Fruits et Légumes de saison  🍄 `,
+            body: `Bonjour,
+
+Vous souhaitez sensibiliser votre communauté ou collaborateurs et les accompagner dans une consommation plus responsable et locale ?
+
+Retrouvez tous les produits du mois grâce à ce simulateur Mes Fruits et Légumes de Saison !
+
+Découvrez le ici : `,
+          },
+          result: {
+            subject: `Découvre mon résultat sur le simulateur de l'ADEME Mes Fruits et Légumes de saison  🍄 `,
+            body: `Bonjour,
+
+Voici un résultat de recherche sur le site Mes Fruits et Légumes de saison que je voulais partager avec toi : `,
+          },
+        },
+        facebook: {
+          simulator: {
+            quote:
+              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️',
+          },
+          result: {
+            quote: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️`,
+          },
+        },
+        twitter: {
+          simulator: {
+            title:
+              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️',
+          },
+          result: {
+            title: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️`,
+          },
+        },
+        linkedin: {
+          simulator: {
+            source: 'Mes Fruits et Légumes de saison',
+          },
+          result: {
+            source: `Mes Fruits et Légumes de saison`,
+          },
+        },
+        whatsapp: {
+          simulator: {
+            title:
+              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️',
+          },
+          result: {
+            title: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️`,
+          },
+        },
+      }}
     />
   )
 }
