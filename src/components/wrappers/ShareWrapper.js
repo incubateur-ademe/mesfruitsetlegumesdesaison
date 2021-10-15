@@ -28,19 +28,19 @@ Voici un résultat de recherche sur le site Mes Fruits et Légumes de saison que
         facebook: {
           simulator: {
             quote:
-              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️',
+              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️ Grâce à ce simulateur Datagir, retrouvez tous les fruits et légumes du mois et consommez de saison toute l’année ! Un petit pas pour votre assiette, un grand pas pour l’environnement  🍽️ 🌍',
           },
           result: {
-            quote: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️`,
+            quote: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️ Voici les résultats de ma recherche sur ce simulateur Datagir. Vous aussi consommez de saison toute l’année ! Un petit pas pour votre assiette, un grand pas pour l’environnement  🍽️ 🌍`,
           },
         },
         twitter: {
           simulator: {
             title:
-              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️',
+              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️ Grâce à ce simulateur @_datagir, retrouvez tous les fruits et légumes du mois et consommez de saison toute l’année ! Un petit pas pour votre assiette, un grand pas pour l’environnement  🍽️ 🌍',
           },
           result: {
-            title: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️`,
+            title: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️ Voici les résultats de ma recherche sur ce simulateur @_datagir. Vous aussi consommez de saison toute l’année ! Un petit pas pour votre assiette, un grand pas pour l’environnement  🍽️ 🌍`,
           },
         },
         linkedin: {
@@ -54,10 +54,10 @@ Voici un résultat de recherche sur le site Mes Fruits et Légumes de saison que
         whatsapp: {
           simulator: {
             title:
-              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️',
+              'Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️ Grâce à ce simulateur Datagir, retrouvez tous les fruits et légumes du mois et consommez de saison toute l’année ! Un petit pas pour votre assiette, un grand pas pour l’environnement  🍽️ 🌍',
           },
           result: {
-            title: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️`,
+            title: `Découvrez vous aussi quels sont les fruits et légumes du mois ! 🍄🗓️ Voici les résultats de ma recherche sur ce simulateur Datagir. Vous aussi consommez de saison toute l’année ! Un petit pas pour votre assiette, un grand pas pour l’environnement  🍽️ 🌍`,
           },
         },
       }}
