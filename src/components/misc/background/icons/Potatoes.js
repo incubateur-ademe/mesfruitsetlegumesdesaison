@@ -3,6 +3,7 @@ import React from 'react'
 export default function Potatoes() {
   return (
     <svg
+      aria-hidden='true'
       height='512pt'
       viewBox='-28 0 512 512.00112'
       width='512pt'
