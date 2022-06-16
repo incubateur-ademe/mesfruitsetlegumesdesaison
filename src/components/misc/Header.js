@@ -99,7 +99,11 @@ export default function Header(props) {
                 </Bottom>
               </NoLink>
             ) : (
-              <StyledLink to={'/'}>
+              <StyledLink
+                to={'/'}
+                aria-label='Est-ce bien la saison ?'
+                title={`Est-ce bien la saison ? Retour à l'accueil`}
+              >
                 <Top text={'Est-ce bien'}>
                   <span>Est-ce bien</span>
                 </Top>

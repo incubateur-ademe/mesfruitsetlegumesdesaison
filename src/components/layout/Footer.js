@@ -98,7 +98,11 @@ export default function Footer(props) {
         </Section>
       </Content>
       <LogosWrapper>
-        <Logos to='https://datagir.ademe.fr/'>
+        <Logos
+          to='https://datagir.ademe.fr/'
+          aria-label='datagir.ademe.fr'
+          noIcon
+        >
           <Institution src={repufrancaise} alt='République Française' />
           <Institution src={ademe} alt='ADEME' />
           <Logo />
