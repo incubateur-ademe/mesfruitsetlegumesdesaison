@@ -1,0 +1,516 @@
+[
+  {
+    "label": { "fr": "Fraise" },
+    "months": [4, 5, 6, 7],
+    "emoji": "🍓",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1IiJA7tUZIhryGsqIP_MNobqFHthSPcc&usp=sharing"
+    ],
+    "pef": 0.32,
+    "CO2": 0.47,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Pomme" },
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "emoji": "🍏",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1-gWK3BdT7RQXqbb8Qf3vS0Qb5M7jUGo&usp=sharing"
+    ],
+    "pef": 0.06,
+    "CO2": 0.28
+  },
+  {
+    "label": { "fr": "Ail" },
+    "months": [6, 7, 8, 9, 10, 11],
+    "emoji": "🧅",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=186H-y9T92YgxqnsaRgP3h7BT6m6N50I&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.37
+  },
+  {
+    "label": { "fr": "Artichaut" },
+    "months": [6, 7, 8, 9],
+    "emoji": "🥬",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/u/1/viewer?mid=13jbDiiPjP257uAFZK9bqSSh115DrGRU"
+    ],
+    "pef": 0.4,
+    "CO2": 3.97
+  },
+  {
+    "label": { "fr": "Échalote" },
+    "months": [0, 1, 3, 6, 7, 8, 9, 10, 11],
+    "emoji": "🧄",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1X27c7YOWnurXS0DEZZ4ltQUuy37s_f4&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.37
+  },
+  {
+    "label": { "fr": "Betterave" },
+    "months": [5, 6, 7, 8, 9, 10, 11],
+    "emoji": "🍠",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1bbaQvGvj5sETKOH7esmkhmJs3QXE4Cg&usp=sharing"
+    ],
+    "pef": 0.06,
+    "CO2": 0.25,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Blette" },
+    "months": [5, 6, 7, 8, 9],
+    "emoji": "🥬",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1nCz0o9Txmb3wKsT4nRFxQbFtdx8vy-k&usp=sharing"
+    ],
+    "pef": 0.06,
+    "CO2": 0.48
+  },
+  {
+    "label": { "fr": "Carotte" },
+    "months": [5, 6, 7, 8, 9, 10, 11, 0, 1],
+    "emoji": "🥕",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=16dZRx_WyIfqXe6G-AcSayD2_kkdAjiw&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.39,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Céleri" },
+    "months": [5, 6, 7, 8, 9, 10, 11],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1p-ziX45AA-ZWpC8XRtp99waKw9eCEME&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.39
+  },
+  {
+    "label": { "fr": "Champignon" },
+    "months": [8, 9, 10, 11, 0],
+    "emoji": "🍄",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1Ct7VCsGNIcJ-hR-cB7TgkgKfjohdsOg&usp=sharing"
+    ],
+    "pef": 0.08,
+    "CO2": 0.4
+  },
+  {
+    "label": { "fr": "Chou-fleur " },
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "emoji": "🥬",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=16mIgiGSDXhx30gvdBgIKmXeEZUL1J8M&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.51
+  },
+  {
+    "label": { "fr": "Chou-pommé" },
+    "months": [7, 8, 9, 10, 11],
+    "emoji": "🥬",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=16mIgiGSDXhx30gvdBgIKmXeEZUL1J8M&usp=sharing"
+    ],
+    "pef": 0.09,
+    "CO2": 0.7
+  },
+  {
+    "label": { "fr": "Chou-rouge" },
+    "months": [0, 1, 2, 3, 4, 7, 8, 9, 10, 11],
+    "emoji": "🥬",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=16mIgiGSDXhx30gvdBgIKmXeEZUL1J8M&usp=sharing"
+    ],
+    "pef": 0.12,
+    "CO2": 1.06
+  },
+  {
+    "label": { "fr": "Chou de Bruxelles" },
+    "months": [0, 1, 2, 9, 10, 11],
+    "emoji": "🥬",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=16mIgiGSDXhx30gvdBgIKmXeEZUL1J8M&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.5
+  },
+  {
+    "label": { "fr": "Concombre" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🥒",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1cL1_Q6QROszdewHIth9gclconcw9FYw&usp=sharing"
+    ],
+    "pef": 0.43,
+    "CO2": 4.86
+  },
+  {
+    "label": { "fr": "Courge" },
+    "months": [7, 8, 9, 10, 11, 0, 1, 2],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1zawOcZ_FjLbmdw-6WRW-Egue3TBbrAI&usp=sharing"
+    ],
+    "pef": 0.1,
+    "CO2": 0.55
+  },
+  {
+    "label": { "fr": "Courgette" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1wYvE1Yn-KNfljSFthzlMvGTgKy9j-3Y&usp=sharing"
+    ],
+    "pef": 0.05,
+    "CO2": 0.41
+  },
+  {
+    "label": { "fr": "Cresson" },
+    "months": [8, 9, 10, 11, 0, 1, 2, 3, 4],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/u/1/viewer?mid=1r1rSNBjt6UOaZDp9mXqOR6eQXsdZxe0&ll=50.83268494491246%2C1.9172550000000044&z=11"
+    ],
+    "pef": 0.09,
+    "CO2": 0.77
+  },
+  {
+    "label": { "fr": "Endive" },
+    "months": [9, 10, 11, 0, 1, 2],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1NTkgsBzTmhu04RQ6GP-kxE7ODqw6nt4&usp=sharing"
+    ],
+    "pef": 0.12,
+    "CO2": 0.79
+  },
+  {
+    "label": { "fr": "Épinard" },
+    "months": [0, 1, 2, 3, 4, 8, 9, 10, 11],
+    "emoji": "🥬",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=100Owll6Cak8Kg5hJjJ1zyiTrU1dB0QA&usp=sharing"
+    ],
+    "pef": 0.05,
+    "CO2": 0.33,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Fenouil" },
+    "months": [5, 6, 7, 8, 9, 10, 11, 0, 1],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1Nv6WjrIRhMqOdAH--zRbMrTC-9-u40s&usp=sharing"
+    ],
+    "pef": 0.13,
+    "CO2": 0.97
+  },
+  {
+    "label": { "fr": "Haricot vert" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1kMXXqMAJR2WH33KKaDPKsCFdEbVeg1w&usp=sharing"
+    ],
+    "pef": 0.06,
+    "CO2": 0.42
+  },
+  {
+    "label": { "fr": "Laitue" },
+    "months": [4, 5, 6, 7, 8, 9],
+    "emoji": "🥗",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1r1rSNBjt6UOaZDp9mXqOR6eQXsdZxe0&usp=sharing"
+    ],
+    "pef": 0.13,
+    "CO2": 0.88
+  },
+  {
+    "label": { "fr": "Mâche" },
+    "months": [0, 1, 2, 3, 8, 9, 10, 11],
+    "emoji": "🥗",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1r1rSNBjt6UOaZDp9mXqOR6eQXsdZxe0&usp=sharing"
+    ],
+    "pef": 0.13,
+    "CO2": 0.88,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Navet" },
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "emoji": "🍠",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1EtJFJwEiIOPLPWpOEVLc0w0yX9Kacys&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.39
+  },
+  {
+    "label": { "fr": "Oignon" },
+    "months": [0, 1, 6, 7, 8, 9, 10, 11],
+    "emoji": "🧅",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1rXbifbwKHGjlGf0YH2Ujk6kM2sCJZ-Y&usp=sharing"
+    ],
+    "pef": 0.7,
+    "CO2": 0.42
+  },
+  {
+    "label": { "fr": "Panais" },
+    "months": [0, 1, 2, 6, 7, 8, 9, 10, 11],
+    "emoji": "🍠",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1l-tWjhQNoQ7sZn83OBcR6bd5U7kr_yw&usp=sharing"
+    ],
+    "pef": 0.07,
+    "CO2": 0.39
+  },
+  {
+    "label": { "fr": "Petit pois" },
+    "months": [4, 5, 6, 7, 8],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1s-wHWUE57SmEcVBhaqaZ7oVKaa8rrPc&usp=sharing"
+    ],
+    "pef": 0.09,
+    "CO2": 0.3
+  },
+  {
+    "label": { "fr": "Poireau" },
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1MbXPFRu-2skEwpTUkFFn566XtKwY0aA&usp=sharing"
+    ],
+    "pef": 0.11,
+    "CO2": 0.71,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Poivron" },
+    "months": [6, 7, 8],
+    "emoji": "🌶️",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1cCWYbvsJNnzbMn3QcZtj16ceAxsPiws&usp=sharing"
+    ],
+    "pef": 0.13,
+    "CO2": 0.92,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Radis noir" },
+    "months": [8, 9, 10, 11, 0, 1, 2, 3],
+    "emoji": "🍠",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1GV6aefI089BN3rvFQ60lI4afcbZTzio&usp=sharing"
+    ],
+    "pef": 0.06,
+    "CO2": 0.25
+  },
+  {
+    "label": { "fr": "Radis rose" },
+    "months": [3, 4, 5, 6, 7, 8, 9],
+    "emoji": "🍠",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1GV6aefI089BN3rvFQ60lI4afcbZTzio&usp=sharing"
+    ],
+    "pef": 0.06,
+    "CO2": 0.25
+  },
+  {
+    "label": { "fr": "Groseille" },
+    "months": [6],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1bZiXfY8NehPkhHUeXwiE4-gVD2VJbsU&usp=sharing"
+    ],
+    "pef": 0.27,
+    "CO2": 1.76
+  },
+  {
+    "label": { "fr": "Melon" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🍈",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1NehEgw6kDfmG4YgHSq37mPh5Y-F2Dvg&usp=sharing"
+    ],
+    "pef": 0.16,
+    "CO2": 0.87,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Rhubarbe" },
+    "months": [3, 4, 5, 6],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1yyclwqzYDbbmR4Yjkx686OXZrUNFDqA&usp=sharing"
+    ],
+    "pef": 0.8,
+    "CO2": 0.69
+  },
+  {
+    "label": { "fr": "Cerise" },
+    "months": [5, 6],
+    "emoji": "🍒",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1hf_oicgbrNJbwH3beg-rQZMMsiooi-w&usp=sharing"
+    ],
+    "pef": 0.43,
+    "CO2": 1.27
+  },
+  {
+    "label": { "fr": "Framboise" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🌱",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1td-5wy8ThPHytjiX9Z2Lxq-cQTzTHmQ&usp=sharing"
+    ],
+    "pef": 0.42,
+    "CO2": 0.91
+  },
+  {
+    "label": { "fr": "Poire" },
+    "months": [0, 1, 2, 7, 8, 9, 10, 11],
+    "emoji": "🍐",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1mdxHKP6qSy02zUjKAen_0QBmZvqRX0k&usp=sharing"
+    ],
+    "pef": 0.09,
+    "CO2": 0.25
+  },
+  {
+    "label": { "fr": "Raisin" },
+    "months": [7, 8],
+    "emoji": "🍇",
+    "local": [true, " "],
+    "pef": 0.11,
+    "CO2": 0.63,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Aubergine" },
+    "months": [6, 7],
+    "emoji": "🍆",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1alI1UnWmTmFMkbh0s7RngwmQM9xOW64&usp=sharing"
+    ],
+    "pef": 0.49,
+    "CO2": 5.31,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Brocoli" },
+    "months": [6, 7, 8, 9],
+    "emoji": "🥦",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=11Ixz9O5Uyv8NjBZ-O_INocMyQp_zh8s&usp=sharing"
+    ],
+    "pef": 0.08,
+    "CO2": 0.68
+  },
+  {
+    "label": { "fr": "Tomate" },
+    "months": [5, 6, 7, 8],
+    "emoji": "🍅",
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=11xNj45Y-RBwtaAJUoM-q6sCS4xiPrsE&usp=sharing"
+    ],
+    "pef": 0.1,
+    "CO2": 0.62,
+    "suggestions": true
+  },
+  {
+    "label": { "fr": "Pommes de terres" },
+    "emoji": "🥔",
+    "months": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1u4jsMo1CD04SVstA1--NmV_oqNytpaA&usp=sharing"
+    ],
+    "pef": 0.14,
+    "C02": 0.91
+  },
+  {
+    "label": { "fr": "Piment" },
+    "emoji": "🌶️",
+    "months": [8],
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1Apsom5DPmG2izLz5HV4-xdW_ZXOoTGI&usp=sharing"
+    ],
+    "pef": 0.34,
+    "C02": 3.81
+  },
+  {
+    "label": { "fr": "Rutabagas" },
+    "emoji": "🌱",
+    "months": [11, 0, 1, 2],
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1cedioUGboJ0p2mEtnwrz_9Cz3vmI5j8&usp=sharing"
+    ],
+    "pef": 0.07,
+    "C02": 0.39
+  },
+  {
+    "label": { "fr": "Topinambours" },
+    "emoji": "🍠",
+    "months": [11, 0, 1, 2],
+    "local": [
+      true,
+      "https://www.google.com/maps/d/viewer?mid=1r5U3jEcW1OLnPqSEeaQLuz2sSHSaVWA&usp=sharing"
+    ],
+    "pef": 0.11,
+    "C02": 0.86
+  }
+]
