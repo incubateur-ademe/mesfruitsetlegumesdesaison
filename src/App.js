@@ -17,6 +17,7 @@ import CO2EModal from 'components/modals/CO2EModal'
 import PEFModal from 'components/modals/PEFModal'
 import LocalModal from 'components/modals/LocalModal'
 import InstallInstructionsModal from 'components/modals/InstallInstructionsModal'
+import Accessibility from 'views/Accessibility'
 import Months from 'views/Months'
 import Results from 'views/Results'
 
@@ -34,6 +35,11 @@ function App() {
                   <SearchProvider>
                     <GlobalStyle />
                     <Switch>
+                      <Route path='/accessibilite'>
+                        <Web>
+                          <Accessibility />
+                        </Web>
+                      </Route>
                       <Route path='/embed'>
                         <Iframe>
                           <SearchInput iframe />

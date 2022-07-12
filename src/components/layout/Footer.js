@@ -55,6 +55,17 @@ const Institution = styled.img`
 const StyledButton = styled(Button)`
   align-self: center;
 `
+const Accessibility = styled(MagicLink)`
+  display: block;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: center;
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
+  background-color: white;
+`
 export default function Footer(props) {
   return (
     <Wrapper background={props.background} id='about'>
@@ -108,6 +119,9 @@ export default function Footer(props) {
           <Logo />
         </Logos>
       </LogosWrapper>
+      <Accessibility to='/accessibilite'>
+        Accessibilité : partiellement conforme
+      </Accessibility>
     </Wrapper>
   )
 }
