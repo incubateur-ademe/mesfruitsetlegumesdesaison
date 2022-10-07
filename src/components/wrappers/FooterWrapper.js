@@ -9,7 +9,7 @@ export default function FooterWrapper() {
       <h2>D'ou viennent ces données ?</h2>
       <p>
         Ce simulateur réutilise les données du{' '}
-        <MagicLink to='https://www.ademe.fr/calendrier-fruits-legumes-saison'>
+        <MagicLink to='https://librairie.ademe.fr/consommer-autrement/5784-a-chaque-mois-ses-fruits-et-legumes-.html'>
           calendrier des fruits et légumes de saison de l'ADEME
         </MagicLink>{' '}
         et de la base de donnée{' '}
