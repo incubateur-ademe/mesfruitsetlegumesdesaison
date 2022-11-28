@@ -125,7 +125,7 @@ export default function Learning() {
         <ButtonWrapper>
           <Button
             to={
-              'https://www.ademe.fr/calendrier-fruits-legumes-saison'
+              'https://librairie.ademe.fr/consommer-autrement/5784-a-chaque-mois-ses-fruits-et-legumes-.html'
             }
           >
             Je télécharge le calendrier des fruits et légumes de saison
