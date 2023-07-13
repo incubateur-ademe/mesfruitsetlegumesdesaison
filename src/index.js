@@ -3,18 +3,16 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import Cookies from 'js-cookie'
 
-let branch = Cookies.get('branch')
-if (!branch) {
-  branch = ['master', 'b-test'][Math.round(Math.random())]
-  console.log(branch)
-  Cookies.set('branch', branch, {
-    sameSite: 'none',
-    secure: true,
-  })
+if (!window.location.href.includes('iframe')) {
+  let branch = Cookies.get('nf_ab')
+  if (!branch) {
+    branch = 'b-test'
+    Cookies.set('nf_ab', branch, {
+      sameSite: 'none',
+      secure: true,
+    })
+    window.location.reload(true)
+  }
 }
-Cookies.set('nf_ab', branch, {
-  sameSite: 'none',
-  secure: true,
-})
 
 ReactDOM.render(<App />, document.getElementById('root'))
