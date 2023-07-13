@@ -4,9 +4,13 @@ import App from './App'
 import Cookies from 'js-cookie'
 
 if (!window.location.href.includes('iframe')) {
-  let branch = Cookies.get('nf_ab')
+  let branch = Cookies.get('branch')
   if (!branch) {
     branch = 'b-test'
+    Cookies.set('branch', branch, {
+      sameSite: 'none',
+      secure: true,
+    })
     Cookies.set('nf_ab', branch, {
       sameSite: 'none',
       secure: true,
