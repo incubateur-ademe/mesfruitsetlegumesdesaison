@@ -80,6 +80,23 @@
         s.parentNode.insertBefore(g, s)
       })()
     </script>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+"></script>
+    <script>
+      if (window.location.href.includes('embed')) {
+        let branch = Cookies.get('nf_ab')
+        if (!branch) {
+          branch = Math.random()
+          Cookies.set('nf_ab', branch, {
+            sameSite: 'None',
+            secure: true,
+          })
+          window.location.reload(true)
+        }
+      }
+    </script>
     <!-- End Matomo Code -->
   </head>
 
