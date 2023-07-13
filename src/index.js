@@ -7,7 +7,7 @@ let branchRandomNumber = Cookies.get('branch_random_number')
 if (!branchRandomNumber) {
   branchRandomNumber = Math.random()
   Cookies.set('branch_random_number', branchRandomNumber, {
-    sameSite: 'None',
+    sameSite: 'none',
     secure: true,
   })
 }
