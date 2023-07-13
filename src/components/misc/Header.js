@@ -91,8 +91,8 @@ export default function Header(props) {
           <Title>
             {props.iframe ? (
               <NoLink>
-                <Top text={'Est-ce bien'}>
-                  <span>Est-ce bien</span>
+                <Top text={'Est ce bien'}>
+                  <span>Est ce bien</span>
                 </Top>
                 <Bottom text={'la saison ?'}>
                   <span>la saison ?</span>
@@ -101,11 +101,11 @@ export default function Header(props) {
             ) : (
               <StyledLink
                 to={'/'}
-                aria-label='Est-ce bien la saison ?'
-                title={`Est-ce bien la saison ? Retour à l'accueil`}
+                aria-label='Est ce bien la saison ?'
+                title={`Est ce bien la saison ? Retour à l'accueil`}
               >
-                <Top text={'Est-ce bien'}>
-                  <span>Est-ce bien</span>
+                <Top text={'Est ce bien'}>
+                  <span>Est ce bien</span>
                 </Top>
                 <Bottom text={'la saison ?'}>
                   <span>la saison ?</span>
