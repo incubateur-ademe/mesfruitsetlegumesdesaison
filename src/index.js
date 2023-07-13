@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import Cookies from 'js-cookie'
 
-if (!window.location.href.includes('iframe')) {
+if (!window.location.href.includes('embed')) {
   let branch = Cookies.get('branch')
   if (!branch) {
     branch = 'b-test'
