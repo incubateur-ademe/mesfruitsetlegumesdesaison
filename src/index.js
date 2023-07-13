@@ -12,7 +12,7 @@ if (!branchRandomNumber) {
   })
 }
 Cookies.set('nf_ab', branchRandomNumber, {
-  sameSite: 'None',
+  sameSite: 'none',
   secure: true,
 })
 
