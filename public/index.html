@@ -65,6 +65,7 @@
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
       _paq.push(['trackPageView'])
       _paq.push(['enableLinkTracking'])
+      _paq.push(['setCookieSameSite', 'None'])
       ;(function () {
         var u = 'https://stats.data.gouv.fr/'
         _paq.push(['setTrackerUrl', u + 'matomo.php'])
