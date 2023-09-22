@@ -80,15 +80,6 @@
         s.parentNode.insertBefore(g, s)
       })()
     </script>
-    <script>
-      if (window.location.href.includes('embed')) {
-        let cookieIsSet = document.cookie.includes('nf_ab')
-        if (!cookieIsSet) {
-          document.cookie = `nf_ab=${Math.random()}; sameSite=None; secure=true`
-          window.location.reload(true)
-        }
-      }
-    </script>
     <!-- End Matomo Code -->
   </head>
 
